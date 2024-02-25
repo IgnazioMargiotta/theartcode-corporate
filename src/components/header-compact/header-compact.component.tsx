@@ -13,7 +13,7 @@ export const HeaderCompact = () => {
   return (
       <div className={`md:container md:mx-auto flex flex-row gap-4 py-[30px]`}>
         <div className={`basis-2/4`}>
-          <Image src={`logo.svg`} width={230} height={300} title={`artCode logo`} alt='artCode logo' />
+          <Image src={`logo.svg`} width={230} height={300} title={`artCode`} alt='artCode' />
         </div>
         <div className={`basis-2/4 flex justify-center`}>
           Menu

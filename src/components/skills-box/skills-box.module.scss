@@ -1,0 +1,84 @@
+.skills{
+  &__box{
+    font-size: 0.8rem;
+    line-height: 1;
+    color: #fff;
+    width: 100%;
+    max-width: 120px;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: 6s ease-in-out infinite;
+    &:nth-child(odd){
+      animation-name: skillsUp;
+    }
+    &:nth-child(even){
+      animation-name: skillsDown;
+    }
+    img{
+      max-width: 50%;
+    }
+  }
+  &__title{
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0.5rem;
+    bottom: 1rem;
+  }
+  &__box--empty{
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+  &__box--blue{
+    background-color: #23AECD;
+  }
+  &__box--green{
+    background-color: #8EDD00;
+  }
+  &__box--violet{
+    background-color: #B286FD;
+  }
+  &__box--purple{
+    background-color: #B55694;
+  }
+  &__box--orange{
+    background-color: #E2773A;
+  }
+}
+@keyframes skillsUp {
+  0%, 100% {
+    transform: translateY(1rem);
+    scale: 0.95;
+  }
+  50% {
+    transform: translateY(-1rem);
+    scale: 1.05;
+  }
+}
+@keyframes skillsDown {
+  0%, 100% {
+    transform: translateY(-1rem);
+    scale: 1.05;
+  }
+  50% {
+    transform: translateY(1rem);
+    scale: 0.95;
+  }
+}
+@media (max-width: 1024px) {
+  .skills__box--empty{
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .skills__box{
+    font-size: 0.6rem;
+    max-width: 100px;
+  }
+}

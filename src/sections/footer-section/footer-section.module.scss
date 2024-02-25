@@ -1,0 +1,42 @@
+.footer{
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, #C33374,#7C2681) 1;
+  .socialBoxed {
+    --size-social: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    transition: all .2s linear;
+    &__instagram{
+      svg{
+        width: calc(30px * var(--size-social));
+      }
+    }
+    &__linkedin{
+      svg{
+        width: calc(26px * var(--size-social));
+      }
+    }
+    a {
+      &:hover {
+        opacity: 0.8;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(60px * var(--size-social));
+      height: calc(60px * var(--size-social));
+      border-radius: 100%;
+      background-color: red;
+      transition: all .2s linear;
+    }
+    svg {
+      fill: orange;
+      overflow: visible;
+    }
+  }
+}
