@@ -1,6 +1,4 @@
 import { HeaderCompact, Intro } from "@theartcode/components"
-
-// Styles
 import styles from './header-section.module.scss'
 
 export const HeaderSection = () => {

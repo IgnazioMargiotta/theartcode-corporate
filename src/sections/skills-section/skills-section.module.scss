@@ -1,6 +1,6 @@
 .skills{
-  background: #F5F5F5 url('/background.png') top left / 300px fixed;
-  &-rowbox{
+  background: $color-gray1 url('/assets/images/background.png') top left / 300px fixed;
+  &-row-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8,43 +8,44 @@
     gap: 4rem 2rem;
     padding-block: 4rem;
   }
-  &-rowlogo{
-    background-color: #fff;
+  &-row-logo{
+    background-color: $color-white;
     margin-block: 2rem;
   }
-  &-containerlogo{
+  &-container-logo{
     max-width: 600px;
     margin-inline: auto;
     position: relative;
   }
   &__logo{
+    width: 300px;
     margin-inline: auto;
     padding-block: 1.5rem;
   }
-  &__linedecoration{
+  &__line-decoration{
     position: absolute;
     user-select: none;
-    &--violet{
-      right: 0;
-      top: 0;
-      transform: translate(65%, -80%);
-    }
-    &--blue{
+    &--variant1{
       right: 0;
       top: 0;
       transform: translate(-170%, -95%);
     }
-    &--green{
+    &--variant2{
       left: 0;
       top: 0;
       transform: translate(-100%, -50%);
     }
-    &--purple{
+    &--variant3{
+      right: 0;
+      top: 0;
+      transform: translate(65%, -80%);
+    }
+    &--variant4{
       left: 0;
       bottom: 0;
-      transform: translate(20%, 90%);
+      transform: translate(45%, 90%);
     }
-    &--orange{
+    &--variant5{
       left: 0;
       bottom: 0;
       transform: translate(-90%, 90%);
@@ -52,12 +53,12 @@
   }
 }
 @media (max-width: 1280px) {
-  .skills__linedecoration{
+  .skills__line-decoration{
     display: none;
   }
 }
 @media (max-width: 640px) {
-  .skills-rowbox{
+  .skills-row-box{
     gap: 1rem;
     padding-block: 1rem;
   }

@@ -2,7 +2,7 @@
   &__box{
     font-size: 0.8rem;
     line-height: 1;
-    color: #fff;
+    color: $color-white;
     width: 100%;
     max-width: 120px;
     aspect-ratio: 1/1;
@@ -13,10 +13,10 @@
     position: relative;
     animation: 6s ease-in-out infinite;
     &:nth-child(odd){
-      animation-name: skillsUp;
+      animation-name: skills-up;
     }
     &:nth-child(even){
-      animation-name: skillsDown;
+      animation-name: skills-down;
     }
     img{
       max-width: 50%;
@@ -35,23 +35,23 @@
     user-select: none;
     pointer-events: none;
   }
-  &__box--blue{
-    background-color: #23AECD;
+  &__box--variant1{
+    background-color: $color-main1;
   }
-  &__box--green{
-    background-color: #8EDD00;
+  &__box--variant2{
+    background-color: $color-primary1;
   }
-  &__box--violet{
-    background-color: #B286FD;
+  &__box--variant3{
+    background-color: $color-primary2;
   }
-  &__box--purple{
-    background-color: #B55694;
+  &__box--variant4{
+    background-color: $color-main2;
   }
-  &__box--orange{
-    background-color: #E2773A;
+  &__box--variant5{
+    background-color: $color-primary3;
   }
 }
-@keyframes skillsUp {
+@keyframes skills-up {
   0%, 100% {
     transform: translateY(1rem);
     scale: 0.95;
@@ -61,7 +61,7 @@
     scale: 1.05;
   }
 }
-@keyframes skillsDown {
+@keyframes skills-down {
   0%, 100% {
     transform: translateY(-1rem);
     scale: 1.05;
@@ -71,13 +71,14 @@
     scale: 0.95;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .skills__box--empty{
     display: none;
   }
 }
 @media (max-width: 640px) {
   .skills__box{
+    animation: none;
     font-size: 0.6rem;
     max-width: 100px;
   }

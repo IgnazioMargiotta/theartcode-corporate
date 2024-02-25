@@ -1,15 +1,21 @@
 .footer{
+  font-size: 0.9rem;
   border-top-width: 4px;
   border-top-style: solid;
-  border-image: linear-gradient(to right, #C33374,#7C2681) 1;
-  .socialBoxed {
+  border-image: $color-main-gradient 1;
+  &__logo{
+    width:200px;
+  }
+  a{
+    text-decoration:underline;
+  }
+  .social {
     --size-social: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 1rem;
     transition: all .2s linear;
     &__instagram{
       svg{
@@ -31,11 +37,11 @@
       width: calc(60px * var(--size-social));
       height: calc(60px * var(--size-social));
       border-radius: 100%;
-      background-color: red;
+      background: $color-main-gradient;
       transition: all .2s linear;
     }
     svg {
-      fill: orange;
+      fill: $color-white;
       overflow: visible;
     }
   }

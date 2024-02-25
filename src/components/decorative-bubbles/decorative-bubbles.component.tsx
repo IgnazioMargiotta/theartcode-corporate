@@ -1,7 +1,10 @@
 import styles from './decorative-bubbles.module.scss'
-import PropTypes from 'prop-types';
+interface DecorativeBubblesProps {
+  direction?: string,
+  position?: string
+}
 
-export const DecorativeBubbles = ({ direction = '', position = '' }: {  direction?: string, position?: string }) => {
+export const DecorativeBubbles = ({ direction = '', position = '' } : DecorativeBubblesProps) => {
   return (
     <div className={`${styles['blubbles']}`} data-direction={direction} data-position={position}>
       <div className={`${styles['blubble__single']} ${styles['blubble__single--border']}`}></div>
@@ -11,10 +14,5 @@ export const DecorativeBubbles = ({ direction = '', position = '' }: {  directio
     </div>
   )
 }
-
-DecorativeBubbles.propTypes = {
-  direction: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-};
 
 export default DecorativeBubbles;
