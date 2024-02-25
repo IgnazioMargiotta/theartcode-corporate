@@ -7,6 +7,7 @@ import styles from './global.module.scss'
 export const Home = () => {
   return (
     <div>
+      <HeaderSection />
       <main>
         <SkillsSection />
         <FooterSection />
