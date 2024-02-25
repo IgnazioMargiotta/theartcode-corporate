@@ -1,0 +1,85 @@
+.skills{
+  &__box{
+    font-size: 0.8rem;
+    line-height: 1;
+    color: $color-white;
+    width: 100%;
+    max-width: 120px;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: 6s ease-in-out infinite;
+    &:nth-child(odd){
+      animation-name: skills-up;
+    }
+    &:nth-child(even){
+      animation-name: skills-down;
+    }
+    img{
+      max-width: 50%;
+    }
+  }
+  &__title{
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0.5rem;
+    bottom: 1rem;
+  }
+  &__box--empty{
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+  &__box--variant1{
+    background-color: $color-main1;
+  }
+  &__box--variant2{
+    background-color: $color-primary1;
+  }
+  &__box--variant3{
+    background-color: $color-primary2;
+  }
+  &__box--variant4{
+    background-color: $color-main2;
+  }
+  &__box--variant5{
+    background-color: $color-primary3;
+  }
+}
+@keyframes skills-up {
+  0%, 100% {
+    transform: translateY(1rem);
+    scale: 0.95;
+  }
+  50% {
+    transform: translateY(-1rem);
+    scale: 1.05;
+  }
+}
+@keyframes skills-down {
+  0%, 100% {
+    transform: translateY(-1rem);
+    scale: 1.05;
+  }
+  50% {
+    transform: translateY(1rem);
+    scale: 0.95;
+  }
+}
+@media (max-width: 1280px) {
+  .skills__box--empty{
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .skills__box{
+    animation: none;
+    font-size: 0.6rem;
+    max-width: 100px;
+  }
+}
