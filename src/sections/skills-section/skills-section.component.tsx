@@ -19,7 +19,7 @@ export const SkillsSection = () => {
           <SkillsBox boxActive={false} />
           <SkillsBox boxActive={false} />
           <SkillsBox boxActive={true} color="variant2" title="HTML5" icon="skills_html5.svg" />
-          <SkillsBox boxActive={true} color="variant2" title="CSS3" icon="skills_CSS3.svg" />
+          <SkillsBox boxActive={true} color="variant2" title="CSS3" icon="skills_css3.svg" />
           <SkillsBox boxActive={true} color="variant2" title="Javascript" icon="skills_javascript.svg" />
           <SkillsBox boxActive={false} />
           <SkillsBox boxActive={true} color="variant3" title="MySQL" icon="skills_mysql.svg" />
