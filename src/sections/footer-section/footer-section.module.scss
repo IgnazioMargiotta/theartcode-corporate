@@ -5,6 +5,7 @@
   border-image: $color-main-gradient 1;
   &__logo{
     width:200px;
+    fill: $color-black;
   }
   a{
     text-decoration:underline;

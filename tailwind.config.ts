@@ -9,7 +9,10 @@ const config: Config = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+  theme: {colors: {
+    'color-main1': '#23AECD',
+    'color-main2': '#B55694',
+  },
     extend: {
       container: {
         padding: {

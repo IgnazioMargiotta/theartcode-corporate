@@ -1,0 +1,46 @@
+.button{
+   display:inline-block;
+   padding: 0.7rem 2rem;
+   font-weight: 500;
+   border:2px solid;
+   border-radius: 10rem;
+   transition-duration: 0.3s;
+}
+.button--fill.button--main1{
+    border-color: $color-main1;
+    background-color: $color-main1;
+    color: $color-white;
+    &:hover{
+        border-color: $color-main2;
+        background-color: $color-main2;
+    }
+}
+.button--fill.button--main2{
+    border-color: $color-main2;
+    background-color: $color-main2;
+    color: $color-white;
+    &:hover{
+        border-color: $color-main1;
+        background-color: $color-main1;
+    }
+}
+.button--ghost.button--main1{
+    border-color: $color-main1;
+    color: $color-main1;
+    &:hover{
+        background-color: $color-main1;
+        color: $color-white;
+    }
+}
+.button--ghost.button--main2{
+    border-color: $color-main2;
+    color: $color-main2;
+    &:hover{
+        background-color: $color-main2;
+        color: $color-white;
+    }
+}
+.button:hover{
+    transform:translateY(-5px);
+    box-shadow: $shadown-base;
+}
