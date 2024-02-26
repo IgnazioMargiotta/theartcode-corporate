@@ -24,14 +24,14 @@ export const SkillsSection = () => {
           <SkillsBox boxActive={false} />
           <SkillsBox boxActive={true} color="variant3" title="MySQL" icon="skills_mysql.svg" />
           <SkillsBox boxActive={true} color="variant3" title="Mongo DB" icon="skills_mongodb.svg" />
-          <SkillsBox boxActive={false} />
+          <SkillsBox boxActive={true} color="variant3" title="POSTGRESQL" icon="skills_postgresql.svg" />
         </div>
       </div>
       <div className={`${styles['skills-row-logo']}`}>
         <div className={`${styles['skills-container-logo']}`}>
           <DecorativeBubbles direction="left" position="top-left" />
           <svg className={`${styles['skills__logo']}`} viewBox="0 0 1215 306">
-            <use href="#logo"></use>
+            <use href="#logo-multicolor"></use>
           </svg>
           <Image src={`assets/images/line_variant1.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant1']}`} width={90} height={310} alt='' />
           <Image src={`assets/images/line_variant2.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant2']}`} width={200} height={135} alt='' />
@@ -46,8 +46,8 @@ export const SkillsSection = () => {
             <SkillsBox boxActive={false} />
             <SkillsBox boxActive={false} />
             <SkillsBox boxActive={false} />
-            <SkillsBox boxActive={true} color="variant4" title="Node JS" icon="skills_nodejs.svg" />
             <SkillsBox boxActive={true} color="variant4" title="Strapi" icon="skills_strapi.svg" />
+            <SkillsBox boxActive={true} color="variant4" title="Node JS" icon="skills_nodejs.svg" />
             <SkillsBox boxActive={true} color="variant4" title="React JS" icon="skills_reactjs.svg" />
             <SkillsBox boxActive={true} color="variant4" title="Angular JS" icon="skills_angularjs.svg" />
             <SkillsBox boxActive={true} color="variant4" title="Next JS" icon="skills_nextjs.svg" />

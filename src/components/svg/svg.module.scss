@@ -1,12 +1,9 @@
 .svgElement{
   display: none;
-}
-
-svg{
-  .color-main1{
+  .fill-main1{
     fill: $color-main1;
   }
-  .color-main2{
+  .fill-main2{
     fill: $color-main2;
   }
 }
