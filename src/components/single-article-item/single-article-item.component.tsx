@@ -9,7 +9,7 @@ export const SingleArticleItem = (props: SingleArticleItemProps) => {
   console.log('props', props)
   return (
     <div>
-      test
+      {props.title}
     </div>
   )
 }
