@@ -12,9 +12,48 @@
     gap:1rem;
     max-width: 430px;
     margin-inline: auto;
+    transition-duration:0.3s;
+    position:relative;
     &__image{
       margin-inline:auto;
       margin-block:-100px 30px;
+      transition-duration: 0.3s;
+    }
+    &:hover .customers-box__image{
+      filter:drop-shadow($shadown-base);
+    }
+    &:before,&:after{
+      content:'';
+      position: absolute;
+      background: url('/assets/images/decoration_stars.svg') 100%;
+      width:50px;
+      height:60px;
+      filter:blur(10px);
+      user-select: none;
+      transition-duration: 0.3s;
+      scale:0;
+    }
+    &:before{
+      bottom:0;
+      left:0;
+      transform: translate(60%,50%);
+      transition-delay: 0.1s;
+    }
+    &:after{
+      top:0;
+      right:0;
+      transform: rotate(180deg) translate(60%,50%);
+      transition-delay: 0.2s;
+    }
+    &:hover{
+      background-color:$color-primary2-opacity;
+      transform: translateY(-20px);
+      box-shadow: $shadown-base;
+    }
+    &:hover:before,&:hover:after{
+      filter:blur(0px);
+      user-select: initial;
+      scale:1;
     }
   }
 }

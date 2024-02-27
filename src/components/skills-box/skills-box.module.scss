@@ -24,12 +24,22 @@
     }
   }
   &__title{
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
     position: absolute;
-    left: 0.5rem;
-    bottom: 1rem;
+    left: 0;
+    right:0;
+    bottom: 0.5rem;
+    margin-inline: auto;
+    text-align:center;
+    text-transform: uppercase;
+    filter:blur(10px);
+    opacity:0;
+    user-select: none;
+    transition-duration: 0.3s;
+  }
+  &__box:hover &__title{
+    filter:blur(0px);
+    opacity:initial;
+    user-select: initial;
   }
   &__box--empty{
     opacity: 0;
@@ -82,5 +92,10 @@
     animation: none;
     font-size: 0.6rem;
     max-width: 100px;
+    .skills__title{
+      filter:blur(0px);
+      opacity:initial;
+      user-select: initial;
+    }
   }
 }
