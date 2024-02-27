@@ -2,7 +2,7 @@ import { InferGetServerSidePropsType } from "next/types";
 import Head from "next/head";
 
 // Sections
-import { HeaderSection, PresentationSection, CustomersSection, SkillsSection, FooterSection, LastArticles } from "@theartcode/sections";
+import { HeaderSection, PresentationSection, CustomersSection, SkillsSection, ServicesSection, FooterSection, LastArticles } from "@theartcode/sections";
 
 // Components
 import OpenGraph from "@theartcode/components/open-graph/open-graph.component";
@@ -38,6 +38,7 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
         <PresentationSection />
         <CustomersSection />
         <SkillsSection />
+        <ServicesSection />
         <LastArticles articles={articles} />
       </main>
       <FooterSection />
