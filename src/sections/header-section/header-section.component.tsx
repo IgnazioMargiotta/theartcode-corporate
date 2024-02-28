@@ -3,7 +3,6 @@ import styles from './header-section.module.scss'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '#', current: false },
   { name: 'Come lavoriamo', href: '#', current: false },
   { name: 'Progetti', href: '#', current: false },
   { name: 'Contattaci', href: '#', current: false },
