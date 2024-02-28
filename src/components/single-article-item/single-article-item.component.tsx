@@ -6,7 +6,7 @@ interface SingleArticleItemProps {
   category: string;
 }
 export const SingleArticleItem = (props: SingleArticleItemProps) => {
-  console.log('props', props)
+
   return (
     <div>
       {props.title}

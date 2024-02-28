@@ -13,6 +13,7 @@ import styles from './global.module.scss'
 // Utils
 import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
+import { MainContactForm } from "@theartcode/components";
 
 
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -40,6 +41,7 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
         <SkillsSection />
         <ServicesSection />
         <LastArticles articles={articles} />
+        <MainContactForm />
       </main>
       <FooterSection />
     </>
