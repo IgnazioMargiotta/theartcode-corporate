@@ -12,10 +12,34 @@ body:has(.header__menu--open){
     }
     &__menu ul{
         display: flex;
-        gap:1rem;
+        gap:2rem;
         text-transform: uppercase;
         font-weight: 500;
         overflow: hidden;
+        li:before{
+            content:'';
+            display:block;
+            width:3rem;
+            aspect-ratio: 1/1;
+            background-color:$color-primary2-opacity;
+            border-radius: 10rem;
+            position: absolute;
+            transform: scale(0);
+            transition-duration: 0.3s;
+            transform-origin: center;
+            z-index: -1;
+            margin-left:-15px;
+            margin-top:-12px;
+        }
+        li:has(a:hover):before{
+            transform: scale(1);
+        }
+        a{
+            transition-duration: 0.3s;
+        }
+        a:hover{
+            text-shadow: $shadown-base;
+        }
     }
     &__icon-hambuger{
         display: none;
@@ -84,13 +108,18 @@ body:has(.header__menu--open){
             transition-duration: 0.5s;
             height:100svh;
             font-size: 1.3rem;
+            a{
+                text-shadow: $shadown-base;
+            }
+            li:before{
+                content:none;
+            }
             &:before{
                 content:'';
                 display:block;
                 width:200px;
                 aspect-ratio: 1/1;
-                background-color:$color-primary2-opacity;
-                border:2px solid $color-primary2;
+                background-color:$color-primary1-opacity;
                 position:absolute;
                 bottom:0;
                 left: 0;
@@ -106,7 +135,6 @@ body:has(.header__menu--open){
                 border-radius: 50rem;
                 aspect-ratio: 1/1;
                 background-color:$color-primary2-opacity;
-                border:2px solid $color-primary2;
                 position:absolute;
                 top:0;
                 left: 50%;
@@ -121,7 +149,7 @@ body:has(.header__menu--open){
             transform: rotate(40deg) translate(-15%, 50%);
         }
         &__menu--open ul:after{
-            transform: translate(-50%, -85%);
+            transform: translate(-65%, -85%);
         }
         &__menu.header__menu--open ul{
             transform: translatex(0);
