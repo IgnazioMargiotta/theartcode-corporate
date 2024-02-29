@@ -12,7 +12,7 @@ export const CustomersSection = () => {
             <h3>startUp</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div className={`${styles['customers-box']}`}>
+          <div className={`${styles['customers-box']} ${styles['customers-box--focus']}`}>
             <Image src={`assets/images/icon_building.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='piccole/medie imprese' />
             <h3>piccole/medie imprese</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
