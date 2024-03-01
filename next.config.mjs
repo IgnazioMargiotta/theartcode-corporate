@@ -10,7 +10,7 @@ const nextConfig = {
       'theartcode-be-app-x8t4f.ondigitalocean.app',
       'localhost',
       'monkfish-app-tt33s.ondigitalocean.app',
-      'theartcode.dev',
+      'vibra.studio',
     ],
     remotePatterns: [
       {
@@ -30,7 +30,7 @@ const nextConfig = {
       {
         protocol: 'https',
         port: '8080',
-        hostname: 'theartcode.dev',
+        hostname: 'vibra.studio',
       },
     ],
   },
