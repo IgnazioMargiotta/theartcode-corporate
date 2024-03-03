@@ -1,31 +1,52 @@
-import { useState } from 'react';
-import styles from './header-section.module.scss'
-import Link from 'next/link'
+import { useState, useEffect } from 'react';
+import { SocialBox } from "@theartcode/components"
+import styles from './header-section.module.scss';
+import Link from 'next/link';
 
 const navigation = [
-  { name: 'Come lavoriamo', href: '#', current: false },
-  { name: 'Progetti', href: '#', current: false },
-  { name: 'Contattaci', href: '#', current: false },
-  { name: 'BLOG', href: '#', current: false },
-]
+  { name: 'Services', href: '/#services', current: false },
+  { name: 'Tecnology', href: '/#tecnology', current: false },
+  { name: 'Contacts', href: '/#contacts', current: false },
+  { name: 'Blog', href: '/#last-articles', current: false },
+];
 
 export const HeaderSection = () => {
+  const [open, setOpen] = useState(false);
+  const [isHeaderSticky, setHeaderSticky] = useState(false);
 
-  const [ open, setOpen ] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      setHeaderSticky(scrollPosition > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className={`${styles['header']}`}>
-      <div className="container min-h-[100px] mx-auto flex items-center justify-center sm:justify-between py-6">
-        <svg className={`${styles['header__logo']}`} viewBox="0 0 1215 306">
-          <use href="#logo-multicolor"></use>
-        </svg>
+    <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
+      <div className={`container mx-auto ${styles['header-container']}`}>
+        <Link href="/">
+          <svg className={`${styles['header__logo']}`} viewBox="0 0 1215 306">
+            <use href="#logo-multicolor"></use>
+          </svg>
+        </Link>
         <nav className={`${styles['header__menu']} ${open ? styles['header__menu--open'] : ''}`}>
           <ul>
             {navigation.map((item, index) => (
-              <li key={`item-key-${index}`}>
-                <Link href={item.href} title={item.name}>{item.name}</Link>
+              <li className={`${styles['header__items']}`}  key={`item-key-${index}`}>
+                <Link href={item.href} title={item.name} onClick={() => {if (window.innerWidth < 768) {setOpen(!open)}}}>
+                  {item.name}
+                </Link>
               </li>
             ))}
+            <li className={`${styles['header__social']} ${styles['header__social--eng']}`}>
+              <SocialBox size="small" />
+            </li>
           </ul>
           <button className={`${styles['header__icon-hambuger']}`} aria-label="Apri navigazione" onClick={() => setOpen(!open)}>
             <svg viewBox="0 0 100 100">
@@ -38,7 +59,7 @@ export const HeaderSection = () => {
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default HeaderSection
+export default HeaderSection;

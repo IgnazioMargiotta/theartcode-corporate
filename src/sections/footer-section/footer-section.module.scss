@@ -10,40 +10,4 @@
   a{
     text-decoration:underline;
   }
-  .social {
-    --size-social: 0.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    transition: all .2s linear;
-    &__instagram{
-      svg{
-        width: calc(30px * var(--size-social));
-      }
-    }
-    &__linkedin{
-      svg{
-        width: calc(26px * var(--size-social));
-      }
-    }
-    a {
-      &:hover {
-        opacity: 0.8;
-      }
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: calc(60px * var(--size-social));
-      height: calc(60px * var(--size-social));
-      border-radius: 100%;
-      background: $color-main-gradient;
-      transition: all .2s linear;
-    }
-    svg {
-      fill: $color-white;
-      overflow: visible;
-    }
-  }
 }

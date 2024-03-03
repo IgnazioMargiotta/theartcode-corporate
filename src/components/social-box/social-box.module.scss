@@ -1,0 +1,46 @@
+.social {
+    &[data-size="small"] {
+        --social-size: 0.5;
+        --social-gap: 0.7rem;
+    }
+    &[data-size="medium"] {
+        --social-size: 0.7;
+        --social-gap: 1rem;
+    }
+    &[data-size="large"] {
+        --social-size: 0.9;
+        --social-gap: 1.3rem;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--social-gap);
+    transition: all .2s linear;
+    &__instagram{
+        svg{
+            width: calc(30px * var(--social-size));
+        }
+    }
+    &__linkedin{
+        svg{
+            width: calc(26px * var(--social-size));
+        }
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(60px * var(--social-size));
+        height: calc(60px * var(--social-size));
+        border-radius: 100%;
+        background: $color-main-gradient;
+        transition: all .2s linear;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    svg {
+        fill: $color-white;
+        overflow: visible;
+    }
+}

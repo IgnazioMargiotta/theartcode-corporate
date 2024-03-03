@@ -5,11 +5,16 @@
   background-color:$color-gray1;
   padding:1.5rem;
   border-radius: 2rem;
+  &:hover .services-box__image{
+    transform:translateY(-10px);
+  }
   &__image{
     background-color:$color-white;
     padding:1rem;
     border-radius: 1.5rem;
-    filter:drop-shadow($shadown-base);
+    filter:drop-shadow($shadow-base);
+    transition-duration: 0.3s;
+    
   }
   &__info p{
     font-size: 14px;

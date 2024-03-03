@@ -81,7 +81,7 @@
 .blubbles[data-animation="true"]{
 	.blubble__single{
 		&:nth-child(1),&:nth-child(2),&:nth-child(3) {
-			animation: blubbles-in 0.5s ease-in-out;
+			animation: blubbles-in 4s infinite;
 		}
 		&:nth-child(1) {
 			animation-delay: 0.3s;
@@ -92,11 +92,14 @@
 	}
 }
 @keyframes blubbles-in {
-	0%,100% {
+	0% {
 		scale: 1;
 	}
-	50%{
-		scale:1.2;
+	25% {
+		scale:1.3;
+	}
+	50%,100%{
+		scale:1;
 	}
 }
 @media (max-width: 640px) {

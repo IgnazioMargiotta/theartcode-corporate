@@ -1,0 +1,19 @@
+.contacts{
+    h2 > span{
+    display: inline-block;
+    position: relative;
+    &:before{
+        content:'';
+        position: absolute;
+        display: block;
+        width: 50px;
+        left: 0;
+        top: 0;
+        transform: translate(-16px, -8px);
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        background-color:$color-primary2-opacity;
+        z-index: -1;
+    }
+    }
+}

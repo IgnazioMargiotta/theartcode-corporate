@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import { ApolloProvider } from "@apollo/client";
 
 // Styles
-import "@theartcode/styles/globals.css";
+import "@theartcode/styles/globals.scss";
 
 // Utils
 import client from "@theartcode/api/apollo-client";
