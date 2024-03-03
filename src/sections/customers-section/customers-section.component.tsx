@@ -1,11 +1,14 @@
 import styles from './customers-section.module.scss'
-import Image from 'next/image';
+import Image from 'next/image'
 
 export const CustomersSection = () => {
   return (
-    <section className={`${styles['customers']}`}>
-      <div className="container mx-auto text-center py-12">
-        <h2 className="pb-16">Lorem ipsum dolor sit amet<br /> consectetur adipiscing.</h2>
+    <section className={`${styles['customers']} py-[4rem] md:py-[8rem]`} id="services">
+      <div className="container mx-auto text-center">
+        <div className="text-center pb-16">
+          <h2 className="pb-4"><span>We work with</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className={`${styles['customers-box']}`}>
             <Image src={`assets/images/icon_rocket.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='startUp' />

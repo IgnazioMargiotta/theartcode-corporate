@@ -1,3 +1,4 @@
+export * from './contacts-section/contacts-section.component'
 export * from './customers-section/customers-section.component'
 export * from './footer-section/footer-section.component'
 export * from './header-section/header-section.component'

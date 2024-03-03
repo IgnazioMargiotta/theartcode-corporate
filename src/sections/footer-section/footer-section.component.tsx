@@ -1,4 +1,4 @@
-import { Svg } from "@theartcode/components"
+import { Svg, SocialBox } from "@theartcode/components"
 import styles from './footer-section.module.scss'
 
 export const FooterSection = () => {
@@ -12,22 +12,11 @@ export const FooterSection = () => {
           </div>
           <div className="md:w-4/6 flex items-center justify-center">
             <div className="text-center">
-              artCode - Via Fausto Coppi, 8/a 43122 Parma - P.IVA 02949510347 <a href="#" target="_blank" title="Privacy Policy">Privacy&nbsp;Policy</a>
+              artCode - Via Fausto Coppi, 8/a 43122 Parma - P.IVA&nbsp;02949510347 <a href="#" target="_blank" title="Privacy Policy">Privacy&nbsp;Policy</a>
             </div>
           </div>
           <div className="md:w-1/6 flex items-center justify-center md:justify-end">
-              <div className={`${styles['social']}`}>
-                <a href="#" target="_blank" title="Instagram" className={`${styles['social__instagram']}`}>
-                  <svg viewBox="0 0 30 30">
-                    <use href="#social-instagram"></use>
-                  </svg>
-                </a> 
-                <a href="#" target="_blank" title="LinkedIn" className={`${styles['social__linkedin']}`}>
-                  <svg viewBox="0 0 26 26">
-                    <use href="#social-linkedin"></use>
-                  </svg>
-                </a>
-            </div>
+            <SocialBox size="medium" />
           </div>
         </div>
       <Svg />

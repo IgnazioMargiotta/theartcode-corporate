@@ -2,7 +2,7 @@ import { InferGetServerSidePropsType } from "next/types";
 import Head from "next/head";
 
 // Sections
-import { HeaderSection, PresentationSection, CustomersSection, SkillsSection, ServicesSection, FooterSection, LastArticles } from "@theartcode/sections";
+import { HeaderSection, PresentationSection, CustomersSection, SkillsSection, ServicesSection, ContactsSection, FooterSection, LastArticlesSection } from "@theartcode/sections";
 
 // Components
 import OpenGraph from "@theartcode/components/open-graph/open-graph.component";
@@ -13,7 +13,6 @@ import styles from './global.module.scss'
 // Utils
 import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
-import { MainContactForm } from "@theartcode/components";
 
 
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -40,8 +39,8 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
         <CustomersSection />
         <SkillsSection />
         <ServicesSection />
-        <LastArticles articles={articles} />
-        <MainContactForm />
+        <LastArticlesSection articles={articles} />
+        <ContactsSection />
       </main>
       <FooterSection />
     </>

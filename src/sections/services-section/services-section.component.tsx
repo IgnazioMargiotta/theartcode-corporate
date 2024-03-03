@@ -1,11 +1,11 @@
 import styles from './services-section.module.scss'
-import { Button, DecorativeBubbles, ServicesBox } from "@theartcode/components"
+import { DecorativeBubbles, ServicesBox } from "@theartcode/components"
 import Image from 'next/image';
 
 export const ServicesSection = () => {
   return (
-    <section className={`${styles['services']}`}>
-      <div className="container mx-auto py-12">
+    <section className={`${styles['services']} py-[4rem] md:py-[8rem]`} id="services">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className={`${styles['services-box-container']}`}>
             <ServicesBox icon="icon_developer.svg" title="Software Development" description="Software su misura: dal concetto al codice, soluzioni software che fanno la differenza." />
@@ -17,7 +17,6 @@ export const ServicesSection = () => {
             <div>
               <h2>Lorem ipsum dolor</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <Button link="#" text="Esplora il lato artistico" style="fill" color="main2" />
             </div>
             <DecorativeBubbles direction="right" position="bottom-right" animation="true" />
           </div>

@@ -6,7 +6,7 @@ import styles from './skills-section.module.scss'
 
 export const SkillsSection = () => {
   return (
-    <section className={`${styles['skills']}`}>
+    <section className={`${styles['skills']} my-[4rem] md:my-[8rem]`} id="tecnology">
        <div className="container mx-auto">
         <div className={`${styles['skills-row-box']}`}>
           <SkillsBox boxActive={true} color="variant1" title="PHP" icon="skills_php.svg" />
@@ -29,7 +29,7 @@ export const SkillsSection = () => {
       </div>
       <div className={`${styles['skills-row-logo']}`}>
         <div className={`${styles['skills-container-logo']}`}>
-          <DecorativeBubbles direction="left" position="top-left" />
+          <DecorativeBubbles direction="left" position="top-left" animation="true" />
           <svg className={`${styles['skills__logo']}`} viewBox="0 0 1215 306">
             <use href="#logo-multicolor"></use>
           </svg>
@@ -38,7 +38,7 @@ export const SkillsSection = () => {
           <Image src={`assets/images/line_variant3.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant3']}`} width={300} height={130} alt='' />
           <Image src={`assets/images/line_variant4.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant4']}`} width={190} height={170} alt='' />
           <Image src={`assets/images/line_variant5.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant5']}`} width={285} height={320} alt='' />
-          <DecorativeBubbles direction="right" position="bottom-right" />
+          <DecorativeBubbles direction="right" position="bottom-right" animation="true" />
         </div>
       </div>
       <div className="container mx-auto">
