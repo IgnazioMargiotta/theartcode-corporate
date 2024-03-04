@@ -19,7 +19,7 @@ export interface OpenGraphProps {
   card?: "summary" | "summary_large_image" | "app" | "player";
 };
 
-const OpenGraph = (props: OpenGraphProps) => {
+export const OpenGraph = (props: OpenGraphProps) => {
   const {
     locale,
     url,

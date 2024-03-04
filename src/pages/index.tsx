@@ -5,7 +5,7 @@ import Head from "next/head";
 import { HeaderSection, PresentationSection, CustomersSection, SkillsSection, ServicesSection, ContactsSection, FooterSection, LastArticlesSection } from "@theartcode/sections";
 
 // Components
-import OpenGraph from "@theartcode/components/open-graph/open-graph.component";
+import { OpenGraph, IubendaScript } from "@theartcode/components";
 
 // Styles 
 import styles from './global.module.scss'
@@ -14,6 +14,7 @@ import styles from './global.module.scss'
 import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
 
+// Lang
 import { customersSection, presentationSection, servicesSection, lastArticlesSection, contactSection } from "@theartcode/lang/en";
 
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -28,13 +29,14 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
         <link rel="icon" type="image/png"  href="/assets/images/favicon.png" />
         <OpenGraph 
           url='string'
-          title='TVibra - Where art meets code'
+          title='Vibra - Where art meets code'
           type='website'
           description='ibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality.'
           site_name='Vibra'
         />
       </Head>
       <HeaderSection />
+      <IubendaScript />
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />

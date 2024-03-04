@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Svg, SocialBox } from "@theartcode/components"
 import styles from './footer-section.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const FooterSection = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -9,23 +10,16 @@ export const FooterSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      // Puoi personalizzare la soglia a tuo piacimento
       const scrollThreshold = 500;
-
       setShowScrollButton(scrollTop > scrollThreshold);
-    };
-
-    // Aggiungi l'ascoltatore dell'evento di scroll
+    };    
     window.addEventListener('scroll', handleScroll);
-
-    // Pulisci l'ascoltatore dell'evento quando il componente viene smontato
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Assicurati di aggiungere tutte le dipendenze necessarie
+  }, []);
 
   const handleScrollTop = () => {
-    // Esegui lo scroll verso l'alto
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -37,7 +31,7 @@ export const FooterSection = () => {
         </div>
         <div className="md:w-4/6 flex items-center justify-center">
           <div className="text-center">
-            artCode - Via Fausto Coppi, 8/a 43122 Parma - P.IVA&nbsp;02949510347 <a href="#" target="_blank" title="Privacy Policy">Privacy&nbsp;Policy</a>
+            vibra - Via Fausto Coppi, 8/a 43122 Parma - P.IVA&nbsp;02949510347 <Link href="https://www.iubenda.com/privacy-policy/40428943/legal" target="_blank" title="Cookie Policy">Cookie&nbsp;Policy</Link>
           </div>
         </div>
         <div className="md:w-1/6 flex items-center justify-center md:justify-end">

@@ -5,7 +5,7 @@ import Head from "next/head";
 import { HeaderSection, PresentationSection, CustomersSection, SkillsSection, ServicesSection, ContactsSection, FooterSection, LastArticlesSection } from "@theartcode/sections";
 
 // Components
-import OpenGraph from "@theartcode/components/open-graph/open-graph.component";
+import { OpenGraph, IubendaScript } from "@theartcode/components";
 
 // Styles 
 import styles from './global.module.scss'
@@ -14,7 +14,7 @@ import styles from './global.module.scss'
 import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
 
-
+// Lang
 import { contactSection, customersSection, lastArticlesSection, presentationSection, servicesSection } from "@theartcode/lang/it";
 
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -36,6 +36,7 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
         />
       </Head>
       <HeaderSection />
+      <IubendaScript />
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
