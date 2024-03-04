@@ -5,10 +5,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Services', href: '/#services', current: false },
   { name: 'Technology', href: '/#technology', current: false },
-  { name: 'Contacts', href: '/#contacts', current: false },
+  { name: 'Services', href: '/#services', current: false },
   { name: 'Blog', href: '/#last-articles', current: false },
+  { name: 'Contacts', href: '/#contacts', current: false },
 ];
 
 export const HeaderSection = () => {

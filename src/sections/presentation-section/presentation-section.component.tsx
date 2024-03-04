@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const PresentationSection = ({lang}:any) => {
-  console.log('presentation',lang)
+  
   return (
     <section className={`${styles['presentation']} py-[15rem] mb-[4rem] md:mb-[8rem]`}>
       <div className={`${styles['decoration-circle']} ${styles['decoration-circle--top-left']} ${styles['decoration-circle--primary3']}`}>
@@ -29,8 +29,8 @@ export const PresentationSection = ({lang}:any) => {
           <h1>Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;<span className="text-color-main2">code</span></h1>
           <p>{lang.description}</p>
           <div className={`${styles['buttons']}`}>
-            <Button link="#services" text="Services" style="ghost" color="main1" />
-            <Button link="#contacts" text="Let's talk" style="fill" color="main2" />
+            <Button link="#services" text={lang.buttonLeft} style="ghost" color="main1" />
+            <Button link="#contacts" text={lang.buttonRight} style="fill" color="main2" />
           </div>
         </div>
       </div>

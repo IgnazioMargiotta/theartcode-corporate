@@ -14,34 +14,34 @@ import styles from './global.module.scss'
 import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
 
-import {lang} from '../lang/en'
-console.log(lang);
+import { customersSection, presentationSection, servicesSection, lastArticlesSection, contactSection } from "@theartcode/lang/en";
+
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { articles } = data;
 
   return (
     <>
     <Head>
-        <title>The artCode - Where art meets code</title>
-        <meta name="description" content="The artCode Web App" />
+        <title>Vibra - Where art meets code</title>
+        <meta name="description" content="Vibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png"  href="/assets/images/favicon.png" />
         <OpenGraph 
           url='string'
-          title='The artCode - Where art meets code'
+          title='TVibra - Where art meets code'
           type='website'
-          description='Where art meets code'
-          site_name='The artCode'
+          description='ibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality.'
+          site_name='Vibra'
         />
       </Head>
       <HeaderSection />
       <main>
-        <PresentationSection lang={lang.presentationSection} />
-        <CustomersSection />
+        <PresentationSection lang={presentationSection} />
+        <CustomersSection lang={customersSection} />
         <SkillsSection />
-        <ServicesSection />
-        <LastArticlesSection articles={articles} />
-        <ContactsSection />
+        <ServicesSection lang={servicesSection} />
+        <LastArticlesSection articles={articles} lang={lastArticlesSection} />
+        <ContactsSection lang={contactSection} />
       </main>
       <FooterSection />
     </>

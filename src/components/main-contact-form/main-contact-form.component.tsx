@@ -38,16 +38,6 @@ export const MainContactForm = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Previene il comportamento di default del form
 
-    // Raccogli i dati dal form
-    // const formData: ContactFormData = {
-    //   "name": `James ${new Date().toISOString()}`,
-    //   "surname": "Rossi",
-    //   "company": "Esempio Srl",
-    //   "email": "mario.rossi@example.com",
-    //   "phone": "1234567890",
-    //   "you_find_us": "Internet",
-    //   "speak_about_your_project": "Descrizione del progetto..."
-    // }
     const formData: ContactFormData = {
     name: (document.getElementById('name') as HTMLInputElement).value,
     surname: (document.getElementById('surname') as HTMLInputElement).value,
