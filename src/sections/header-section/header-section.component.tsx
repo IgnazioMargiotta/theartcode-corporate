@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import { SocialBox } from "@theartcode/components"
-import styles from './header-section.module.scss';
-import Link from 'next/link';
+import styles from './header-section.module.scss'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Services', href: '/#services', current: false },
@@ -31,9 +32,7 @@ export const HeaderSection = () => {
     <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
       <div className={`container mx-auto ${styles['header-container']}`}>
         <Link href="/">
-          <svg className={`${styles['header__logo']}`} viewBox="0 0 1215 306">
-            <use href="#logo-multicolor"></use>
-          </svg>
+          <Image src={`assets/images/logo_vibra_gradient.svg`} className={`${styles['header__logo']}`} width={200} height={75} alt='' />
         </Link>
         <nav className={`${styles['header__menu']} ${open ? styles['header__menu--open'] : ''}`}>
           <ul>

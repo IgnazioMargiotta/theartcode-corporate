@@ -1,14 +1,13 @@
 import { Svg, SocialBox } from "@theartcode/components"
 import styles from './footer-section.module.scss'
+import Image from 'next/image'
 
 export const FooterSection = () => {
   return (
     <footer className={`${styles['footer']}`}>
         <div className="container mx-auto flex flex-col md:flex-row gap-4 py-8">
           <div className="md:w-1/6 flex items-center justify-center md:justify-start">
-            <svg className={`${styles['footer__logo']}`} viewBox="0 0 1215 306">
-              <use href="#logo-simple"></use>
-            </svg>
+            <Image src={`assets/images/logo_vibra_black.svg`} className={`${styles['footer__logo']}`} width={200} height={75} alt='vibra' />
           </div>
           <div className="md:w-4/6 flex items-center justify-center">
             <div className="text-center">
