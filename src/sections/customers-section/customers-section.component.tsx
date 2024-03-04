@@ -6,11 +6,11 @@ import {FadeInAnimation} from '@theartcode/components'
 
 export const CustomersSection = () => {
   return (
-    <section className={`${styles['customers']} py-[4rem] md:py-[8rem]`} id="services">
+    <section className={`${styles['customers']} py-[4rem] md:py-[8rem]`} id="customers">
       <div className="container mx-auto text-center">
         <div className="text-center pb-16">
           <FadeInAnimation delay={0}>
-            <h2 className="pb-4"><span>We work with</span></h2>
+            <h2 className="pb-4"><span className={`decoration-title`}>We work with</span></h2>
           </FadeInAnimation>
           <FadeInAnimation delay={5}>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>

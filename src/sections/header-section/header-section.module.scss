@@ -74,7 +74,7 @@
     }
     &__icon-hambuger path {
       fill: none;
-      stroke: $color-main1;
+      stroke: $color-white;
       stroke-width: 3;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -85,7 +85,7 @@
       transition: all .8s cubic-bezier(.645, .045, .355, 1);
     }
     &__icon-hambuger circle{
-        fill: $color-gray1;
+        fill: $color-primary3;
     }
     .line1, .line3 {
         --total-length: 126.64183044433594;

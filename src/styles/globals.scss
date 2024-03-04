@@ -1,60 +1,73 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./variables.scss";
 
-/* Reset form */
+/* Reset */
+*,*::after,*::before{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent; scroll-margin-top:100px;}
+*:focus{outline:none}
+table{border-collapse:collapse;border-spacing:0;}
+strong{font-weight:700;}
+em,i{font-style:italic;}
+ins,a{text-decoration:none;}
+svg{max-width:100%;}
+main{overflow-x:hidden;}
+html{scroll-behavior:smooth;}
+@media (max-width: 768px) {
+    *{scroll-margin-top: 90px;}
+}
 button,input,select,textarea{font-family:inherit;border-radius:0;white-space:initial;}
 input[type="text"],input[type="password"],textarea{appearance:none;}
 button,input[type="button"],input[type="submit"]{appearance:none;cursor:pointer;overflow:visible;}
 select{cursor:pointer;}
 textarea{overflow:auto;resize:none;white-space:pre-wrap;display: block;}
-input:autofill,input:-webkit-autofill{-webkit-box-shadow:0 0 0px 1000px #FFFFFF inset;-webkit-text-fill-color:#000000;}
-input::placeholder,textarea::placeholder,select:has(option[value=""]:checked),option[value=""]{color:#626262;font-weight:300;}
-
-/* CHROOME - scrollbar */
+input:autofill,input:-webkit-autofill{-webkit-box-shadow:0 0 0px 1000px $color-white inset;-webkit-text-fill-color:$color-black;}
+input::placeholder,textarea::placeholder,select:has(option[value=""]:checked),option[value=""]{color:$color-gray2;font-weight:300;}
 ::-webkit-scrollbar{appearance:none;width:10px;}
 ::-webkit-scrollbar:horizontal{height:10px;}
 ::-webkit-scrollbar-track-piece{background-color:transparent;}
-::-webkit-scrollbar-thumb{background-color:#000000;}
+::-webkit-scrollbar-thumb{background-color:$color-primary2-opacity;border-radius:1rem;}
 ::-webkit-scrollbar-corner{background-color:transparent;}
-
-/* Highlight */
-::selection{background-color:#23AECD;color:#FFFFFF;}
-
-svg{
-    max-width:100%;
-}
-html{
-    scroll-behavior: smooth;
-}
-main{
-    overflow-x: hidden;
-}
-*{
-    scroll-margin-top: 100px;
-}
-@media (max-width: 768px) {
-    *{
-        scroll-margin-top: 90px;
-    }
-}
+::selection{background-color:$color-main1;color:$color-white;}
+/* Style global */
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: $font-base;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
+    color:$color-black;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Space Grotesk', serif;
+    font-family: $font-title;
     font-weight: 700;
 }
 h1{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     line-height: 1.2;
 }
 h2{
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     line-height: 1.2;
+    .decoration-title{
+        display: inline-block;
+        position: relative;
+        &:before{
+            content:'';
+            position: absolute;
+            display: block;
+            width: 1.65em;
+            left: 0;
+            top: 0;
+            transform: translate(-0.6em, -0.23em);
+            border-radius: 100%;
+            aspect-ratio: 1/1;
+            z-index: -1;
+            background-color:$color-primary2-opacity;
+        }
+    }
+    .decoration-title--primary3:before{
+        background-color:$color-primary3-opacity;
+    }
 }
 h3{
     font-size: 1.5rem;

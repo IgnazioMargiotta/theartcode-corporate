@@ -5,9 +5,12 @@ export const LastArticlesSection = ({articles}: any) => {
   const { data: articlesData } = articles
   return (
     <section className={`py-[4rem] md:py-[8rem] ${styles['last-articles']}`} id="last-articles">
+      <div className={`${styles['decoration-circle']}`}>
+        <div></div>
+      </div>
       <div className="container mx-auto">
         <div className="text-center pb-16">
-          <h2 className="pb-4"><span>Last articles</span></h2>
+          <h2 className="pb-4"><span className={`decoration-title decoration-title--primary3`}>Last articles</span></h2>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
