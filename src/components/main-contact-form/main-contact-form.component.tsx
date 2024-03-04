@@ -97,9 +97,11 @@ export const MainContactForm = () => {
       <div>
         <select name="you_find_us" id="you_find_us">
           <option value="">How you find us?</option>
-          <option value="James">Valore 1</option>
-          <option value="Word of mouth">Valore 2</option>
-          <option value="Social">Valore 3</option>
+          <option value="Social media">Social media</option>
+          <option value="Good old Word of Mouth">Good old Word of Mouth</option>
+          <option value="Events">Events</option>
+          <option value="Blogs or online articles">Blogs or online articles</option>
+          <option value="Other">Other</option>
         </select>
       </div>
       <div>
