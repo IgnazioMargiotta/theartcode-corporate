@@ -5,6 +5,9 @@ import Image from 'next/image';
 export const ServicesSection = () => {
   return (
     <section className={`${styles['services']} py-[4rem] md:py-[8rem]`} id="services">
+      <div className={`${styles['decoration-square']}`}>
+        <div></div>
+      </div>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className={`${styles['services-box-container']}`}>

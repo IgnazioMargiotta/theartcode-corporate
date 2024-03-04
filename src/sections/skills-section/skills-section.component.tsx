@@ -6,7 +6,7 @@ import styles from './skills-section.module.scss'
 
 export const SkillsSection = () => {
   return (
-    <section className={`${styles['skills']} my-[4rem] md:my-[8rem]`} id="tecnology">
+    <section className={`${styles['skills']} my-[4rem] md:my-[8rem]`} id="technology">
        <div className="container mx-auto">
         <div className={`${styles['skills-row-box']}`}>
           <SkillsBox boxActive={true} color="variant1" title="PHP" icon="skills_php.svg" />

@@ -17,7 +17,7 @@ export const SingleArticleItem = (props: SingleArticleItemProps) => {
         <Image src={`/assets/images/example.png`} width={410} height={230} alt={props.title} />
       </Link>
       <div>
-        <Link className={`${styles['last-articles-box__title']}`} href={`localhost:3000/post/${props.slug}`} title={props.title}>
+        <Link href={`localhost:3000/post/${props.slug}`} title={props.title}>
           <h4>{props.title}</h4>
         </Link>
         {props.description && <p className={`${styles['last-articles-box__description']}`}>{props.description}</p>}

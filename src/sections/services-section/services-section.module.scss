@@ -1,18 +1,22 @@
 .services{
   position: relative;
-  &:before{
-    content:'';
-    display: block;
+  .decoration-square{
     width:500px;
     max-width: 80%;
     aspect-ratio: 1/1;
-    background-color:$color-primary1-opacity;
+    border:1px solid $color-primary1;
     position:absolute;
+    padding:20px;
     top:30%;
     right:-5vw;
     z-index:-1;
-    animation: square-rotation 5s infinite;
-  }
+    animation: rotation-square 5s infinite;
+    > div{
+        width:100%;
+        aspect-ratio: 1/1;
+        background-color:$color-primary1-opacity;
+    }
+}
   &-content{
     display: flex;
     align-items: center;
@@ -20,6 +24,7 @@
     position: relative;
     border-radius: 2rem;
     padding:5rem;
+    z-index: 1;
     > div{
       display: flex;
       flex-direction: column;
@@ -32,7 +37,7 @@
     gap:2rem
   }
 }
-@keyframes square-rotation {
+@keyframes rotation-square {
   0% {
     transform: rotate(55deg);
     scale:1;
@@ -49,7 +54,7 @@
   }
 }
 @media (max-width: 1024px) {
-  .services:before{
+  .decoration-square{
     top:10%
   }
   .services-content{

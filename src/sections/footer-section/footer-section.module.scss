@@ -9,4 +9,33 @@
   a{
     text-decoration:underline;
   }
+  .scrollButton{
+    position: fixed;
+    background-color:$color-primary2-opacity;
+    width:40px;
+    height:40px;
+    border-radius: 0.5rem;
+    bottom:2rem;
+    right:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow-base;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.3s;
+    transform-origin: center;
+    z-index: 9998;
+    svg{
+      width:50%;
+      fill:$color-main2;
+    }
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  .scrollButton--active{
+    opacity: 1;
+    pointer-events: initial;
+  }
 }

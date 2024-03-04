@@ -6,8 +6,24 @@ import Link from 'next/link'
 export const PresentationSection = ({lang}:any) => {
   console.log('presentation',lang)
   return (
-    <section className={`${styles['presentation']} py-[11rem] mb-[4rem] md:mb-[8rem]`}>
-      <div className={`${styles['static-bubbles']}`}></div>
+    <section className={`${styles['presentation']} py-[15rem] mb-[4rem] md:mb-[8rem]`}>
+      <div className={`${styles['decoration-circle']} ${styles['decoration-circle--top-left']} ${styles['decoration-circle--primary3']}`}>
+        <div>  
+          <div className={`${styles['decoration-circle__single']}`}></div>
+          <div className={`${styles['decoration-circle__single']}`}></div>
+          <div className={`${styles['decoration-circle__single']}`}></div>
+        </div>
+      </div>
+      <div className={`${styles['decoration-circle']}`}>
+        <div>
+          <div className={`${styles['decoration-circle__single']}`}></div>
+          <div className={`${styles['decoration-circle__single']}`}></div>
+          <div className={`${styles['decoration-circle__single']}`}></div>
+        </div>
+      </div>
+      <div className={`${styles['decoration-square']}`}>
+        <div></div>
+      </div>
       <div className="container mx-auto text-center z-1">
         <div className={`${styles['presentation-container']}`}>
           <h1>Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;<span className="text-color-main2">code</span></h1>
@@ -18,16 +34,10 @@ export const PresentationSection = ({lang}:any) => {
           </div>
         </div>
       </div>
-      <Link className={`${styles['presentation__arrow']}`} href="#services">
+      <Link className={`${styles['presentation__arrow']}`} href="#customers">
         <Image src={`assets/images/arrow_bottom.svg`}  width={35} height={75} alt='Down' />
       </Link>
-      <div className={`${styles['rotation-bubbles']}`}>
-        <div>
-          <div className={`${styles['rotation-bubbles__single']}`}></div>
-          <div className={`${styles['rotation-bubbles__single']}`}></div>
-          <div className={`${styles['rotation-bubbles__single']}`}></div>
-        </div>
-      </div>
+     
     </section>
   )
 }
