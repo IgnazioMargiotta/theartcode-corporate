@@ -17,31 +17,27 @@ export const CustomersSection = () => {
           </FadeInAnimation>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <FadeInAnimation delay={5}>
+          <FadeInAnimation delay={500}>
           <div className={`${styles['customers-box']}`}>
               <Image src={`assets/images/icon_rocket.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='startUp' />
              <h3>startUp</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           </FadeInAnimation>
+          <FadeInAnimation delay={15}>
           <div className={`${styles['customers-box']} ${styles['customers-box--focus']}`}>
-            <FadeInAnimation delay={5}>
               <Image src={`assets/images/icon_building.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='piccole/medie imprese' />
-            </FadeInAnimation>
-            <FadeInAnimation delay={5}>
               <h3>piccole/medie imprese</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </FadeInAnimation>
           </div>
+          </FadeInAnimation>
+          <FadeInAnimation delay={500}>
           <div className={`${styles['customers-box']}`}>
-            <FadeInAnimation delay={5}>
               <Image src={`assets/images/icon_palace.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='multinazionali' />
-            </FadeInAnimation>
-            <FadeInAnimation delay={5}>
               <h3>multinazionali</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </FadeInAnimation>
           </div>
+          </FadeInAnimation>
         </div>
       </div>
     </section>
