@@ -14,7 +14,7 @@ import styles from './global.module.scss'
 import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
 
-import {lang} from '../lang/en'
+import {lang} from '../../lang/it'
 console.log(lang);
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { articles } = data;

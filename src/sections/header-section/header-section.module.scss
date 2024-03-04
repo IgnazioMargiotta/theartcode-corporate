@@ -18,7 +18,7 @@
         box-shadow: $shadow-base;
     }
     &__logo{
-        width:200px;
+        width:100px;
     }
     &__menu ul{
         display: flex;
@@ -111,9 +111,6 @@
             justify-content: center;
             padding-block: 1rem;
             min-height: 90px;
-        }
-        &__logo{
-            width: 170px;
         }
         &__icon-hambuger{
             display: block;

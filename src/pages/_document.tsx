@@ -24,11 +24,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <button>
-          <svg viewBox="0 0 20 20">
-            <use href="#arrow-double-top"></use>
-          </svg>
-        </button>
       </body>
     </Html>
   );
