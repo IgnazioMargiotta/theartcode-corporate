@@ -15,7 +15,7 @@ export const SingleArticleItem = (props: SingleArticleItemProps) => {
   return (
     <div className={`${styles['last-articles-box']}`}>
       <Link className={`${styles['last-articles-box__image']}`} href={`#${props.slug}`} title={props.title}>
-        <Image loading="lazy" src={props.image} width={410} height={230} alt={props.title} />
+        <img loading="lazy" src={props.image} width={410} height={230} alt={props.title} />
       </Link>
       <div>
         <Link href={`#${props.slug}`} title={props.title}>
