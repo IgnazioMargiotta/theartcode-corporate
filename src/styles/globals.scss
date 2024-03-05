@@ -29,6 +29,8 @@ input::placeholder,textarea::placeholder,select:has(option[value=""]:checked),op
 ::-webkit-scrollbar-thumb{background-color:$color-primary2-opacity;border-radius:1rem;}
 ::-webkit-scrollbar-corner{background-color:transparent;}
 ::selection{background-color:$color-main1;color:$color-white;}
+// Disable iubenda cookie widget
+.iub__us-widget{display: none !important;}
 /* Style global */
 body{
     font-family: $font-base;
