@@ -18,7 +18,7 @@ export const LastArticlesSection = ({articles, lang}: any) => {
             articlesData.map((article: any, index: number) => {
               const { Title, Slug, categories, Seo } = article.attributes
               return (
-                <SingleArticleItem key={article.id} id={articles.id} title={Title} slug={Slug} image={`${process.env.BE_BASE_URL}${Seo.SharedImage.data.attributes.url}`} category={categories.data[0]?.attributes?.Title} description={Seo.MetaDescription} />
+                <SingleArticleItem key={article.id} id={articles.id} title={Title} slug={Slug} image={`${Seo.SharedImage.data.attributes.url}`} category={categories.data[0]?.attributes?.Title} description={Seo.MetaDescription} />
               )
             }
           )) : (

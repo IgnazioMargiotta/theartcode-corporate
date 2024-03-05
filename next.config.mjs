@@ -16,6 +16,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'https',
         port: '8080',
         hostname: 'theartcode-be-app-x8t4f.ondigitalocean.app',
       },
@@ -26,7 +30,8 @@ const nextConfig = {
       },
       {
         protocol: 'http',
-        hostname: 'localhost:1337',
+        port: '1337',
+        hostname: 'localhost',
       },
       {
         protocol: 'https',
