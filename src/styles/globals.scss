@@ -31,6 +31,7 @@ input::placeholder,textarea::placeholder,select:has(option[value=""]:checked),op
 ::selection{background-color:$color-main1;color:$color-white;}
 // Disable iubenda cookie widget
 .iub__us-widget{display: none !important;}
+a.iubenda-tp-btn.iubenda-cs-preferences-link {display: none !important;}
 /* Style global */
 body{
     font-family: $font-base;
