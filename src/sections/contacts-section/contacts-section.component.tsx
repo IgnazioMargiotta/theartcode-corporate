@@ -8,7 +8,7 @@ export const ContactsSection = ({lang}:any) => {
         <h2 className="pb-4"><span className={`decoration-title`}>{lang.title}</span></h2>
         <p>{lang.subtitle}</p>
       </div>
-      <MainContactForm />
+      <MainContactForm lang={lang.form}/>
     </section>
   )
 }

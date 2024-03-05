@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer';
 
 import styles from './fade-in-animation.module.scss'
@@ -28,7 +28,7 @@ export const FadeInAnimation = (props: IFadeInAnimation): JSX.Element => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    rootMargin: '0px',
+    rootMargin: '350px',
     threshold: 0 
   });
 

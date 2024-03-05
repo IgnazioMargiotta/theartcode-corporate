@@ -31,7 +31,7 @@ export const FooterSection = () => {
         </div>
         <div className="md:w-4/6 flex items-center justify-center">
           <div className="text-center">
-            vibra - Via Fausto Coppi, 8/a 43122 Parma - P.IVA&nbsp;02949510347 <Link href="https://www.iubenda.com/privacy-policy/40428943/legal" target="_blank" title="Cookie Policy">Cookie&nbsp;Policy</Link>
+            Vibra Studio - Via Fausto Coppi, 8/a 43122 Parma - P.IVA&nbsp;02949510347 <Link href="https://www.iubenda.com/privacy-policy/40428943/legal" target="_blank" title="Cookie Policy">Cookie&nbsp;Policy</Link>
           </div>
         </div>
         <div className="md:w-1/6 flex items-center justify-center md:justify-end">
