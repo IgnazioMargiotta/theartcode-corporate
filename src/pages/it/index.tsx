@@ -25,7 +25,6 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
     <Head>
         <title>Vibra - Where art meets code</title>
         <meta name="description" content="Vibra unisce arte e codice per creare soluzioni software innovative che elevano la tua esperienza digitale. Scopri come trasformiamo le idee in realtà." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png"  href="/assets/images/favicon.png" />
         <OpenGraph 
           url='string'

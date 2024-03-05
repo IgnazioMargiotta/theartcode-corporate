@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './single-article-item.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,15 +10,15 @@ interface SingleArticleItemProps {
   category: string;
   description: string;
 }
-export const SingleArticleItem = (props: SingleArticleItemProps) => {
 
+export const SingleArticleItem = (props: SingleArticleItemProps) => {
   return (
     <div className={`${styles['last-articles-box']}`}>
-      <Link className={`${styles['last-articles-box__image']}`} href={`localhost:3000/post/${props.slug}`} title={props.title}>
-        <Image src={`/assets/images/example.png`} width={410} height={230} alt={props.title} />
+      <Link className={`${styles['last-articles-box__image']}`} href={`#${props.slug}`} title={props.title}>
+        <Image loading="lazy" src={props.image} width={410} height={230} alt={props.title} />
       </Link>
       <div>
-        <Link href={`localhost:3000/post/${props.slug}`} title={props.title}>
+        <Link href={`#${props.slug}`} title={props.title}>
           <h4>{props.title}</h4>
         </Link>
         {props.description && <p className={`${styles['last-articles-box__description']}`}>{props.description}</p>}

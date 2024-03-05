@@ -19,6 +19,11 @@ const nextConfig = {
         hostname: 'theartcode-be-app-x8t4f.ondigitalocean.app',
       },
       {
+        protocol: 'https',
+        port: '8080',
+        'hostname': '**.ondigitalocean.app'
+      },
+      {
         protocol: 'http',
         hostname: 'localhost:1337',
       },
