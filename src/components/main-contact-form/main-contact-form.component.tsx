@@ -109,7 +109,7 @@ export const MainContactForm = () => {
       </div>
       <div className={`${styles['custom-checkbox']}`}>
         <input type="checkbox" name="acceptance" id="acceptance" required />
-        <label htmlFor="acceptance">I accept the <a href="#" target="_blank" title="Privacy Policy">Privacy&nbsp;Policy</a> and agree to data processing</label>
+        <label htmlFor="acceptance">I accept the <a href="https://www.iubenda.com/privacy-policy/40428943/legal" target="_blank" title="Privacy Policy">Privacy&nbsp;Policy</a> and agree to data processing</label>
       </div>
       <div>
         <button type="submit">Let&apos;s talk</button>
