@@ -63,6 +63,7 @@ export const MainContactForm = ({lang}: any) => {
       const response = await fetch('https://theartcode-be-app-x8t4f.ondigitalocean.app/api/main-contacts-form/send-email', {
         method: 'POST',
         headers: {
+          'Authorization': process.env.CONTACTFORM || '',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),

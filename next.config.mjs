@@ -4,6 +4,7 @@ const nextConfig = {
   env: {
     BASE_URL: process.env.BASE_URL,
     BE_BASE_URL: process.env.BE_BASE_URL,
+    CONTACTFORM: process.env.CONTACTFORM,
   },
   images: {
     domains: [
