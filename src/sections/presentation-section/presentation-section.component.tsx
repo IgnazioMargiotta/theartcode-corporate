@@ -27,7 +27,10 @@ export const PresentationSection = ({lang}:any) => {
       <div className="container mx-auto text-center z-1">
         <div className={`${styles['presentation-container']}`}>
           <h1>Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;<span className="text-color-main2">code</span></h1>
-          <p>{lang.description}</p>
+          <div className={`${styles['presentation-container__descriptions']}`}>
+            <p>{lang.descriptionFirst}</p>
+            <p>{lang.descriptionSecond}</p>
+          </div>
           <div className={`${styles['buttons']}`}>
             <Button link="#services" text={lang.buttonLeft} style="ghost" color="main1" />
             <Button link="#contacts" text={lang.buttonRight} style="fill" color="main2" />
