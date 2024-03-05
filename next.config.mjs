@@ -11,6 +11,7 @@ const nextConfig = {
       'localhost',
       'monkfish-app-tt33s.ondigitalocean.app',
       'vibra.studio',
+      'res.cloudinary.com',
     ],
     remotePatterns: [
       {
@@ -21,7 +22,7 @@ const nextConfig = {
       {
         protocol: 'https',
         port: '8080',
-        'hostname': '**.ondigitalocean.app'
+        hostname: '**.ondigitalocean.app',
       },
       {
         protocol: 'http',
