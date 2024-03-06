@@ -7,14 +7,14 @@ export const PresentationSection = ({lang}:any) => {
   
   return (
     <section className={`${styles['presentation']} py-[15rem] mb-[4rem] md:mb-[8rem]`}>
-      <div className={`${styles['decoration-circle']} ${styles['decoration-circle--top-left']} ${styles['decoration-circle--primary3']}`}>
+      <div className={`${styles['decoration-circle']} ${styles['decoration-circle--top-left']}`}>
         <div>  
           <div className={`${styles['decoration-circle__single']}`}></div>
           <div className={`${styles['decoration-circle__single']}`}></div>
           <div className={`${styles['decoration-circle__single']}`}></div>
         </div>
       </div>
-      <div className={`${styles['decoration-circle']}`}>
+      <div className={`${styles['decoration-circle']} ${styles['decoration-circle--primary3']}`}>
         <div>
           <div className={`${styles['decoration-circle__single']}`}></div>
           <div className={`${styles['decoration-circle__single']}`}></div>

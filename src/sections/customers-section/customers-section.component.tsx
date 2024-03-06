@@ -20,21 +20,21 @@ export const CustomersSection = ({lang}:any) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <FadeInAnimation delay={0}>
           <div className={`${styles['customers-box']}`}>
-              <Image src={`assets/images/icon_rocket.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='startUp' />
+              <Image src={`assets/images/icon_rocket.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt={lang.leftCard.title} />
              <h3>{lang.leftCard.title}</h3>
               <p>{lang.leftCard.subtitle}</p>
           </div>
           </FadeInAnimation>
           <FadeInAnimation delay={0}>
           <div className={`${styles['customers-box']} ${styles['customers-box--focus']}`}>
-              <Image src={`assets/images/icon_building.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='piccole/medie imprese' />
+              <Image src={`assets/images/icon_building.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt={lang.centerCard.title} />
               <h3>{lang.centerCard.title}</h3>
               <p>{lang.centerCard.subtitle}</p>
           </div>
           </FadeInAnimation>
           <FadeInAnimation delay={0}>
           <div className={`${styles['customers-box']}`}>
-              <Image src={`assets/images/icon_palace.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt='multinazionali' />
+              <Image src={`assets/images/icon_palace.svg`} className={`${styles['customers-box__image']}`} width={130} height={130} alt={lang.rightCard.title} />
               <h3>{lang.rightCard.title}</h3>
               <p>{lang.rightCard.subtitle}</p>
           </div>

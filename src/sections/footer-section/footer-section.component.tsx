@@ -20,14 +20,14 @@ export const FooterSection = () => {
   }, []);
 
   const handleScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   return (
     <footer className={`${styles['footer']}`}>
       <div className="container mx-auto flex flex-col md:flex-row gap-4 py-8">
         <div className="md:w-1/6 flex items-center justify-center md:justify-start">
-          <Image src={`assets/images/logo_vibra_black.svg`} className={`${styles['footer__logo']}`} width={200} height={75} alt='vibra' />
+          <Image src={`assets/images/logo_vibra_black.svg`} className={`${styles['footer__logo']}`} width={200} height={75} alt='Vibra Studio' />
         </div>
         <div className="md:w-4/6 flex items-center justify-center">
           <div className="text-center">
@@ -38,7 +38,7 @@ export const FooterSection = () => {
           <SocialBox size="medium" />
         </div>
       </div>
-      <button className={`${styles['scrollButton']} ${showScrollButton ? styles['scrollButton--active'] : ''}`} onClick={handleScrollTop}>
+      <button className={`${styles['scrollButton']} ${showScrollButton ? styles['scrollButton--active'] : ''}`} onClick={handleScrollTop} aria-label="Torna all'inizio">
         <svg viewBox="0 0 20 20">
           <use href="#arrow-double-top"></use>
         </svg>

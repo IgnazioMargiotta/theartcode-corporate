@@ -4,14 +4,16 @@ import styles from './header-section.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const navigation = [
-  { name: 'Technology', href: '/#technology', current: false },
-  { name: 'Services', href: '/#services', current: false },
-  { name: 'Blog', href: '/#last-articles', current: false },
-  { name: 'Contacts', href: '/#contacts', current: false },
-];
 
-export const HeaderSection = () => {
+
+export const HeaderSection = ({lang}:any) => {
+  const navigation = [
+    { name: lang.navigation.itemOne, href: '/#technology', current: false },
+    { name: lang.navigation.itemTwo, href: '/#services', current: false },
+    { name: lang.navigation.itemThree, href: '/#last-articles', current: false },
+    { name: lang.navigation.itemFour, href: '/#contacts', current: false },
+  ];
+
   const [open, setOpen] = useState(false);
   const [isHeaderSticky, setHeaderSticky] = useState(false);
 
@@ -31,8 +33,8 @@ export const HeaderSection = () => {
   return (
     <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
       <div className={`container mx-auto ${styles['header-container']}`}>
-        <Link href="/">
-          <Image src={`assets/images/logo_vibra_gradient.svg`} className={`${styles['header__logo']}`} width={200} height={75} alt='' />
+        <Link href="/" title="Vibra Studio">
+          <Image src={`assets/images/logo_vibra_gradient.svg`} className={`${styles['header__logo']}`} width={200} height={75} alt='Vibra Studio' />
         </Link>
         <nav className={`${styles['header__menu']} ${open ? styles['header__menu--open'] : ''}`}>
           <ul>
@@ -43,11 +45,14 @@ export const HeaderSection = () => {
                 </Link>
               </li>
             ))}
-            <li className={`${styles['header__social']} ${styles['header__social--eng']}`}>
+            <li className={`${styles['header__social']} ${styles[lang.socialClass]}`}>
               <SocialBox size="small" />
             </li>
+            <li>
+              <Link href={lang.langSwitch.link} title={lang.langSwitch.text} className={`${styles['header__switch-lang']} ${styles[lang.langSwitch.class]}`} aria-label={lang.langSwitch.text}></Link>
+            </li>
           </ul>
-          <button className={`${styles['header__icon-hambuger']}`} aria-label="Apri navigazione" onClick={() => setOpen(!open)}>
+          <button className={`${styles['header__icon-hambuger']}`} aria-label={lang.hamburgerAriaLabel} onClick={() => setOpen(!open)}>
             <svg viewBox="0 0 100 100">
               <circle cx="50" cy="50" r="25" />
               <path className={`${styles['line1']}`} d="M0 40h62c13 0 6 28-4 18L35 35" />
