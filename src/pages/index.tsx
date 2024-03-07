@@ -23,16 +23,15 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
   return (
     <>
     <Head>
-        <title>Vibra - Where art meets code</title>
+        <title>Vibra Studio - Where art meets code</title>
         <meta name="description" content="Vibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png"  href="/assets/images/favicon.png" />
         <OpenGraph 
           url='string'
-          title='Vibra - Where art meets code'
+          title='Vibra Studio - Where art meets code'
           type='website'
-          description='ibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality.'
-          site_name='Vibra'
+          description='Vibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality.'
+          site_name='Vibra Studio'
         />
       </Head>
       <HeaderSection lang={{...headerSection, defaultLang}} />

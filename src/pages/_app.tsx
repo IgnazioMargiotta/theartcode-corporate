@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { ApolloProvider } from "@apollo/client";
-import TagManager from 'react-gtm-module';
+// import TagManager from 'react-gtm-module';
 
 // Styles
 import '../styles/globals.scss';
