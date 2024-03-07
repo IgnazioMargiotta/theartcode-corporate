@@ -15,7 +15,7 @@ import client from "@theartcode/api/apollo-client";
 import { FETCH_LIMITED_POSTS } from "@theartcode/api/posts.api";
 
 // Lang
-import { customersSection, presentationSection, servicesSection, lastArticlesSection, contactSection, headerSection } from "@theartcode/lang/it";
+import { defaultLang, customersSection, presentationSection, servicesSection, lastArticlesSection, contactSection, headerSection } from "@theartcode/lang/it";
 
 const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { articles } = data;
@@ -35,7 +35,7 @@ const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) =>
           site_name='Vibra'
         />
       </Head>
-      <HeaderSection lang={headerSection} />
+      <HeaderSection lang={{...headerSection, defaultLang}} />
       <IubendaScript />
       <main>
         <PresentationSection lang={presentationSection} />

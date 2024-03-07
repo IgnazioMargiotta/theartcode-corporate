@@ -7,11 +7,14 @@ import Image from 'next/image'
 
 
 export const HeaderSection = ({lang}:any) => {
+  
+  const defaultLang = lang.defaultLang === 'it' ? 'it' : '';
+
   const navigation = [
-    { name: lang.navigation.itemOne, href: '/#technology', current: false },
-    { name: lang.navigation.itemTwo, href: '/#services', current: false },
-    { name: lang.navigation.itemThree, href: '/#last-articles', current: false },
-    { name: lang.navigation.itemFour, href: '/#contacts', current: false },
+    { name: lang.navigation.itemOne, href: `${defaultLang}/#technology`, current: false },
+    { name: lang.navigation.itemTwo, href: `${defaultLang}/#services`, current: false },
+    { name: lang.navigation.itemThree, href: `${defaultLang}/#last-articles`, current: false },
+    { name: lang.navigation.itemFour, href: `${defaultLang}/#contacts`, current: false },
   ];
 
   const [open, setOpen] = useState(false);
@@ -33,7 +36,7 @@ export const HeaderSection = ({lang}:any) => {
   return (
     <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
       <div className={`container mx-auto ${styles['header-container']}`}>
-        <Link href="/" title="Vibra Studio">
+        <Link href={`/${defaultLang}`} title="Vibra Studio">
           <Image src={`assets/images/logo_vibra_gradient.svg`} className={`${styles['header__logo']}`} width={200} height={75} alt='Vibra Studio' />
         </Link>
         <nav className={`${styles['header__menu']} ${open ? styles['header__menu--open'] : ''}`}>

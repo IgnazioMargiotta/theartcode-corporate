@@ -1,3 +1,4 @@
+export const defaultLang = 'en';
 export * from "./presentation.lang" 
 export * from "./customers-section.lang"
 export * from "./services-section.lang"
