@@ -21,27 +21,27 @@ input[type="text"],input[type="password"],textarea{appearance:none;}
 button,input[type="button"],input[type="submit"]{appearance:none;cursor:pointer;overflow:visible;}
 select{cursor:pointer;}
 textarea{overflow:auto;resize:none;white-space:pre-wrap;display: block;}
-input:autofill,input:-webkit-autofill{-webkit-box-shadow:0 0 0px 1000px $color-white inset;-webkit-text-fill-color:$color-black;}
-input::placeholder,textarea::placeholder,select:has(option[value=""]:checked),option[value=""]{color:$color-gray2;font-weight:300;}
+input:autofill,input:-webkit-autofill{-webkit-box-shadow:0 0 0px 1000px var(--color-white) inset;-webkit-text-fill-color:var(--color-gray2);}
+input::placeholder,textarea::placeholder,select:has(option[value=""]:checked),option[value=""]{color:var(--color-gray2);font-weight:300;}
 ::-webkit-scrollbar{appearance:none;width:10px;}
 ::-webkit-scrollbar:horizontal{height:10px;}
 ::-webkit-scrollbar-track-piece{background-color:transparent;}
-::-webkit-scrollbar-thumb{background-color:$color-primary2-opacity;border-radius:1rem;}
+::-webkit-scrollbar-thumb{background-color:var(--color-primary2-opacity);border-radius:1rem;}
 ::-webkit-scrollbar-corner{background-color:transparent;}
-::selection{background-color:$color-main1;color:$color-white;}
+::selection{background-color:var(--color-main1);color:var(--color-white);}
 // Disable iubenda cookie widget
 .iub__us-widget{display: none !important;}
 a.iubenda-tp-btn.iubenda-cs-preferences-link {display: none !important;}
 /* Style global */
 body{
-    font-family: $font-base;
+    font-family: var(--font-base);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
-    color:$color-black;
+    color:var(--color-black);
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: $font-title;
+    font-family: var(--font-title);
     font-weight: 700;
 }
 h1{
@@ -65,11 +65,11 @@ h2{
             border-radius: 100%;
             aspect-ratio: 1/1;
             z-index: -1;
-            background-color:$color-primary2-opacity;
+            background-color:var(--color-primary2-opacity);
         }
     }
     .decoration-title--primary3:before{
-        background-color:$color-primary3-opacity;
+        background-color:var(--color-primary3-opacity);
     }
 }
 h3{

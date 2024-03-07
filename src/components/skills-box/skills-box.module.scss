@@ -2,8 +2,8 @@
   &__box{
     font-size: 0.8rem;
     line-height: 1;
-    color: $color-white;
-    box-shadow: $shadow-base;
+    color: var(--color-white);
+    box-shadow: var(--shadow-base);
     width: 100%;
     max-width: 120px;
     aspect-ratio: 1/1;
@@ -47,19 +47,19 @@
     pointer-events: none;
   }
   &__box--variant1{
-    background-color: $color-main1;
+    background-color: var(--color-main1);
   }
   &__box--variant2{
-    background-color: $color-primary1;
+    background-color: var(--color-primary1);
   }
   &__box--variant3{
-    background-color: $color-primary2;
+    background-color: var(--color-primary2);
   }
   &__box--variant4{
-    background-color: $color-main2;
+    background-color: var(--color-main2);
   }
   &__box--variant5{
-    background-color: $color-primary3;
+    background-color: var(--color-primary3);
   }
 }
 @keyframes skills-up {

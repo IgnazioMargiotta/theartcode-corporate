@@ -2,7 +2,7 @@
   font-size: 0.9rem;
   border-top-width: 4px;
   border-top-style: solid;
-  border-image: $color-main-gradient 1;
+  border-image: var(--color-main-gradient) 1;
   &__logo{
     width: 120px;
   }
@@ -11,7 +11,7 @@
   }
   .scrollButton{
     position: fixed;
-    background-color:$color-primary2-opacity;
+    background-color:var(--color-primary2-opacity);
     width:40px;
     height:40px;
     border-radius: 0.5rem;
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $shadow-base;
+    box-shadow: var(--shadow-base);
     opacity: 0;
     pointer-events: none;
     transition-duration: 0.3s;
@@ -28,7 +28,7 @@
     z-index: 9998;
     svg{
       width:50%;
-      fill:$color-main2;
+      fill:var(--color-main2);
     }
     &:hover{
       transform: scale(1.2);

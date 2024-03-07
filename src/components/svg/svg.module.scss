@@ -1,9 +1,9 @@
 .svgElement{
   display: none;
   .fill-main1{
-    fill: $color-main1;
+    fill: var(--color-main1);
   }
   .fill-main2{
-    fill: $color-main2;
+    fill: var(--color-main2);
   }
 }

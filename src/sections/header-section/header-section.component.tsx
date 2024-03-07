@@ -33,6 +33,24 @@ export const HeaderSection = ({lang}:any) => {
     };
   }, []);
 
+  const handleDarkMode = () => {
+    const checkTheme = localStorage.getItem('theme');
+
+    switch (checkTheme) {
+      case 'light':
+        document.documentElement.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        break;
+      case 'dark':
+        document.documentElement.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+        break;
+      default:
+        document.documentElement.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+    }
+  }
+
   return (
     <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
       <div className={`container mx-auto ${styles['header-container']}`}>
@@ -53,6 +71,9 @@ export const HeaderSection = ({lang}:any) => {
             </li>
             <li>
               <Link href={lang.langSwitch.link} title={lang.langSwitch.text} className={`${styles['header__switch-lang']} ${styles[lang.langSwitch.class]}`} aria-label={lang.langSwitch.text}></Link>
+            </li>
+            <li style={{display: 'none'}}>
+              <button onClick={handleDarkMode}>Dark mode</button>
             </li>
           </ul>
           <button className={`${styles['header__icon-hambuger']}`} aria-label={lang.hamburgerAriaLabel} onClick={() => setOpen(!open)}>

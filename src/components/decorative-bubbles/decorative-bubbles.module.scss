@@ -6,7 +6,7 @@
 }
 .blubble__single {
 	border-radius: 50%;
-	background-color: $color-primary2-opacity;
+	background-color: var(--color-primary2-opacity);
 	aspect-ratio: 1/1;
 	&:nth-child(1) {
 		width: 70px;
@@ -33,13 +33,13 @@
 		content: '';
 		display: block;
 		width: 100%;
-		background-color: $color-primary2-opacity;
+		background-color: var(--color-primary2-opacity);
 		flex: 0.5;
 	}
 }
 .blubble__single.blubble__single--border {
 	background-color: transparent;
-	border: 1px solid $color-primary2;
+	border: 1px solid var(--color-primary2);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -48,7 +48,7 @@
 		display: block;
 		width: 85%;
 		aspect-ratio: 1/1;
-		background-color: $color-primary2-opacity;
+		background-color: var(--color-primary2-opacity);
 		border-radius: 50%;
 	}
 }

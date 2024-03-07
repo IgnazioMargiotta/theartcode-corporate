@@ -7,40 +7,40 @@
    transition-duration: 0.3s;
 }
 .button--fill.button--main1{
-    border-color: $color-main1;
-    background-color: $color-main1;
-    color: $color-white;
+    border-color: var(--color-main1);
+    background-color: var(--color-main1);
+    color: var(--color-white);
     &:hover{
-        border-color: $color-main2;
-        background-color: $color-main2;
+        border-color: var(--color-main2);
+        background-color: var(--color-main2);
     }
 }
 .button--fill.button--main2{
-    border-color: $color-main2;
-    background-color: $color-main2;
-    color: $color-white;
+    border-color: var(--color-main2);
+    background-color: var(--color-main2);
+    color: var(--color-white);
     &:hover{
-        border-color: $color-main1;
-        background-color: $color-main1;
+        border-color: var(--color-main1);
+        background-color: var(--color-main1);
     }
 }
 .button--ghost.button--main1{
-    border-color: $color-main1;
-    color: $color-main1;
+    border-color: var(--color-main1);
+    color: var(--color-main1);
     &:hover{
-        background-color: $color-main1;
-        color: $color-white;
+        background-color: var(--color-main1);
+        color: var(--color-white);
     }
 }
 .button--ghost.button--main2{
-    border-color: $color-main2;
-    color: $color-main2;
+    border-color: var(--color-main2);
+    color: var(--color-main2);
     &:hover{
-        background-color: $color-main2;
-        color: $color-white;
+        background-color: var(--color-main2);
+        color: var(--color-white);
     }
 }
 .button:hover{
     transform:translateY(-5px);
-    box-shadow: $shadow-base;
+    box-shadow: var(--shadow-base);
 }

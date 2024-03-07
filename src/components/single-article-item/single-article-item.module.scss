@@ -5,8 +5,8 @@
     display: flex;
     flex-direction:column;
     margin-inline: auto;
-    box-shadow: $shadow-base;
-    background-color: $color-white;
+    box-shadow: var(--shadow-base);
+    background-color: var(--color-white);
     &__image{
         display: block;
         overflow: hidden;
@@ -39,20 +39,20 @@
     &__category{
         padding:0.3rem 1rem;
         border-radius: 1rem;
-        background-color:$color-gray1;
+        background-color:var(--color-gray1);
         font-size: 0.7rem;
         text-transform: uppercase;
     }
     &__button{
         margin-left: auto;
-        background-color:$color-primary3-opacity;
+        background-color:var(--color-primary3-opacity);
         padding:0.7rem;
         border-radius: 2rem;
         transition-duration: 0.3s;
     }
     &__button svg{
         width:25px;
-        fill:$color-white
+        fill:var(--color-white)
     }
     &:hover{
         transform: translateY(-10px);
@@ -60,7 +60,7 @@
             scale:1.1;
         }
         .last-articles-box__button{
-            background-color:$color-primary3;
+            background-color:var(--color-primary3);
         }
     }
 }

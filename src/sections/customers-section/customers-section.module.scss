@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   &-box{
-    background-color: $color-gray1;
+    background-color: var(--color-gray1);
     border-radius: 2rem;
     padding:2rem;
     margin-top: 4rem;
@@ -19,7 +19,7 @@
       transition-duration: 0.3s;
     }
     &:hover .customers-box__image, &--focus .customers-box__image{
-      filter:drop-shadow($shadow-base);
+      filter:drop-shadow(var(--shadow-base));
     }
     &:before,&:after{
       content:'';
@@ -45,9 +45,9 @@
       transition-delay: 0.2s;
     }
     &:hover,&--focus{
-      background-color:$color-primary2-opacity;
+      background-color:var(--color-primary2-opacity);
       transform: translateY(-20px);
-      box-shadow: $shadow-base;
+      box-shadow: var(--shadow-base);
     }
     &:hover:before,&:hover:after,&--focus:before,&--focus:after{
       filter:blur(0px);

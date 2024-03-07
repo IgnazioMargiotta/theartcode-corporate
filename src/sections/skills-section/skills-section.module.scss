@@ -1,5 +1,5 @@
 .skills{
-  background: $color-gray1 url('/assets/images/background.png') top left / 300px fixed;
+  background: var(--color-gray1) url('/assets/images/background.png') top left / 300px fixed;
   &-row-box{
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
     padding-block: 4rem;
   }
   &-row-logo{
-    background-color: $color-white;
+    background-color: var(--color-white);
     margin-block: 2rem;
   }
   &-container-logo{

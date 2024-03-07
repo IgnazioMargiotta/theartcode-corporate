@@ -1,5 +1,5 @@
 .presentation{
-    background: $color-gray1 url('/assets/images/background.png') top left / 300px fixed;
+    background: var(--color-gray1) url('/assets/images/background.png') top left / 300px fixed;
     position: relative;
     min-height: 100svh;
     display: flex;
@@ -8,7 +8,7 @@
     .decoration-circle{
         width:700px;
         aspect-ratio: 1/1;
-        border:1px solid $color-primary2;
+        border:1px solid var(--color-primary2);
         position:absolute;
         padding:20px;
         border-radius: 100%;
@@ -18,13 +18,13 @@
         & > div{
             width:100%;
             aspect-ratio: 1/1;
-            background-color:$color-primary2-opacity;
+            background-color:var(--color-primary2-opacity);
             border-radius: 100%;
             animation: rotation-circle 4s linear infinite;
             .decoration-circle__single{
                 border-radius: 100%;
                 aspect-ratio: 1/1;
-                background-color:$color-primary2;
+                background-color:var(--color-primary2);
                 position:absolute;
                 transform: translate(-50%, -50%);
             }
@@ -51,20 +51,20 @@
         transform: translate(-40%,-40%);
     }
     .decoration-circle.decoration-circle--primary3{
-        border:1px solid $color-primary3;
+        border:1px solid var(--color-primary3);
         > div{
-            background-color:$color-primary3-opacity;
+            background-color:var(--color-primary3-opacity);
             animation: rotation-circle 4s linear infinite;
             animation-delay: 1s;
             .decoration-circle__single{
-                background-color:$color-primary3;
+                background-color:var(--color-primary3);
             }
         }
     }
     .decoration-square{
         width:25vw;
         aspect-ratio: 1/1;
-        border:1px solid $color-primary1;
+        border:1px solid var(--color-primary1);
         position:absolute;
         padding:20px;
         bottom:-25vh;
@@ -73,7 +73,7 @@
         > div{
             width:100%;
             aspect-ratio: 1/1;
-            background-color:$color-primary1-opacity;
+            background-color:var(--color-primary1-opacity);
         }
     }
     .presentation-container{
@@ -99,7 +99,7 @@
         position: absolute;
         bottom: 5svh;
         transform: translateX(-50%);
-        filter: drop-shadow($shadow-base);
+        filter: drop-shadow(var(--shadow-base));
         animation: bounce 4s infinite;
         z-index: 1;
     }

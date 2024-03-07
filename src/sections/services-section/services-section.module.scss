@@ -4,7 +4,7 @@
     width:500px;
     max-width: 80%;
     aspect-ratio: 1/1;
-    border:1px solid $color-primary1;
+    border:1px solid var(--color-primary1);
     position:absolute;
     padding:20px;
     top:30%;
@@ -14,13 +14,13 @@
     > div{
         width:100%;
         aspect-ratio: 1/1;
-        background-color:$color-primary1-opacity;
+        background-color:var(--color-primary1-opacity);
     }
 }
   &-content{
     display: flex;
     align-items: center;
-    background: $color-gray1 url('/assets/images/background.png') top left / 300px fixed;
+    background: var(--color-gray1) url('/assets/images/background.png') top left / 300px fixed;
     position: relative;
     border-radius: 2rem;
     padding:5rem;

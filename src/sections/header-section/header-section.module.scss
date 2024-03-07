@@ -7,7 +7,7 @@
         padding:3px;
         background-position: center;
         background-size: 100%;
-        box-shadow: inset $shadow-base;
+        box-shadow: inset var(--shadow-base);
         position: relative;
         &:before{
             font-size: 0.7rem;
@@ -24,7 +24,7 @@
             height:100%;
             aspect-ratio: 1/1;
             border-radius: 2rem;
-            border:2px solid $color-white;
+            border:2px solid var(--color-white);
             background-position: center;
             background-size: 100%;
             transition-duration: 0.3s;
@@ -67,8 +67,8 @@
     }
     &--sticky{
         position:fixed;
-        background-color: $color-white;
-        box-shadow: $shadow-base;
+        background-color: var(--color-white);
+        box-shadow: var(--shadow-base);
     }
     &__logo{
         width:120px;
@@ -84,7 +84,7 @@
             display:block;
             width:3rem;
             aspect-ratio: 1/1;
-            background-color:$color-primary2-opacity;
+            background-color:var(--color-primary2-opacity);
             border-radius: 10rem;
             position: absolute;
             transform: scale(0);
@@ -97,7 +97,7 @@
         li.header__items:has(a[href*="blog"]):before,
         li.header__items:has(a[href*="articoli"]):before,
         li.header__items:has(a[href*="articles"]):before{
-            background-color:$color-primary3-opacity;
+            background-color:var(--color-primary3-opacity);
         }
         li.header__social{
             display: flex;
@@ -111,7 +111,7 @@
             transition-duration: 0.3s;
         }
         li.header__items a:hover{
-            text-shadow: $shadow-base;
+            text-shadow: var(--shadow-base);
         }
     }
     &__icon-hambuger{
@@ -126,7 +126,7 @@
     }
     &__icon-hambuger path {
       fill: none;
-      stroke: $color-white;
+      stroke: var(--color-white);
       stroke-width: 3;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -137,7 +137,7 @@
       transition: all .8s cubic-bezier(.645, .045, .355, 1);
     }
     &__icon-hambuger circle{
-        fill: $color-primary2;
+        fill: var(--color-primary2);
     }
     .line1, .line3 {
         --total-length: 126.64183044433594;
@@ -173,7 +173,7 @@
         &__menu ul{
             overflow: hidden;
             gap:2rem;
-            background-color: $color-white;
+            background-color: var(--color-white);
             justify-content: center;
             flex-direction: column;
             position: absolute;
@@ -188,7 +188,7 @@
             height:100svh;
             font-size: 1.3rem;
             li.header__items a{
-                text-shadow: $shadow-base;
+                text-shadow: var(--shadow-base);
             }
             li.header__social:before{
                 font-size: 0.8rem;
@@ -207,7 +207,7 @@
                 display:block;
                 width:200px;
                 aspect-ratio: 1/1;
-                background-color:$color-primary1-opacity;
+                background-color:var(--color-primary1-opacity);
                 position:absolute;
                 bottom:0;
                 left: 0;
@@ -222,7 +222,7 @@
                 width:700px;
                 border-radius: 50rem;
                 aspect-ratio: 1/1;
-                background-color:$color-primary2-opacity;
+                background-color:var(--color-primary2-opacity);
                 position:absolute;
                 top:0;
                 left: 50%;

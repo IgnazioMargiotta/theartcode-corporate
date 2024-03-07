@@ -2,17 +2,17 @@
   display:flex;
   align-items: center;
   gap:1.5rem;
-  background-color:$color-gray1;
+  background-color:var(--color-gray1);
   padding:1.5rem;
   border-radius: 2rem;
   &:hover .services-box__image{
     transform:translateY(-10px);
   }
   &__image{
-    background-color:$color-white;
+    background-color:var(--color-white);
     padding:1rem;
     border-radius: 1.5rem;
-    filter:drop-shadow($shadow-base);
+    filter:drop-shadow(var(--shadow-base));
     transition-duration: 0.3s;
     
   }
