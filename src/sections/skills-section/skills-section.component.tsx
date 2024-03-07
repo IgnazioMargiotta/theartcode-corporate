@@ -33,11 +33,11 @@ export const SkillsSection = () => {
           <svg className={`${styles['skills__logo']}`} viewBox="0 0 1215 306">
             <use href="#logo-multicolor"></use>
           </svg>
-          <Image src={`assets/images/line_variant1.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant1']}`} width={90} height={310} alt='' />
-          <Image src={`assets/images/line_variant2.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant2']}`} width={200} height={135} alt='' />
-          <Image src={`assets/images/line_variant3.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant3']}`} width={300} height={130} alt='' />
-          <Image src={`assets/images/line_variant4.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant4']}`} width={190} height={170} alt='' />
-          <Image src={`assets/images/line_variant5.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant5']}`} width={285} height={320} alt='' />
+          <Image src={`assets/images/line_variant1.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant1']}`} width={90} height={310} alt='Arrow' />
+          <Image src={`assets/images/line_variant2.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant2']}`} width={200} height={135} alt='Arrow' />
+          <Image src={`assets/images/line_variant3.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant3']}`} width={300} height={130} alt='Arrow' />
+          <Image src={`assets/images/line_variant4.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant4']}`} width={190} height={170} alt='Arrow' />
+          <Image src={`assets/images/line_variant5.svg`} className={`${styles['skills__line-decoration']} ${styles['skills__line-decoration--variant5']}`} width={285} height={320} alt='Arrow' />
           <DecorativeBubbles direction="right" position="bottom-right" animation="true" />
         </div>
       </div>
