@@ -11,11 +11,11 @@ import client from "@theartcode/api/apollo-client";
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  useEffect(()=>{
-    TagManager.initialize({
-      gtmId: 'G-PXKMHSTBF9'
-    })
-  },[]);
+  // useEffect(()=>{
+  //   TagManager.initialize({
+  //     gtmId: 'G-PXKMHSTBF9'
+  //   })
+  // },[]);
 
   useEffect(() => {
     // const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
