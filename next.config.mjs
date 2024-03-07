@@ -7,13 +7,6 @@ const nextConfig = {
     CONTACTFORM: process.env.CONTACTFORM,
   },
   images: {
-    domains: [
-      'theartcode-be-app-x8t4f.ondigitalocean.app',
-      'localhost',
-      'monkfish-app-tt33s.ondigitalocean.app',
-      'vibra.studio',
-      'res.cloudinary.com',
-    ],
     remotePatterns: [
       {
         protocol: 'https',
