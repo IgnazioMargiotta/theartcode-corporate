@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { SocialBox } from "@theartcode/components"
 import styles from './header-section.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-
-
 
 export const HeaderSection = ({lang}:any) => {
   
@@ -39,7 +37,7 @@ export const HeaderSection = ({lang}:any) => {
     };
   }, []);
 
-  const handleDarkMode = () => {
+  const handleDarkMode = useCallback(() => {
     switch (checkTheme) {
       case 'light':
         document.documentElement.classList.add('dark-mode');
@@ -62,7 +60,7 @@ export const HeaderSection = ({lang}:any) => {
           window.localStorage.setItem('theme', 'light');
         }
     }
-  };
+  }, [checkTheme])
 
   return (
     <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
@@ -85,7 +83,7 @@ export const HeaderSection = ({lang}:any) => {
             <li className={`${styles['header__switch']}`}>
               <Link href={lang.langSwitch.link} title={lang.langSwitch.text} className={`${styles['header__switch-lang']} ${styles[lang.langSwitch.class]}`} aria-label={lang.langSwitch.text}></Link>
 
-              <button className={`${styles['header__switch-theme']} ${styles[lang.themeSwitch.class]} ${checkTheme === 'dark' ? styles['header__switch-theme--dark'] : styles['header__switch-theme--light']}`} onClick={handleDarkMode} aria-label={lang.themeSwitch.text} title={lang.themeSwitch.text}></button>
+              <button className={`${styles['header__switch-theme']} ${styles[lang.themeSwitch.class]} ${checkTheme === 'dark' ? styles['header__switch-theme--light'] : styles['header__switch-theme--dark']}`} onClick={handleDarkMode} aria-label={lang.themeSwitch.text} title={lang.themeSwitch.text}></button>
             </li>
           </ul>
           <button className={`${styles['header__icon-hambuger']}`} aria-label={lang.hamburgerAriaLabel} onClick={() => setOpen(!open)}>
