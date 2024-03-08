@@ -1,65 +1,72 @@
-.customers{
+.customers {
   display: flex;
   align-items: center;
-  &-box{
+  &-box {
     background-color: var(--color-gray1);
     border-radius: 2rem;
-    padding:2rem;
+    padding: 2rem;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
     max-width: 430px;
     margin-inline: auto;
-    transition-duration:0.3s;
-    position:relative;
-    &__image{
-      margin-inline:auto;
-      margin-block:-100px 30px;
+    transition-duration: 0.3s;
+    position: relative;
+    &__image {
+      margin-inline: auto;
+      margin-block: -100px 30px;
       transition-duration: 0.3s;
     }
-    &:hover .customers-box__image, &--focus .customers-box__image{
-      filter:drop-shadow(var(--shadow-base));
+    &:hover .customers-box__image,
+    &--focus .customers-box__image {
+      filter: drop-shadow(var(--shadow-base));
     }
-    &:before,&:after{
-      content:'';
+    &:before,
+    &:after {
+      content: "";
       position: absolute;
-      background: url('/assets/images/decoration_stars.svg') 100%;
-      width:50px;
-      height:60px;
-      filter:blur(10px);
+      background: url("/assets/images/decoration_stars.svg") 100%;
+      width: 50px;
+      height: 60px;
+      filter: blur(10px);
       user-select: none;
       transition-duration: 0.3s;
-      scale:0;
+      scale: 0;
     }
-    &:before{
-      bottom:0;
-      left:0;
-      transform: translate(60%,50%);
+    &:before {
+      bottom: 0;
+      left: 0;
+      transform: translate(60%, 50%);
       transition-delay: 0.1s;
     }
-    &:after{
-      top:0;
-      right:0;
-      transform: rotate(180deg) translate(60%,50%);
+    &:after {
+      top: 0;
+      right: 0;
+      transform: rotate(180deg) translate(60%, 50%);
       transition-delay: 0.2s;
     }
-    &:hover,&--focus{
-      background-color:var(--color-primary2-opacity);
-      color:var(--forced-theme-color-black);
+    &:hover,
+    &--focus {
+      background-color: var(--color-primary2-opacity);
+      color: var(--forced-theme-color-black);
       transform: translateY(-20px);
       box-shadow: var(--shadow-base);
     }
-    &:hover:before,&:hover:after,&--focus:before,&--focus:after{
-      filter:blur(0px);
+    &:hover:before,
+    &:hover:after,
+    &--focus:before,
+    &--focus:after {
+      filter: blur(0px);
       user-select: initial;
-      scale:1;
+      scale: 1;
     }
   }
 }
 @media (max-width: 1024px) {
-  .customers-box{
-    &:hover,&--focus{
+  .customers-box {
+    &:hover,
+    &--focus {
       transform: translateY(0px);
     }
   }

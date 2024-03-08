@@ -1,7 +1,10 @@
 export const GoogleAdsScript = () => {
   return (
     <>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16485768351"></script>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16485768351"
+      ></script>
       <script
         dangerouslySetInnerHTML={{
           __html: `

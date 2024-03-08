@@ -1,6 +1,7 @@
-.skills{
-  background: var(--color-gray1) url('/assets/images/background.png') top left / 300px fixed;
-  &-row-box{
+.skills {
+  background: var(--color-gray1) url("/assets/images/background.png") top left /
+    300px fixed;
+  &-row-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8,44 +9,44 @@
     gap: 4rem 2rem;
     padding-block: 4rem;
   }
-  &-row-logo{
+  &-row-logo {
     background-color: var(--color-white);
     margin-block: 2rem;
   }
-  &-container-logo{
+  &-container-logo {
     max-width: 600px;
     margin-inline: auto;
     position: relative;
   }
-  &__logo{
+  &__logo {
     width: 300px;
     margin-inline: auto;
     padding-block: 1.5rem;
   }
-  &__line-decoration{
+  &__line-decoration {
     position: absolute;
     user-select: none;
-    &--variant1{
+    &--variant1 {
       right: 0;
       top: 0;
       transform: translate(-170%, -95%);
     }
-    &--variant2{
+    &--variant2 {
       left: 0;
       top: 0;
       transform: translate(-100%, -50%);
     }
-    &--variant3{
+    &--variant3 {
       right: 0;
       top: 0;
       transform: translate(65%, -80%);
     }
-    &--variant4{
+    &--variant4 {
       left: 0;
       bottom: 0;
       transform: translate(45%, 90%);
     }
-    &--variant5{
+    &--variant5 {
       left: 0;
       bottom: 0;
       transform: translate(-90%, 90%);
@@ -53,16 +54,16 @@
   }
 }
 @media (max-width: 1280px) {
-  .skills__line-decoration{
+  .skills__line-decoration {
     display: none;
   }
 }
 @media (max-width: 640px) {
-  .skills-row-box{
+  .skills-row-box {
     gap: 1rem;
     padding-block: 2rem;
   }
-  .skills__logo{
+  .skills__logo {
     width: 250px;
   }
 }

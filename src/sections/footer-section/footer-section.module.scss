@@ -1,19 +1,19 @@
-.footer{
+.footer {
   font-size: 0.9rem;
   border-top-width: 4px;
   border-top-style: solid;
   border-image: var(--color-main-gradient) 1;
-  &__logo{
+  &__logo {
     width: 120px;
   }
-  .scrollButton{
+  .scrollButton {
     position: fixed;
-    background-color:var(--color-primary2-opacity);
-    width:40px;
-    height:40px;
+    background-color: var(--color-primary2-opacity);
+    width: 40px;
+    height: 40px;
     border-radius: 0.5rem;
-    bottom:2rem;
-    right:2rem;
+    bottom: 2rem;
+    right: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,15 +23,15 @@
     transition-duration: 0.3s;
     transform-origin: center;
     z-index: 9998;
-    svg{
-      width:50%;
-      fill:var(--color-main2);
+    svg {
+      width: 50%;
+      fill: var(--color-main2);
     }
-    &:hover{
+    &:hover {
       transform: scale(1.2);
     }
   }
-  .scrollButton--active{
+  .scrollButton--active {
     opacity: 1;
     pointer-events: initial;
   }

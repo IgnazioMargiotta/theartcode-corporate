@@ -9,38 +9,38 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        protocol: "https",
+        hostname: "res.cloudinary.com",
       },
       {
-        protocol: 'https',
-        port: '8080',
-        hostname: 'theartcode-be-app-x8t4f.ondigitalocean.app',
+        protocol: "https",
+        port: "8080",
+        hostname: "theartcode-be-app-x8t4f.ondigitalocean.app",
       },
       {
-        protocol: 'https',
-        port: '8080',
-        hostname: '**.ondigitalocean.app',
+        protocol: "https",
+        port: "8080",
+        hostname: "**.ondigitalocean.app",
       },
       {
-        protocol: 'http',
-        port: '1337',
-        hostname: 'localhost',
+        protocol: "http",
+        port: "1337",
+        hostname: "localhost",
       },
       {
-        protocol: 'https',
-        port: '8080',
-        hostname: 'monkfish-app-tt33s.ondigitalocean.app',
+        protocol: "https",
+        port: "8080",
+        hostname: "monkfish-app-tt33s.ondigitalocean.app",
       },
       {
-        protocol: 'https',
-        port: '8080',
-        hostname: 'vibra.studio',
+        protocol: "https",
+        port: "8080",
+        hostname: "vibra.studio",
       },
     ],
   },
   sassOptions: {
-    includePaths: ['./src'],
+    includePaths: ["./src"],
     // prependData: `@import "~@styles/variables.scss";`,
   },
 };

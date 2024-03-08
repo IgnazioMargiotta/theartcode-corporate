@@ -1,46 +1,46 @@
-.button{
-   display:inline-block;
-   padding: 0.7rem 2rem;
-   font-weight: 500;
-   border:2px solid;
-   border-radius: 10rem;
-   transition-duration: 0.3s;
+.button {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 10rem;
+  transition-duration: 0.3s;
 }
-.button--fill.button--main1{
-    border-color: var(--color-main1);
-    background-color: var(--color-main1);
-    color: var(--forced-theme-color-white);
-    &:hover{
-        border-color: var(--color-main2);
-        background-color: var(--color-main2);
-    }
-}
-.button--fill.button--main2{
+.button--fill.button--main1 {
+  border-color: var(--color-main1);
+  background-color: var(--color-main1);
+  color: var(--forced-theme-color-white);
+  &:hover {
     border-color: var(--color-main2);
     background-color: var(--color-main2);
-    color: var(--forced-theme-color-white);
-    &:hover{
-        border-color: var(--color-main1);
-        background-color: var(--color-main1);
-    }
+  }
 }
-.button--ghost.button--main1{
+.button--fill.button--main2 {
+  border-color: var(--color-main2);
+  background-color: var(--color-main2);
+  color: var(--forced-theme-color-white);
+  &:hover {
     border-color: var(--color-main1);
-    color: var(--color-main1);
-    &:hover{
-        background-color: var(--color-main1);
-        color: var(--forced-theme-color-white);
-    }
+    background-color: var(--color-main1);
+  }
 }
-.button--ghost.button--main2{
-    border-color: var(--color-main2);
-    color: var(--color-main2);
-    &:hover{
-        background-color: var(--color-main2);
-        color: var(---forced-theme-color-white);
-    }
+.button--ghost.button--main1 {
+  border-color: var(--color-main1);
+  color: var(--color-main1);
+  &:hover {
+    background-color: var(--color-main1);
+    color: var(--forced-theme-color-white);
+  }
 }
-.button:hover{
-    transform:translateY(-5px);
-    box-shadow: var(--shadow-base);
+.button--ghost.button--main2 {
+  border-color: var(--color-main2);
+  color: var(--color-main2);
+  &:hover {
+    background-color: var(--color-main2);
+    color: var(---forced-theme-color-white);
+  }
+}
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-base);
 }

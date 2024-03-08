@@ -1,144 +1,164 @@
-.form{
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-    padding:5rem;
-    background-color:var(--color-gray1);
-    border-radius: 2rem;
-    position: relative;
-    margin-inline:auto;
-    width: 850px;
-    max-width: 90%;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
+  background-color: var(--color-gray1);
+  border-radius: 2rem;
+  position: relative;
+  margin-inline: auto;
+  width: 850px;
+  max-width: 90%;
+  box-shadow: var(--shadow-base);
+  &__decoration-balls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    border-top: 15px solid var(--color-main2);
+    border-right: 15px solid var(--color-main2);
+    border-top-right-radius: 100%;
+    aspect-ratio: 1/1;
+    width: 80px;
+    &:before {
+      content: "";
+      width: 200px;
+      aspect-ratio: 1/1;
+      border: 5px solid var(--color-white);
+      display: block;
+      position: absolute;
+      background-color: var(--color-primary2-opacity);
+      border-radius: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transform: translate(-70px, 70px);
+      outline: 1px solid var(--color-primary2);
+      transition-duration: 0.3s;
+    }
+  }
+  &:has(input:focus, textarea:focus, select:focus) &__decoration-balls:before,
+  &:hover &__decoration-balls:before {
+    scale: 1.1;
+  }
+  input[type="password"],
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select {
+    height: 3.5rem;
+  }
+  :is(
+      input[type="password"],
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      select,
+      textarea
+    ):focus {
     box-shadow: var(--shadow-base);
-    &__decoration-balls{
-        position: absolute;
-        bottom:0;
-        left:0;
-        user-select:none;
-        pointer-events: none;
-        border-top:15px solid var(--color-main2);
-        border-right:15px solid var(--color-main2);
-        border-top-right-radius: 100%;
-        aspect-ratio: 1/1;
-        width:80px;
-        &:before{
-            content:'';
-            width:200px;
-            aspect-ratio: 1/1;
-            border:5px solid var(--color-white);
-            display:block;
-            position: absolute;
-            background-color:var(--color-primary2-opacity);
-            border-radius: 100%;
-            bottom:0;
-            left:0;
-            z-index:-1;
-            transform:translate(-70px, 70px);
-            outline:1px solid var(--color-primary2);
-            transition-duration: 0.3s;
-        }
+  }
+  input[type="password"],
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea,
+  select,
+  option {
+    color: var(--color-black);
+    width: 100%;
+    padding: 0.3rem 1.2rem;
+    background-color: var(--color-white);
+    transition: all 0.2s linear;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    border: none;
+    border-radius: 1rem;
+  }
+  textarea {
+    padding-block: 1.2rem;
+  }
+  &__submit {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0.7rem 2rem;
+    font-weight: 500;
+    color: var(--forced-theme-color-white);
+    border: 2px solid var(--color-main2);
+    background-color: var(--color-main2);
+    border-radius: 10rem;
+    transition-duration: 0.3s;
+    text-align: center;
+    max-width: 100%;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-base);
+      background-color: var(--color-main1);
+      border-color: var(--color-main1);
     }
-    &:has(input:focus,textarea:focus,select:focus) &__decoration-balls:before,&:hover &__decoration-balls:before{
-        scale:1.1;
+  }
+  :focus {
+    outline: none;
+  }
+  .custom-checkbox {
+    $checkbox-size: 30px;
+    input[type="checkbox"] {
+      width: $checkbox-size;
+      height: $checkbox-size;
+      position: absolute;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
     }
-    input[type="password"],input[type="text"],input[type="email"],input[type="tel"],input[type="date"],select{
-        height:3.5rem;
+    input[type="checkbox"] ~ label {
+      line-height: $checkbox-size;
+      cursor: pointer;
     }
-    :is(input[type="password"], input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select,textarea):focus{
-        box-shadow: var(--shadow-base);
+    input[type="checkbox"] ~ label:before {
+      content: "✓";
+      font-weight: 900;
+      color: transparent;
+      font-size: calc(21 * $checkbox-size / 35);
+      line-height: 100%;
+      border: 1px solid var(--color-gray2);
+      width: $checkbox-size;
+      height: $checkbox-size;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      transition: all 0.2s linear;
+      border-radius: 8px;
+      cursor: pointer;
     }
-    input[type="password"],input[type="text"],input[type="email"],input[type="tel"],input[type="date"],textarea,select,option{
-        color:var(--color-black);
-        width:100%;
-        padding:0.3rem 1.2rem;
-        background-color:var(--color-white);
-        transition:all .2s linear;
-        font-size:16px;
-        line-height:1.2;
-        font-weight: 400;
-        border:none;
-        border-radius: 1rem;
+    input[type="checkbox"]:checked ~ label:before {
+      color: var(--color-main2);
     }
-    textarea{
-        padding-block:1.2rem;
+    a {
+      text-decoration: underline;
     }
-    &__submit{
-        font-size:16px;
-        line-height:1.5;
-        padding: 0.7rem 2rem;
-        font-weight: 500;
-        color:var(--forced-theme-color-white);
-        border:2px solid var(--color-main2);
-        background-color:var(--color-main2);
-        border-radius: 10rem;
-        transition-duration: 0.3s;
-        text-align:center;
-        max-width:100%;
-        &:hover{
-            transform:translateY(-5px);
-            box-shadow: var(--shadow-base);
-            background-color:var(--color-main1);
-            border-color:var(--color-main1);
-        }
-    }
-    :focus{
-        outline: none;
-    }
-    .custom-checkbox{
-        $checkbox-size:30px;
-        input[type="checkbox"]{
-            width: $checkbox-size;
-            height: $checkbox-size;
-            position: absolute;
-            left: 0;
-            pointer-events: none;
-            opacity: 0;
-        }
-        input[type="checkbox"] ~ label{
-            line-height:$checkbox-size;
-            cursor: pointer;
-        }
-        input[type="checkbox"] ~ label:before{
-            content:'✓';
-            font-weight:900;
-            color:transparent;
-            font-size:calc(21 * $checkbox-size / 35);
-            line-height:100%;
-            border:1px solid var(--color-gray2);
-            width:$checkbox-size;
-            height:$checkbox-size;
-            float:left;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            margin-right:10px;
-            transition:all .2s linear;
-            border-radius:8px;
-            cursor: pointer;
-        }
-        input[type="checkbox"]:checked ~ label:before{
-            color:var(--color-main2);
-        }
-        a{
-            text-decoration: underline;
-        }
-    }
+  }
 }
 @media (max-width: 768px) {
-    .form{
-        padding: 2rem;
-        &__decoration-balls{
-            display: none;
-        }
+  .form {
+    padding: 2rem;
+    &__decoration-balls {
+      display: none;
     }
+  }
 }
 @media (max-width: 640px) {
-    .form{
-        max-width: 100%;
-        background-color: var(--color-gray1);
-        border-radius: 0;
-        gap:1rem;
-        box-shadow: none;
-        
-    }
+  .form {
+    max-width: 100%;
+    background-color: var(--color-gray1);
+    border-radius: 0;
+    gap: 1rem;
+    box-shadow: none;
+  }
 }

@@ -1,0 +1,28 @@
+# Add files here to ignore them from prettier formatting
+TODO.md
+
+
+/node_modules
+
+# Build
+/.next
+/out
+/build
+
+# Tailwind configuration
+tailwind.config.js
+postcss.config.js
+
+# Configurations files and scripts
+*.json
+*.yml
+*.yaml
+
+# Env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Nextjs cache files
+.next/cache

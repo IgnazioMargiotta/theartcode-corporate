@@ -1,4 +1,4 @@
-This is a the artCode corporate Web App made with [Next.js] 
+This is a the artCode corporate Web App made with [Next.js]
 
 ## Getting Started
 

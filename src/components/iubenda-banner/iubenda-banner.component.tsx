@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export const IubendaScript = () => {
   useEffect(() => {
-    
-    const configScript = document.createElement('script');
-    configScript.type = 'text/javascript';
+    const configScript = document.createElement("script");
+    configScript.type = "text/javascript";
     configScript.innerHTML = `
       var _iub = _iub || [];
       _iub.csConfiguration = {
@@ -34,20 +33,20 @@ export const IubendaScript = () => {
     `;
     document.head.appendChild(configScript);
 
-    const autoblockingScript = document.createElement('script');
-    autoblockingScript.type = 'text/javascript';
-    autoblockingScript.src = 'https://cs.iubenda.com/autoblocking/3536975.js';
+    const autoblockingScript = document.createElement("script");
+    autoblockingScript.type = "text/javascript";
+    autoblockingScript.src = "https://cs.iubenda.com/autoblocking/3536975.js";
     document.head.appendChild(autoblockingScript);
 
-    const stubScript = document.createElement('script');
-    stubScript.type = 'text/javascript';
-    stubScript.src = '//cdn.iubenda.com/cs/gpp/stub.js';
+    const stubScript = document.createElement("script");
+    stubScript.type = "text/javascript";
+    stubScript.src = "//cdn.iubenda.com/cs/gpp/stub.js";
     document.head.appendChild(stubScript);
 
-    const csScript = document.createElement('script');
-    csScript.type = 'text/javascript';
-    csScript.src = '//cdn.iubenda.com/cs/iubenda_cs.js';
-    csScript.charset = 'UTF-8';
+    const csScript = document.createElement("script");
+    csScript.type = "text/javascript";
+    csScript.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
+    csScript.charset = "UTF-8";
     csScript.async = true;
     document.head.appendChild(csScript);
 

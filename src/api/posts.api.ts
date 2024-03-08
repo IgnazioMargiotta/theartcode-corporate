@@ -4,34 +4,33 @@ import { gql } from "@apollo/client";
 import { FILE_FRAGMENT } from "./fragments/image-fragment.api";
 
 const FETCH_LIMITED_POSTS = gql`
-${FILE_FRAGMENT}
+  ${FILE_FRAGMENT}
 
-query {
-  articles(pagination: {limit: 3} sort: "createdAt:desc") {
-    data {
-      id
-      attributes {
-        Title
-        Slug
-        Seo {
-          MetaTitle
-          MetaDescription
-           SharedImage {
-            ...FileParts
+  query {
+    articles(pagination: { limit: 3 }, sort: "createdAt:desc") {
+      data {
+        id
+        attributes {
+          Title
+          Slug
+          Seo {
+            MetaTitle
+            MetaDescription
+            SharedImage {
+              ...FileParts
+            }
           }
-        }
-        categories {
-          data {
-            attributes {
-              Title
+          categories {
+            data {
+              attributes {
+                Title
+              }
             }
           }
         }
       }
     }
   }
-}`;
-
-
+`;
 
 export { FETCH_LIMITED_POSTS };

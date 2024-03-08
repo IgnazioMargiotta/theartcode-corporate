@@ -4,30 +4,24 @@ import { ApolloProvider } from "@apollo/client";
 // import TagManager from 'react-gtm-module';
 
 // Styles
-import '../styles/globals.scss';
+import "../styles/globals.scss";
 
 // Utils
 import client from "@theartcode/api/apollo-client";
+import { ThemeProvider } from "../contexts/ThemeContext";
 
 export default function App({ Component, pageProps }: AppProps) {
-
   // useEffect(()=>{
   //   TagManager.initialize({
   //     gtmId: 'G-PXKMHSTBF9'
   //   })
   // },[]);
 
-  useEffect(() => {
-    // const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const checkTheme = localStorage.getItem('theme');
-    if (checkTheme && checkTheme === 'dark') {
-      document.documentElement.classList.add('dark-mode');
-    }
-  }, []);
-
   return (
-  <ApolloProvider client={client}>
-    <Component {...pageProps} />
-  </ApolloProvider>
+    <ApolloProvider client={client}>
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </ApolloProvider>
   );
 }

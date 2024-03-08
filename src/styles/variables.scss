@@ -1,24 +1,24 @@
 :root {
-  --color-main1: #23AECD;
-  --color-main2: #B55694;
-  --color-main-gradient: linear-gradient(to right, #C33374, #7C2681);
-  --color-main-gradient-alt: linear-gradient(to left, #C33374, #7C2681);
-  --color-primary1: #8EDD00;
-  --color-primary1-opacity: #D0FF7A;
-  --color-primary2: #B286FD;
-  --color-primary2-opacity: #D2B7FF;
-  --color-primary3: #E2773A;
-  --color-primary3-opacity: #FFB387;
-  --color-white: #FFFFFF;
-  --color-gray1: #F5F5F5;
+  --color-main1: #23aecd;
+  --color-main2: #b55694;
+  --color-main-gradient: linear-gradient(to right, #c33374, #7c2681);
+  --color-main-gradient-alt: linear-gradient(to left, #c33374, #7c2681);
+  --color-primary1: #8edd00;
+  --color-primary1-opacity: #d0ff7a;
+  --color-primary2: #b286fd;
+  --color-primary2-opacity: #d2b7ff;
+  --color-primary3: #e2773a;
+  --color-primary3-opacity: #ffb387;
+  --color-white: #ffffff;
+  --color-gray1: #f5f5f5;
   --color-gray2: #626262;
   --color-black: #000000;
   --forced-theme-color-white: var(--color-white);
   --forced-theme-color-black: var(--color-black);
   --shadow-base: 0 5px 5px #00000040;
   --shadow-large: 0px 0px 50px 5px #00000040;
-  --font-base: 'Inter', sans-serif;
-  --font-title: 'Space Grotesk', serif;
+  --font-base: "Inter", sans-serif;
+  --font-title: "Space Grotesk", serif;
 }
 
 .dark-mode {
@@ -26,6 +26,6 @@
   --color-gray1: #313131;
   --color-gray2: #626262;
   --color-black: #ffffff;
-  --forced-theme-color-white:var(--color-black);
-  --forced-theme-color-black:var(--color-white);
+  --forced-theme-color-white: var(--color-black);
+  --forced-theme-color-black: var(--color-white);
 }

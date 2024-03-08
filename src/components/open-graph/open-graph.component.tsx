@@ -17,7 +17,7 @@ export interface OpenGraphProps {
   modified_time?: string;
   published_time?: string;
   card?: "summary" | "summary_large_image" | "app" | "player";
-};
+}
 
 export const OpenGraph = (props: OpenGraphProps) => {
   const {
@@ -47,8 +47,12 @@ export const OpenGraph = (props: OpenGraphProps) => {
         <>
           <meta property="article:author" content={author} />
           <meta property="article:section" content={section} />
-          {modified_time && (<meta property="article:modified_time" content={modified_time} />)}
-          {published_time && (<meta property="article:published_time" content={published_time} />)}
+          {modified_time && (
+            <meta property="article:modified_time" content={modified_time} />
+          )}
+          {published_time && (
+            <meta property="article:published_time" content={published_time} />
+          )}
         </>
       )}
       {image && (

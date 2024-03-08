@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
-import styles from './fade-in-animation.module.scss'
+import styles from "./fade-in-animation.module.scss";
 
 enum DisplayElement {
   flex = "flex",
   block = "block",
-  inlineBlock = "inline-block"
-};
+  inlineBlock = "inline-block",
+}
 
 interface IFadeInAnimation {
   delay?: number;
@@ -28,8 +28,8 @@ export const FadeInAnimation = (props: IFadeInAnimation): JSX.Element => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    rootMargin: '350px',
-    threshold: 0 
+    rootMargin: "350px",
+    threshold: 0,
   });
 
   useEffect(() => {
@@ -37,14 +37,14 @@ export const FadeInAnimation = (props: IFadeInAnimation): JSX.Element => {
     if (inView && !startAnimation) {
       timer1 = setTimeout(() => setStartAnimation(true), delay);
     } else if (!inView && startAnimation) {
-      setStartAnimation(false); 
+      setStartAnimation(false);
     }
   }, [inView, startAnimation, delay]);
 
   return (
     <div ref={ref}>
       <span
-        className={`${styles['slide-in']} ${startAnimation ? `${styles['--view']}` : "--hide"}`}
+        className={`${styles["slide-in"]} ${startAnimation ? `${styles["--view"]}` : "--hide"}`}
         style={style}
       >
         {props.children}

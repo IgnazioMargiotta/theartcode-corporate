@@ -1,6 +1,6 @@
 export const lastArticlesSection = {
-  "title": "Last articles",
-  "subtitle": "Come discover the latest articles on theArtCode!",
-}
+  title: "Last articles",
+  subtitle: "Come discover the latest articles on theArtCode!",
+};
 
-export default lastArticlesSection
+export default lastArticlesSection;
