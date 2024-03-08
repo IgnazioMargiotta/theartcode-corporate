@@ -10,6 +10,10 @@ export const headerSection = {
     "text": "Traduci in Inglese",
     "class": "header__switch-lang--ita"
   },
+  "themeSwitch": {
+    "text": "Cambia tema",
+    "class": "header__switch-theme--ita"
+  },
   "socialClass": "header__social--ita",
   "hamburgerAriaLabel": "Apri navigazione",
 }

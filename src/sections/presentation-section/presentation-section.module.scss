@@ -49,13 +49,15 @@
         left:0;
         top:0;
         transform: translate(-40%,-40%);
+        > div{
+            animation-delay: 1s;
+        }
     }
     .decoration-circle.decoration-circle--primary3{
         border:1px solid var(--color-primary3);
         > div{
             background-color:var(--color-primary3-opacity);
             animation: rotation-circle 4s linear infinite;
-            animation-delay: 1s;
             .decoration-circle__single{
                 background-color:var(--color-primary3);
             }
@@ -117,10 +119,10 @@
 }
 @keyframes rotation-circle {
     from{
-        transform: rotate(360deg);
+        transform: rotate(450deg);
     }
     to{
-        transform: rotate(0deg);
+        transform: rotate(90deg);
     }
 }
 @keyframes rotation-circle-invert {

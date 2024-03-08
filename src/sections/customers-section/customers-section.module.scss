@@ -46,6 +46,7 @@
     }
     &:hover,&--focus{
       background-color:var(--color-primary2-opacity);
+      color:var(--forced-theme-color-black);
       transform: translateY(-20px);
       box-shadow: var(--shadow-base);
     }
