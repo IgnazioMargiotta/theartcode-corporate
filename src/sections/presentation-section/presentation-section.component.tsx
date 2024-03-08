@@ -38,6 +38,7 @@ export const PresentationSection = ({ lang }: any) => {
           <div className={`${styles["presentation-container__descriptions"]}`}>
             <p>{lang.descriptionFirst}</p>
             <p>{lang.descriptionSecond}</p>
+            <p>{lang.descriptionThird}</p>
           </div>
           <div className={`${styles["buttons"]}`}>
             <Button
