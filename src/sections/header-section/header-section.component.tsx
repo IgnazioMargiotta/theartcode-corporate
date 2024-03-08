@@ -19,6 +19,12 @@ export const HeaderSection = ({lang}:any) => {
 
   const [open, setOpen] = useState(false);
   const [isHeaderSticky, setHeaderSticky] = useState(false);
+  const [checkTheme, setCheckTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || 'light';
+    }
+    return 'light';
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,22 +40,29 @@ export const HeaderSection = ({lang}:any) => {
   }, []);
 
   const handleDarkMode = () => {
-    const checkTheme = localStorage.getItem('theme');
-
     switch (checkTheme) {
       case 'light':
         document.documentElement.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
+        setCheckTheme('dark');
+        if (typeof window !== 'undefined') {
+          window.localStorage.setItem('theme', 'dark');
+        }
         break;
       case 'dark':
         document.documentElement.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light');
+        setCheckTheme('light');
+        if (typeof window !== 'undefined') {
+          window.localStorage.setItem('theme', 'light');
+        }
         break;
       default:
-        document.documentElement.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
+        document.documentElement.classList.remove('dark-mode');
+        setCheckTheme('light');
+        if (typeof window !== 'undefined') {
+          window.localStorage.setItem('theme', 'light');
+        }
     }
-  }
+  };
 
   return (
     <header className={`${styles['header']} ${isHeaderSticky ? styles['header--sticky'] : ''}`}>
@@ -69,11 +82,10 @@ export const HeaderSection = ({lang}:any) => {
             <li className={`${styles['header__social']} ${styles[lang.socialClass]}`}>
               <SocialBox size="small" />
             </li>
-            <li>
+            <li className={`${styles['header__switch']}`}>
               <Link href={lang.langSwitch.link} title={lang.langSwitch.text} className={`${styles['header__switch-lang']} ${styles[lang.langSwitch.class]}`} aria-label={lang.langSwitch.text}></Link>
-            </li>
-            <li style={{display: 'none'}}>
-              <button onClick={handleDarkMode}>Dark mode</button>
+
+              <button className={`${styles['header__switch-theme']} ${styles[lang.themeSwitch.class]} ${checkTheme === 'dark' ? styles['header__switch-theme--dark'] : styles['header__switch-theme--light']}`} onClick={handleDarkMode} aria-label={lang.themeSwitch.text} title={lang.themeSwitch.text}></button>
             </li>
           </ul>
           <button className={`${styles['header__icon-hambuger']}`} aria-label={lang.hamburgerAriaLabel} onClick={() => setOpen(!open)}>

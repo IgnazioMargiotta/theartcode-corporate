@@ -1,54 +1,104 @@
 .header{
-    &__switch-lang{
-        height:35px;
-        width:75px;
-        border-radius: 2rem;
-        display: block;
-        padding:3px;
-        background-position: center;
-        background-size: 100%;
-        box-shadow: inset var(--shadow-base);
-        position: relative;
-        &:before{
-            font-size: 0.7rem;
-            line-height: 1;
-            position: absolute;
-            top:-15px;
-            left:0;
-            right:0;
-            text-align: center;
-        }
-        &:after{
-            content:'';
-            display: block;
-            height:100%;
-            aspect-ratio: 1/1;
+    &__switch{
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        &-theme{
+            height:35px;
+            width:75px;
             border-radius: 2rem;
-            border:2px solid var(--color-white);
+            display: block;
+            padding:3px;
             background-position: center;
             background-size: 100%;
-            transition-duration: 0.3s;
-        }
-        &:hover{
-            background-size:120%;
-        }
-        &--ita{
+            box-shadow: inset var(--shadow-base);
+            position: relative;
             &:before{
-                content:'LINGUA';
+                font-size: 0.7rem;
+                line-height: 1;
+                position: absolute;
+                top:-15px;
+                left:0;
+                right:0;
+                text-align: center;
             }
-            background-image: url('/assets/images/flag_ita_background.jpg');
+            &--ita{
+                &:before{
+                    content:'TEMA';
+                }
+            }
+            &--eng{
+                &:before{
+                    content:'THEME';
+                }
+            }
             &:after{
-                background-image: url('/assets/images/flag_ita.jpg');
-                margin-left: auto;
+                content:'';
+                display: block;
+                height:100%;
+                aspect-ratio: 1/1;
+                border-radius: 2rem;
+                border:2px solid var(--color-white);
+                background-color:var(--color-black);
+            }
+            &--light{
+                background-image: url('/assets/images/theme_light_background.jpg');
+                &:after{
+                    margin-left:auto;
+                }
+            }
+            &--dark{
+                background-image: url('/assets/images/theme_dark_background.jpg');
             }
         }
-        &--eng{
+        &-lang{
+            height:35px;
+            width:75px;
+            border-radius: 2rem;
+            display: block;
+            padding:3px;
+            background-position: center;
+            background-size: 100%;
+            box-shadow: inset var(--shadow-base);
+            position: relative;
             &:before{
-                content:'LANG';
+                font-size: 0.7rem;
+                line-height: 1;
+                position: absolute;
+                top:-15px;
+                left:0;
+                right:0;
+                text-align: center;
             }
-            background-image: url('/assets/images/flag_eng_background.jpg');
             &:after{
-                background-image: url('/assets/images/flag_eng.jpg');
+                content:'';
+                display: block;
+                height:100%;
+                aspect-ratio: 1/1;
+                border-radius: 2rem;
+                border:2px solid var(--color-white);
+                background-position: center;
+                background-size: 100%;
+                transition-duration: 0.3s;
+            }
+            &--ita{
+                &:before{
+                    content:'LINGUA';
+                }
+                background-image: url('/assets/images/flag_ita_background.jpg');
+                &:after{
+                    background-image: url('/assets/images/flag_ita.jpg');
+                    margin-left: auto;
+                }
+            }
+            &--eng{
+                &:before{
+                    content:'LANG';
+                }
+                background-image: url('/assets/images/flag_eng_background.jpg');
+                &:after{
+                    background-image: url('/assets/images/flag_eng.jpg');
+                }
             }
         }
     }
@@ -100,14 +150,14 @@
             background-color:var(--color-primary3-opacity);
         }
         li.header__social{
-            display: flex;
+            display: none;
             align-items: center;
             gap:1rem;
         }
         li:has(a:hover):before{
             transform: scale(1);
         }
-        a{
+        a,button{
             transition-duration: 0.3s;
         }
         li.header__items a:hover{
@@ -187,6 +237,9 @@
             transition-duration: 0.5s;
             height:100svh;
             font-size: 1.3rem;
+            li.header__social{
+                display: flex;
+            }
             li.header__items a{
                 text-shadow: var(--shadow-base);
             }

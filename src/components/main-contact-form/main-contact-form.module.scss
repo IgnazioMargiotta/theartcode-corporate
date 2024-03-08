@@ -48,7 +48,7 @@
         box-shadow: var(--shadow-base);
     }
     input[type="password"],input[type="text"],input[type="email"],input[type="tel"],input[type="date"],textarea,select,option{
-        color:var(--color-gray2);
+        color:var(--color-black);
         width:100%;
         padding:0.3rem 1.2rem;
         background-color:var(--color-white);
@@ -67,7 +67,7 @@
         line-height:1.5;
         padding: 0.7rem 2rem;
         font-weight: 500;
-        color:var(--color-white);
+        color:var(--forced-theme-color-white);
         border:2px solid var(--color-main2);
         background-color:var(--color-main2);
         border-radius: 10rem;
