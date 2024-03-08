@@ -1,11 +1,16 @@
+import Script from 'next/script';
+
 export const GoogleAdsScript = () => {
   return (
     <>
-      <script
-        async
+      <Script
+       id="gtag-fetch-tagmanager"
         src="https://www.googletagmanager.com/gtag/js?id=AW-16485768351"
-      ></script>
-      <script
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -14,7 +19,7 @@ export const GoogleAdsScript = () => {
             gtag('config', 'AW-16485768351');
           `,
         }}
-      ></script>
+      />
     </>
   );
 };

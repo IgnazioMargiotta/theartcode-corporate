@@ -14,10 +14,7 @@ import {
 } from "@theartcode/sections";
 
 // Components
-import { OpenGraph, IubendaScript } from "@theartcode/components";
-
-// Styles
-import styles from "./global.module.scss";
+import { OpenGraph } from "@theartcode/components";
 
 // Utils
 import client from "@theartcode/api/apollo-client";
@@ -57,7 +54,6 @@ const Home = ({
         />
       </Head>
       <HeaderSection lang={{ ...headerSection, defaultLang }} />
-      <IubendaScript />
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />

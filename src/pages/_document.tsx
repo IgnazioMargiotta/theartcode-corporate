@@ -1,8 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-// Components
-import { GoogleAdsScript } from "@theartcode/components";
-
 export default function Document() {
   return (
     <Html lang="en">
@@ -14,7 +11,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet"
         />
-        <GoogleAdsScript />
       </Head>
       <body>
         <Main />
