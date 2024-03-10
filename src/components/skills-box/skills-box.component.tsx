@@ -17,6 +17,7 @@ export const SkillsBox = ({
   return (
     <div
       className={`${styles["skills__box"]} ${boxActive ? "" : styles["skills__box--empty"]} ${color ? styles[`skills__box--${color}`] : ""}`}
+      tabIndex={boxActive ? 0 : -1}
     >
       {boxActive && (
         <Image

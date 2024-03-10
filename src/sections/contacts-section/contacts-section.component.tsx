@@ -1,10 +1,10 @@
-import { MainContactForm, DecorativeBubbles } from "@theartcode/components";
+import { MainContactForm } from "@theartcode/components";
 import styles from "./contacts-section.module.scss";
 
 export const ContactsSection = ({ lang }: any) => {
   return (
     <section
-      className={`pt-[4rem] md:pt-[8rem] pb-[0rem] sm:pb-[8rem]`}
+      className={`pt-[4rem] pb-[0rem] sm:pb-[10rem]`}
       id="contacts"
     >
       <div className="container mx-auto text-center pb-16">

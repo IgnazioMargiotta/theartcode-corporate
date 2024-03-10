@@ -1,0 +1,144 @@
+.package-price{
+  background-color:var(--color-gray1);
+  &-slide{
+    display: flex !important;
+    height: auto !important;
+  }
+  &-row{
+    overflow:visible !important;
+    padding-inline: 1rem !important;
+  }
+  &-card{
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    width: min(100%, 408px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: var(--shadow-large);
+    transition-duration: 0.3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+    &--color-primary1{
+      --background:url("/assets/images/devoration_card_variant1.webp");
+      --color-1:var(--color-primary1);
+      --color-2:var(--color-primary1-opacity);
+    }
+    &--color-primary2{
+      --background:url("/assets/images/devoration_card_variant2.webp");
+      --color-1:var(--color-primary2);
+      --color-2:var(--color-primary2-opacity);
+    }
+    &--color-primary3{
+      --background:url("/assets/images/devoration_card_variant3.webp");
+      --color-1:var(--color-primary3);
+      --color-2:var(--color-primary3-opacity);
+    }
+    &__title,&__content{
+      padding:1.1rem 1.5rem;
+    }
+    &__title{
+      border-radius: 0 0 1rem 1rem;
+      color:var(--forced-theme-color-black);
+      background: var(--color-2) var(--background) center right / auto 100% no-repeat;
+      > span{
+        font-size: 0.8rem;
+      }
+    }
+    &__content{
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & > div > span{
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+    &__list{
+      margin: 0.4rem;
+      padding-block: 0.4rem;
+      font-size: 0.8rem;
+      border-left: 2px solid var(--color-1);
+      position: relative;
+      &:before{
+        content:'';
+        position: absolute;
+        display: block;
+        width:10px;
+        height: 10px;
+        border-radius: 100%;
+        bottom:0;
+        left:0;
+        transform: translate(calc(-50% - 1px), calc(50% + 1px));
+        background-color:var(--color-1);
+      }
+      & > span{
+        display: flex;
+        margin-left: -2px;
+        position: relative;
+        &:before{
+          content:'';
+          display: block;
+          width:25px;
+          height: 13px;
+          margin: 0 10px 13px 0;
+          border-left:2px solid;
+          border-bottom:2px solid;
+          border-color: var(--color-1);
+          border-bottom-left-radius: 0.8rem;
+          margin-top:-3px;
+        }
+        &:after{
+          content:'';
+          position: absolute;
+          display: block;
+          width:8px;
+          height: 8px;
+          bottom:0;
+          top: 0;
+          transform: translate(18px, 8px) rotate(45deg);
+          background-color:var(--color-1);
+          margin-top:-3px;
+        }
+      }
+    }
+    &__price{
+      font-size: 0.8rem;
+      display: flex;
+      gap:0.5rem;
+      justify-content: space-between;
+      margin-top:2rem;
+      .main-text{
+        font-size: 2.3rem;
+        line-height: 1.1;
+        font-weight: 700;
+        text-shadow: var(--shadow-base);
+      }
+      .small-text{
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-shadow: var(--shadow-base);
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .package-price{
+    &-card{
+      font-size: 0.9rem;
+      &:hover{
+        transform: none;
+      }
+    }
+    &-card__content > div > span{
+        font-size: 1.2rem;
+    }
+    &-card__price{
+      .main-text{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

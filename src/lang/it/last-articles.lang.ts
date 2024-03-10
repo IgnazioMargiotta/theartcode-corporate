@@ -1,5 +1,5 @@
 export const lastArticlesSection = {
-  title: "Last articles",
+  title: "Ultimi articoli",
   subtitle: "Vieni a scoprire gli ultimi articoli in theArtCode!",
 };
 

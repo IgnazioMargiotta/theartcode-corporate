@@ -6,7 +6,7 @@ import Link from "next/link";
 export const PresentationSection = ({ lang }: any) => {
   return (
     <section
-      className={`${styles["presentation"]} py-[15rem] mb-[4rem] md:mb-[8rem]`}
+      className={`${styles["presentation"]} py-[15rem] mb-[4rem]`}
     >
       <div
         className={`${styles["decoration-circle"]} ${styles["decoration-circle--top-left"]}`}
@@ -31,15 +31,15 @@ export const PresentationSection = ({ lang }: any) => {
       </div>
       <div className="container mx-auto text-center z-1">
         <div className={`${styles["presentation-container"]}`}>
-          <h1>
-            Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;
-            <span className="text-color-main2">code</span>
-          </h1>
-          <div className={`${styles["presentation-container__descriptions"]}`}>
-            <p>{lang.descriptionFirst}</p>
-            <p>{lang.descriptionSecond}</p>
-            <p>{lang.descriptionThird}</p>
-          </div>
+            <h1>
+              Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;
+              <span className="text-color-main2">code</span>
+            </h1>
+            <div className={`${styles["presentation-container__descriptions"]}`}>
+              <p>{lang.descriptionFirst}</p>
+              <p>{lang.descriptionSecond}</p>
+              <p>{lang.descriptionThird}</p>
+            </div>
           <div className={`${styles["buttons"]}`}>
             <Button
               link="#services"

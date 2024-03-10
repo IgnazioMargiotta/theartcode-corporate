@@ -1,5 +1,5 @@
 export const customersSection = {
-  title: "We work with",
+  title: "Con chi lavoriamo",
   subtitle: "Dall'idea alla realizzazione: partner nel viaggio digitale",
   leftCard: {
     title: "startUp",

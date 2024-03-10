@@ -31,7 +31,7 @@ export const FooterSection = () => {
             src={`assets/images/logo_vibra_black.svg`}
             className={`${styles["footer__logo"]}`}
             width={200}
-            height={75}
+            height={37}
             alt="Vibra Studio"
           />
         </div>
@@ -70,9 +70,10 @@ export const FooterSection = () => {
         </div>
       </div>
       <button
+        type="button"
         className={`${styles["scrollButton"]} ${showScrollButton ? styles["scrollButton--active"] : ""}`}
         onClick={handleScrollTop}
-        aria-label="Torna all'inizio"
+        aria-label="Top"
       >
         <svg viewBox="0 0 20 20">
           <use href="#arrow-double-top"></use>
