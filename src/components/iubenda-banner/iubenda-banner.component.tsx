@@ -5,7 +5,7 @@ export const IubendaScript = () => {
     <>
       <Script
         id="iubenda-config"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             window._iub = window._iub || [];
@@ -38,12 +38,12 @@ export const IubendaScript = () => {
       <Script
         id="iubenda-stub"
         src="https://cdn.iubenda.com/cs/stub.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <Script
         id="iubenda-cs"
         src={`https://cdn.iubenda.com/cs/iubenda_cs.js`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
     </>
   );
