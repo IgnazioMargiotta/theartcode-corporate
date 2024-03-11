@@ -7,7 +7,7 @@ import styles from "./skills-section.module.scss";
 export const SkillsSection = () => {
   return (
     <section
-      className={`${styles["skills"]} my-[4rem] md:my-[8rem]`}
+      className={`${styles["skills"]} mb-[4rem]`}
       id="technology"
     >
       <div className="container mx-auto">
@@ -97,42 +97,46 @@ export const SkillsSection = () => {
             position="top-left"
             animation="true"
           />
-          <svg className={`${styles["skills__logo"]}`} viewBox="0 0 1215 306">
-            <use href="#logo-multicolor"></use>
-          </svg>
+          <Image
+            src={`assets/images/logo_artcode_gradient.svg`}
+            className={`${styles["skills__logo"]}`}
+            width={300}
+            height={78}
+            alt="artCode"
+          />
           <Image
             src={`assets/images/line_variant1.svg`}
             className={`${styles["skills__line-decoration"]} ${styles["skills__line-decoration--variant1"]}`}
             width={90}
-            height={310}
+            height={301}
             alt="Arrow"
           />
           <Image
             src={`assets/images/line_variant2.svg`}
             className={`${styles["skills__line-decoration"]} ${styles["skills__line-decoration--variant2"]}`}
             width={200}
-            height={135}
+            height={145}
             alt="Arrow"
           />
           <Image
             src={`assets/images/line_variant3.svg`}
             className={`${styles["skills__line-decoration"]} ${styles["skills__line-decoration--variant3"]}`}
             width={300}
-            height={130}
+            height={132}
             alt="Arrow"
           />
           <Image
             src={`assets/images/line_variant4.svg`}
             className={`${styles["skills__line-decoration"]} ${styles["skills__line-decoration--variant4"]}`}
             width={190}
-            height={170}
+            height={164}
             alt="Arrow"
           />
           <Image
             src={`assets/images/line_variant5.svg`}
             className={`${styles["skills__line-decoration"]} ${styles["skills__line-decoration--variant5"]}`}
             width={285}
-            height={320}
+            height={314}
             alt="Arrow"
           />
           <DecorativeBubbles

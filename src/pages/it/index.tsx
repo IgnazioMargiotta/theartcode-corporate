@@ -5,11 +5,13 @@ import Head from "next/head";
 import {
   HeaderSection,
   PresentationSection,
+  PackagePriceSection,
   CustomersSection,
   SkillsSection,
   ServicesSection,
   ContactsSection,
   FooterSection,
+  BrandSection,
   LastArticlesSection,
 } from "@theartcode/sections";
 
@@ -29,6 +31,7 @@ import {
   lastArticlesSection,
   contactSection,
   headerSection,
+  brandSection,
 } from "@theartcode/lang/it";
 
 const Home = ({
@@ -57,9 +60,11 @@ const Home = ({
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
+        <PackagePriceSection />
         <SkillsSection />
         <ServicesSection lang={servicesSection} />
         <LastArticlesSection articles={articles} lang={lastArticlesSection} />
+        <BrandSection lang={brandSection} />
         <ContactsSection lang={contactSection} />
       </main>
       <FooterSection />

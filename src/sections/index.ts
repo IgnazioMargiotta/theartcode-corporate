@@ -1,3 +1,4 @@
+export * from "./brand-section/brand-section.component";
 export * from "./contacts-section/contacts-section.component";
 export * from "./customers-section/customers-section.component";
 export * from "./footer-section/footer-section.component";
@@ -7,3 +8,4 @@ export * from "./services-section/services-section.component";
 export * from "./skills-section/skills-section.component";
 export * from "./footer-section/footer-section.component";
 export * from "./last-articles-section/last-articles.section";
+export * from "./package-price-section/package-price-section.component";

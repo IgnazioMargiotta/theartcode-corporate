@@ -16,7 +16,7 @@ export const ServicesBox = ({
     <div className={`${styles["services-box"]}`}>
       {icon && (
         <Image
-          src={`/assets/images/${icon}`}
+          src={`/assets/images/flat-icon/${icon}`}
           className={`${styles["services-box__image"]}`}
           width={100}
           height={100}

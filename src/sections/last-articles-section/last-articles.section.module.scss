@@ -12,12 +12,25 @@
     left: 0;
     transform: translateX(-45%);
     z-index: -1;
+    animation: pulse 4s infinite;
     > div {
       width: 100%;
       aspect-ratio: 1/1;
       border-radius: 100%;
       background-color: var(--color-primary3-opacity);
     }
+  }
+}
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.1;
+  }
+  50%,
+  100% {
+    scale: 1;
   }
 }
 @media (max-width: 640px) {

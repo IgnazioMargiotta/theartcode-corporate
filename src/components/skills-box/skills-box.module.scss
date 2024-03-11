@@ -36,7 +36,7 @@
     user-select: none;
     transition-duration: 0.3s;
   }
-  &__box:hover &__title {
+  &__box:hover &__title,&__box:focus &__title {
     filter: blur(0px);
     opacity: initial;
     user-select: initial;

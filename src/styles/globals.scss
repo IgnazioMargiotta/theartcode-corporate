@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "./variables.scss";
+@import "./fonts.scss";
+
 
 /* Reset */
 *,
@@ -15,6 +17,10 @@
 }
 *:focus {
   outline: none;
+}
+*:focus-visible {
+  outline: 2px solid var(--color-black);
+  border-radius: 0.3rem;
 }
 table {
   border-collapse: collapse;
@@ -104,8 +110,8 @@ option[value=""] {
   background-color: transparent;
 }
 ::selection {
-  background-color: var(--color-main1);
-  color: var(--color-white);
+  background-color: var(--color-main2);
+  color: var(--forced-theme-color-white);
 }
 // Disable iubenda cookie widget
 .iub__us-widget {

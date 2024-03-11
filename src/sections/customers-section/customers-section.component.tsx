@@ -7,7 +7,7 @@ import { FadeInAnimation } from "@theartcode/components";
 export const CustomersSection = ({ lang }: any) => {
   return (
     <section
-      className={`${styles["customers"]} py-[4rem] md:py-[8rem]`}
+      className={`${styles["customers"]} py-[4rem]`}
       id="customers"
     >
       <div className="container mx-auto text-center">
@@ -16,8 +16,6 @@ export const CustomersSection = ({ lang }: any) => {
             <h2 className="pb-4">
               <span className={`decoration-title`}>{lang.title}</span>
             </h2>
-          </FadeInAnimation>
-          <FadeInAnimation delay={0}>
             <p>{lang.subtitle}</p>
           </FadeInAnimation>
         </div>
@@ -25,7 +23,7 @@ export const CustomersSection = ({ lang }: any) => {
           <FadeInAnimation delay={0}>
             <div className={`${styles["customers-box"]}`}>
               <Image
-                src={`assets/images/icon_rocket.svg`}
+                src={`/assets/images/flat-icon/icon_rocket.webp`}
                 className={`${styles["customers-box__image"]}`}
                 width={130}
                 height={130}
@@ -40,7 +38,7 @@ export const CustomersSection = ({ lang }: any) => {
               className={`${styles["customers-box"]} ${styles["customers-box--focus"]}`}
             >
               <Image
-                src={`assets/images/icon_building.svg`}
+                src={`/assets/images/flat-icon/icon_building.webp`}
                 className={`${styles["customers-box__image"]}`}
                 width={130}
                 height={130}
@@ -53,7 +51,7 @@ export const CustomersSection = ({ lang }: any) => {
           <FadeInAnimation delay={0}>
             <div className={`${styles["customers-box"]}`}>
               <Image
-                src={`assets/images/icon_palace.svg`}
+                src={`/assets/images/flat-icon/icon_palace.webp`}
                 className={`${styles["customers-box__image"]}`}
                 width={130}
                 height={130}

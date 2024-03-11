@@ -10,7 +10,7 @@ export const ServicesSection = ({ lang }: any) => {
   const { cards } = lang;
   return (
     <section
-      className={`${styles["services"]} py-[4rem] md:py-[8rem]`}
+      className={`${styles["services"]} py-[4rem]`}
       id="services"
     >
       <div className={`${styles["decoration-square"]}`}>
@@ -21,21 +21,21 @@ export const ServicesSection = ({ lang }: any) => {
           <div className={`${styles["services-box-container"]}`}>
             <FadeInAnimation delay={0}>
               <ServicesBox
-                icon="icon_developer.svg"
+                icon="icon_developer.webp"
                 title={cards.softwareDev.title}
                 description={cards.softwareDev.description}
               />
             </FadeInAnimation>
             <FadeInAnimation delay={0}>
               <ServicesBox
-                icon="icon_database.svg"
+                icon="icon_diagram.webp"
                 title={cards.itStrategic.title}
                 description={cards.itStrategic.description}
               />
             </FadeInAnimation>
             <FadeInAnimation delay={0}>
               <ServicesBox
-                icon="icon_network.svg"
+                icon="icon_network.webp"
                 title={cards.webDev.title}
                 description={cards.webDev.description}
               />
@@ -59,28 +59,28 @@ export const ServicesSection = ({ lang }: any) => {
           </div>
           <FadeInAnimation delay={0}>
             <ServicesBox
-              icon="icon_app.svg"
+              icon="icon_app.webp"
               title={cards.appsDev.title}
               description={cards.appsDev.description}
             />
           </FadeInAnimation>
           <FadeInAnimation delay={0}>
             <ServicesBox
-              icon="icon_think.svg"
+              icon="icon_think.webp"
               title={cards.projectProductManagment.title}
               description={cards.projectProductManagment.description}
             />
           </FadeInAnimation>
           <FadeInAnimation delay={0}>
             <ServicesBox
-              icon="icon_cloud.svg"
+              icon="icon_cloud.webp"
               title={cards.couldServices.title}
               description={cards.couldServices.description}
             />
           </FadeInAnimation>
           <FadeInAnimation delay={0}>
             <ServicesBox
-              icon="icon_architecture.svg"
+              icon="icon_architecture.webp"
               title={cards.infrastructureArchitecture.title}
               description={cards.infrastructureArchitecture.description}
             />

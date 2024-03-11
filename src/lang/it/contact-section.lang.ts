@@ -1,5 +1,5 @@
 export const contactSection = {
-  title: "Let's connect",
+  title: "Contattaci",
   subtitle:
     "Il tuo progetto, la nostra passione. Raccontaci cosa hai in mente!",
   form: {
@@ -22,8 +22,12 @@ export const contactSection = {
       firstFrag: "Accetto la",
       secondFrag: "e acconsento al trattamento dei dati",
     },
-    successMessage:
-      "Notifica ricevuta! Non ci sfugge nulla. Saremo da te presto!",
+    submit: "Parliamone",
+    successMessage: {
+      title: "Notifica ricevuta!",
+      description: "Non ci sfugge nulla, saremo presto da te.",
+      button: "Chiudi",
+    },
   },
 };
 

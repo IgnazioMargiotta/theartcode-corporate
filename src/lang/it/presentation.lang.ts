@@ -4,8 +4,8 @@ export const presentationSection = {
   descriptionSecond: "Aiutiamo le organizzazioni a crescere attraverso Design e Sviluppo di Prodotti Digitali Innovativi.",
   descriptionThird:
     "Dalla startup alla grande azienda, portiamo il tuo business a un livello superiore.",
-  buttonLeft: "Our services",
-  buttonRight: "Let's talk",
+  buttonLeft: "I nostri servizi",
+  buttonRight: "Contattaci",
 };
 
 export default presentationSection;

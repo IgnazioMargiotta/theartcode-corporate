@@ -21,8 +21,12 @@ export const contactSection = {
       firstFrag: "I accept the",
       secondFrag: "and agree to data processing",
     },
-    successMessage:
-      "Notification received! We miss nothing. We'll be in touch soon!",
+    submit: "Let's talk",
+    successMessage: {
+      title: "Notification received!",
+      description: "We miss nothing, we'll be in touch soon.",
+      button: "Close",
+    },
   },
 };
 

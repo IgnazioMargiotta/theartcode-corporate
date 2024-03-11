@@ -1,3 +1,6 @@
+body:has(.header__menu--open){
+  overflow: hidden !important;
+}
 .header {
   &__switch {
     display: flex;
@@ -44,7 +47,7 @@
         margin-left: auto;
       }
       &--light {
-        background-image: url("/assets/images/theme_light_background.jpg");
+        background-image: url("/assets/images/theme_light_background.webp");
 
         &:after {
           opacity: 1;
@@ -53,7 +56,7 @@
         }
       }
       &--dark {
-        background-image: url("/assets/images/theme_dark_background.jpg");
+        background-image: url("/assets/images/theme_dark_background.webp");
 
         &:after {
           opacity: 1;
@@ -96,9 +99,9 @@
         &:before {
           content: "LINGUA";
         }
-        background-image: url("/assets/images/flag_ita_background.jpg");
+        background-image: url("/assets/images/flag_ita_background.webp");
         &:after {
-          background-image: url("/assets/images/flag_ita.jpg");
+          background-image: url("/assets/images/flag_ita.webp");
           margin-left: auto;
         }
       }
@@ -106,9 +109,9 @@
         &:before {
           content: "LANG";
         }
-        background-image: url("/assets/images/flag_eng_background.jpg");
+        background-image: url("/assets/images/flag_eng_background.webp");
         &:after {
-          background-image: url("/assets/images/flag_eng.jpg");
+          background-image: url("/assets/images/flag_eng.webp");
         }
       }
     }
@@ -139,7 +142,7 @@
     align-items: center;
     gap: 2rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     li.header__items:before {
       content: "";
       display: block;
@@ -188,7 +191,7 @@
   }
   &__icon-hambuger path {
     fill: none;
-    stroke: var(--color-white);
+    stroke: var(--forced-theme-color-white);
     stroke-width: 3;
     stroke-linecap: round;
     stroke-linejoin: round;
