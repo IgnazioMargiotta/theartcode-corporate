@@ -1,5 +1,4 @@
 import { MainContactForm } from "@theartcode/components";
-import styles from "./contacts-section.module.scss";
 
 export const ContactsSection = ({ lang }: any) => {
   return (

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from "./single-article-item.module.scss";
 import Image from "next/image";
 import Link from "next/link";
