@@ -60,11 +60,11 @@ const Home = ({
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
-        <PackagePriceSection />
+        {/* <PackagePriceSection /> */}
         <SkillsSection />
         <ServicesSection lang={servicesSection} />
         <LastArticlesSection articles={articles} lang={lastArticlesSection} />
-        <BrandSection lang={brandSection} />
+        {/* <BrandSection lang={brandSection} /> */}
         <ContactsSection lang={contactSection} />
       </main>
       <FooterSection />
