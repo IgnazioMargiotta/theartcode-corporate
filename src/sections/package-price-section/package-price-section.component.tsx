@@ -6,8 +6,6 @@ import 'swiper/css';
 
 export const PackagePriceSection = ({ lang }: any) => {
 
-  console.log('lang', lang)
-
   const { init, sectionOne, sectionTwo } = lang
 
   const breakpoints = {
@@ -182,7 +180,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                     </div>
                     <div className="text-right">
                       {init.startTo}<br />
-                      <span className={`${styles["main-text"]}`}>16.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      <span className={`${styles["main-text"]}`}>22.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
