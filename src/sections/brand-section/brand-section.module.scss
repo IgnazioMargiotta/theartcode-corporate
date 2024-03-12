@@ -6,6 +6,7 @@
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1.5rem;
+    align-items: stretch;
   }
   &__single-box {
     width: 100%;
