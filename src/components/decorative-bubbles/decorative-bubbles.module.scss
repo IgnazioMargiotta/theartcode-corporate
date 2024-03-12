@@ -1,6 +1,6 @@
 .blubbles {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 25px;
   position: absolute;
 }
@@ -41,7 +41,7 @@
   background-color: transparent;
   border: 1px solid var(--color-primary2);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   &:before {
     content: "";
