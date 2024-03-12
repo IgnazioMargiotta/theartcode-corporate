@@ -31,7 +31,7 @@ export const FooterSection = () => {
             src={`assets/images/logo_vibra_black.svg`}
             className={`${styles["footer__logo"]}`}
             width={200}
-            height={37}
+            height={36}
             alt="Vibra Studio"
           />
         </div>

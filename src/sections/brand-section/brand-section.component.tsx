@@ -15,58 +15,58 @@ export const BrandSection = ({ lang }: any) => {
             <div className={`${styles["brand-container"]} col-span-6 lg:col-span-4 items-center`}>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size33"]}`}>
                 <Image
-                  src={`/assets/images/flat-icon/icon_app.webp`}
+                  src={`/assets/images/brands-logo/brands_ilpost.webp`}
                   width={200}
-                  height={200}
-                  alt=""
+                  height={68}
+                  alt="il POST"
                 />
               </div>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size33"]}`}>
                 <Image
-                  src={`/assets/images/flat-icon/icon_architecture.webp`}
+                  src={`/assets/images/brands-logo/brands_photosi.webp`}
                   width={200}
-                  height={200}
-                  alt=""
+                  height={53}
+                  alt="PhotoSi"
                 />
               </div>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size33"]}`}>
                 <Image
-                  src={`/assets/images/flat-icon/icon_cloud.webp`}
+                  src={`/assets/images/brands-logo/brands_iungo.webp`}
                   width={200}
-                  height={200}
-                  alt=""
+                  height={78}
+                  alt="iungo"
                 />
               </div>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
                 <Image
-                  src={`/assets/images/logo_vibra_black.svg`}
-                  width={200}
-                  height={200}
-                  alt=""
+                  src={`/assets/images/brands-logo/brands_np_digital.webp`}
+                  width={146}
+                  height={64}
+                  alt="NP digital"
                 />
               </div>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
                 <Image
-                  src={`/assets/images/logo_vibra_black.svg`}
-                  width={200}
-                  height={200}
-                  alt=""
+                  src={`/assets/images/brands-logo/brands_matehub.webp`}
+                  width={146}
+                  height={50}
+                  alt="MateHub"
                 />
               </div>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
                 <Image
-                  src={`/assets/images/logo_vibra_black.svg`}
-                  width={200}
-                  height={200}
-                  alt=""
+                  src={`/assets/images/brands-logo/brands_iride.webp`}
+                  width={146}
+                  height={30}
+                  alt="IRIDE"
                 />
               </div>
               <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
                 <Image
-                  src={`/assets/images/logo_vibra_black.svg`}
-                  width={200}
-                  height={200}
-                  alt=""
+                  src={`/assets/images/brands-logo/brands_frg.webp`}
+                  width={146}
+                  height={35}
+                  alt="FRG Technology Consulting"
                 />
               </div>
             </div>
