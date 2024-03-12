@@ -6,6 +6,10 @@ import 'swiper/css';
 
 export const PackagePriceSection = ({ lang }: any) => {
 
+  console.log('lang', lang)
+
+  const { init, sectionOne, sectionTwo } = lang
+
   const breakpoints = {
     320: {
       slidesPerView: 1.2,
@@ -35,8 +39,8 @@ export const PackagePriceSection = ({ lang }: any) => {
       <div className="container mx-auto">
         <div className="pb-12">
           <FadeInAnimation>
-            <h2 className="pb-4">Siti web & eCommerce</h2>
-            <p>Lorem ipsum doloret sit amet</p>
+            <h2 className="pb-4">{sectionOne.title}</h2>
+            <p>{sectionOne.subtitle}</p>
           </FadeInAnimation>
         </div>
       </div>
@@ -53,30 +57,31 @@ export const PackagePriceSection = ({ lang }: any) => {
             <SwiperSlide className={styles["package-price-slide"]}>
               <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary1"]}`}>
                 <div className={`${styles["package-price-card__title"]}`}>
-                  <span>SITO WEB</span>
-                  <h3>BASIC</h3>
+                  <span>{sectionOne.cards[0].label}</span>
+                  <h3>{sectionOne.cards[0].name}</h3>
                 </div>
                 <div className={`${styles["package-price-card__content"]}`}>
                   <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
+                    <span>{sectionOne.cards[0].cms}</span> CMS<br/>
+                    <span>{init.pageBuilder}</span> {sectionOne.cards[0].builder}<br/>
+                    <span>{sectionOne.cards[0].endTo}</span> {init.pages}<br/>
+                    <span>{init.components}</span> {init.included}<br/>
                     <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
+                      <span>{sectionOne.cards[0].points[0]}</span>
+                      <span>{sectionOne.cards[0].points[1]}</span>
+                      <span>{sectionOne.cards[0].points[2]}</span>
+                      <span>{sectionOne.cards[0].points[3]}</span>
+                      <span>{sectionOne.cards[0].points[4]}</span>
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      {init.delivery}<br />
+                      <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      {init.startTo}<br />
+                      <span className={`${styles["main-text"]}`}>1.200</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
@@ -86,30 +91,32 @@ export const PackagePriceSection = ({ lang }: any) => {
             <SwiperSlide className={styles["package-price-slide"]}>
               <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary3"]}`}>
                 <div className={`${styles["package-price-card__title"]}`}>
-                  <span>SITO WEB</span>
-                  <h3>PRO</h3>
+                  <span>{sectionOne.cards[1].label}</span>
+                  <h3>{sectionOne.cards[1].name}</h3>
                 </div>
                 <div className={`${styles["package-price-card__content"]}`}>
                   <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
+                    <span>{sectionOne.cards[1].cms}</span> CMS<br/>
+                    <span>{init.pageBuilder}</span> {sectionOne.cards[0].builder}<br/>
+                    <span>{sectionOne.cards[1].endTo}</span> {init.pages}<br/>
+                    <span>{init.components}</span> {init.included}<br/>
                     <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
+                      <span>{sectionOne.cards[1].points[0]}</span>
+                      <span>{sectionOne.cards[1].points[1]}</span>
+                      <span>{sectionOne.cards[1].points[2]}</span>
+                      <span>{sectionOne.cards[1].points[3]}</span>
+                      <span>{sectionOne.cards[1].points[4]}</span>
+                      <span>{sectionOne.cards[1].points[5]}</span>
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      {init.delivery}<br />
+                      <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      {init.startTo}<br />
+                      <span className={`${styles["main-text"]}`}>1.600</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
@@ -119,30 +126,30 @@ export const PackagePriceSection = ({ lang }: any) => {
             <SwiperSlide className={styles["package-price-slide"]}>
               <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary1"]}`}>
                 <div className={`${styles["package-price-card__title"]}`}>
-                  <span>E-COMMERCE</span>
-                  <h3>BASIC</h3>
+                  <span>{sectionOne.cards[2].label}</span>
+                  <h3>{sectionOne.cards[2].name}</h3>
                 </div>
                 <div className={`${styles["package-price-card__content"]}`}>
                   <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
+                    <span>Strapi</span> CMS<br/>
+                    <span>Next.js</span> Frontend<br/>
+                    <span>{init.speakWithUs}</span><br/>
                     <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
+                      <span>
+                        <span className={`${styles["package-price-card__list-single"]}`}>
+                          {sectionOne.cards[2].points[0]}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      {init.delivery}<br />
+                      <span className={`${styles["main-text"]}`}>6</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                     {init.startTo}<br />
+                      <span className={`${styles["main-text"]}`}>12.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
@@ -152,30 +159,30 @@ export const PackagePriceSection = ({ lang }: any) => {
             <SwiperSlide className={styles["package-price-slide"]}>
               <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary3"]}`}>
                 <div className={`${styles["package-price-card__title"]}`}>
-                  <span>ECOMMERCE</span>
-                  <h3>PRO</h3>
+                  <span>{sectionOne.cards[3].label}</span>
+                  <h3>{sectionOne.cards[3].name}</h3>
                 </div>
                 <div className={`${styles["package-price-card__content"]}`}>
                   <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
+                    <span>Strapi</span> CMS<br/>
+                    <span>Next.js</span> Frontend<br/>
+                    <span>{init.speakWithUs}</span><br/>
                     <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
+                      <span>
+                        <span className={`${styles["package-price-card__list-single"]}`}>
+                          {sectionOne.cards[3].points[0]}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      {init.delivery}<br />
+                      <span className={`${styles["main-text"]}`}>12</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      {init.startTo}<br />
+                      <span className={`${styles["main-text"]}`}>16.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
@@ -185,118 +192,25 @@ export const PackagePriceSection = ({ lang }: any) => {
             <SwiperSlide className={styles["package-price-slide"]}>
               <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary2"]}`}>
                 <div className={`${styles["package-price-card__title"]}`}>
-                  <span>SVILUPPO</span>
-                  <h3>CUSTOM</h3>
+                  <span>{sectionOne.cards[4].label}</span>
+                  <h3>{sectionOne.cards[4].name}</h3>
                 </div>
                 <div className={`${styles["package-price-card__content"]}`}>
                   <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
+                    <span>{init.speakWithUs}</span><br/>
                     <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
+                      <span>{sectionOne.cards[4].points[0]}</span>
+                      <span>{sectionOne.cards[4].points[1]}</span>
+                      <span>{sectionOne.cards[4].points[2]}</span>
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      {init.delivery}<br />
+                      <span className={`${styles["main-text"]}`}>X</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
-                      + IVA
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </FadeInAnimation>
-      </div>
-      <div className="container mx-auto">
-        <div className="pt-16 pb-12">
-          <FadeInAnimation>
-            <h2 className="pb-4">Headless</h2>
-            <p>Lorem ipsum doloret sit amet</p>
-          </FadeInAnimation>
-        </div>
-      </div>
-      <div className={`container mx-auto px-0`}>
-        <FadeInAnimation>
-          <Swiper
-            breakpoints={breakpoints}
-            centeredSlides={false}
-            spaceBetween={30}
-            grabCursor={true}
-            className={`${styles["package-price-row"]}`}
-            wrapperClass={`swiper-wrapper ${styles["swiper-wrapper-card"]}`}
-          >
-            <SwiperSlide className={styles["package-price-slide"]}>
-              <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary1"]}`}>
-                <div className={`${styles["package-price-card__title"]}`}>
-                  <span>SITO WEB</span>
-                  <h3>BASIC</h3>
-                </div>
-                <div className={`${styles["package-price-card__content"]}`}>
-                  <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
-                    <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div className={`${styles["package-price-card__price"]}`}>
-                    <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
-                    </div>
-                    <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
-                      + IVA
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className={styles["package-price-slide"]}>
-              <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary2"]}`}>
-                <div className={`${styles["package-price-card__title"]}`}>
-                  <span>SVILUPPO</span>
-                  <h3>CUSTOM</h3>
-                </div>
-                <div className={`${styles["package-price-card__content"]}`}>
-                  <div>
-                    <span>WordPress</span> CMS<br/>
-                    <span>Elementor</span> page builder<br/>
-                    <span>Fino a 4</span> pagine<br/>
-                    <span>Componenti</span> inclusi<br/>
-                    <div className={`${styles["package-price-card__list"]}`}>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                      <span>Lorem ipsum</span>
-                    </div>
-                  </div>
-                  <div className={`${styles["package-price-card__price"]}`}>
-                    <div>
-                      CONSEGNA<br />
-                      <span className={`${styles["main-text"]}`}>10</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
-                    </div>
-                    <div className="text-right">
-                      A PARTIRE DA<br />
-                      <span className={`${styles["main-text"]}`}>2.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
-                      + IVA
+                      Scopri di più
                     </div>
                   </div>
                 </div>

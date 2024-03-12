@@ -32,6 +32,7 @@ import {
   contactSection,
   headerSection,
   brandSection,
+  packagePriceSection,
 } from "@theartcode/lang/it";
 
 const Home = ({
@@ -60,7 +61,7 @@ const Home = ({
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
-        {/* <PackagePriceSection /> */}
+        <PackagePriceSection lang={packagePriceSection} />
         <SkillsSection />
         <ServicesSection lang={servicesSection} />
         <LastArticlesSection articles={articles} lang={lastArticlesSection} />

@@ -74,6 +74,9 @@
         transform: translate(calc(-50% - 1px), calc(50% + 1px));
         background-color:var(--color-1);
       }
+      &-single {
+        padding-left: 10px;
+      }
       & > span{
         display: flex;
         margin-left: -2px;
