@@ -63,9 +63,9 @@ export const packagePriceSection = {
         builder: "Elementor/WPbakery",
         endTo: "Fino a X",
         points: [
-          "Immaginiamo Insieme",
-          "Costruiamo Idee Invece",
-          "Sogniamo la Struttura Giusta"
+          "Immaginiamo insieme",
+          "Costruiamo idee vincenti",
+          "Sogniamo una struttura performante"
         ]
       },
     ]
