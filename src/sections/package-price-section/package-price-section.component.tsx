@@ -75,7 +75,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
                       {init.delivery}<br />
-                      <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      <span className={`${styles["main-text"]}`}>1</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
                       {init.startTo}<br />
@@ -110,7 +110,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
                       {init.delivery}<br />
-                      <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      <span className={`${styles["main-text"]}`}>1</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
                       {init.startTo}<br />

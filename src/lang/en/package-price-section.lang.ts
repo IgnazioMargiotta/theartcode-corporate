@@ -11,7 +11,7 @@ export const packagePriceSection = {
   },
   sectionOne: {
     title: "Monolithic & Headless Solutions",
-    subtitle: "Website, eCommerce & Software solutions",
+    subtitle: "Website, E-commerce & Software solutions",
     cards: [
       {
         label: "Website Plan",
