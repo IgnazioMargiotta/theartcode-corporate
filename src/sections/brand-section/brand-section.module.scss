@@ -18,11 +18,7 @@
     align-items: center;
     img{
       max-width: 90%;
-      filter: grayscale(100%);
       transition-duration: 0.3s;
-      &:hover{
-        filter:none
-      }
     }
     &--size33{
       grid-column: span 4;

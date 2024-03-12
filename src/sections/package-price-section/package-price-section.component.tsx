@@ -1,6 +1,6 @@
 import styles from "./package-price-section.module.scss";
 
-import { FadeInAnimation } from "@theartcode/components";
+import { Button, FadeInAnimation } from "@theartcode/components";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
@@ -202,13 +202,18 @@ export const PackagePriceSection = ({ lang }: any) => {
                       <span>{sectionOne.cards[4].points[2]}</span>
                     </div>
                   </div>
-                  <div className={`${styles["package-price-card__price"]}`}>
+                  <div className={`${styles["package-price-card__price"]} ${styles["package-price-card__price--custom"]}`}>
                     <div>
                       {init.delivery}<br />
                       <span className={`${styles["main-text"]}`}>X</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
-                      Scopri di più
+                      <Button
+                        link="#contacts"
+                        text={init.discoverMore}
+                        style="fill"
+                        color="main2"
+                      />
                     </div>
                   </div>
                 </div>

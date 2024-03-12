@@ -113,6 +113,9 @@
       gap:0.5rem;
       justify-content: space-between;
       margin-top:2rem;
+      &--custom {
+        align-items: end;
+      }
       .main-text{
         font-size: 2.3rem;
         line-height: 1.1;

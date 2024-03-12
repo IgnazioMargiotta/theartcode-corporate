@@ -6,7 +6,8 @@ export const packagePriceSection = {
     pages: "pagine",
     included: "inclusi",
     components: "Componenti",
-    speakWithUs: "Parlane con noi"
+    speakWithUs: "Parlane con noi",
+    discoverMore: "Parla con noi"
   },
   sectionOne: {
     title: "Soluzioni Monolitiche & Headless",
@@ -51,7 +52,7 @@ export const packagePriceSection = {
       },
       {
         label: "E-commerce Plan",
-        name: "BASIC headless",
+        name: "PRO headless",
         points: [
           "Vuoi realizzare una piattaforma di vendita online scalabile? Che possa integrarsi con diverse soluzioni di mercato?",
         ]
