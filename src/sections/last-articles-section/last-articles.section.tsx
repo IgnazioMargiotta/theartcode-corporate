@@ -4,6 +4,7 @@ import { FadeInAnimation } from "@theartcode/components";
 
 export const LastArticlesSection = ({ articles, lang }: any) => {
   const { data: articlesData } = articles;
+
   return (
     <section
       className={`${styles["last-articles"]} py-[4rem]`}
@@ -27,7 +28,7 @@ export const LastArticlesSection = ({ articles, lang }: any) => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {articlesData.length > 0 ? (
               articlesData.map((article: any, index: number) => {
-                const { Title, Slug, categories, Seo } = article.attributes;
+                const { Title, Slug, categories, Seo, ReadTime } = article.attributes;
                 return (
                   <SingleArticleItem
                     key={article.id}

@@ -13,6 +13,7 @@ const FETCH_LIMITED_POSTS = gql`
         attributes {
           Title
           Slug
+          ReadTime
           Seo {
             MetaTitle
             MetaDescription
