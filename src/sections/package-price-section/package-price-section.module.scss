@@ -1,5 +1,9 @@
 .package-price{
   background-color:var(--color-gray1);
+  &-custom{
+    background-color: var(--color-primary2-opacity);
+    color:var(--forced-theme-color-black);
+  }
   &-slide{
     display: flex !important;
     height: auto !important;
@@ -26,12 +30,12 @@
       --color-2:var(--color-primary1-opacity);
     }
     &--color-primary2{
-      --background:url("/assets/images/devoration_card_variant2.webp");
+      --background:url("/assets/images/devoration_card_variant3.webp");
       --color-1:var(--color-primary2);
       --color-2:var(--color-primary2-opacity);
     }
     &--color-primary3{
-      --background:url("/assets/images/devoration_card_variant3.webp");
+      --background:url("/assets/images/devoration_card_variant2.webp");
       --color-1:var(--color-primary3);
       --color-2:var(--color-primary3-opacity);
     }
@@ -56,6 +60,13 @@
         font-size: 1.5rem;
       }
     }
+    &__box{
+      background-color: var(--color-gray1);
+      border:2px solid var(--color-1);
+      padding:1rem 1.5rem;
+      border-radius: 0.8rem;
+      margin-top:2rem;
+    }
     &__list{
       margin: 0.4rem;
       padding-block: 0.4rem;
@@ -74,9 +85,6 @@
         transform: translate(calc(-50% - 1px), calc(50% + 1px));
         background-color:var(--color-1);
       }
-      &-single {
-        padding-left: 10px;
-      }
       & > span{
         display: flex;
         margin-left: -2px;
@@ -92,6 +100,7 @@
           border-color: var(--color-1);
           border-bottom-left-radius: 0.8rem;
           margin-top:-3px;
+          flex-shrink: 0;
         }
         &:after{
           content:'';
@@ -113,9 +122,6 @@
       gap:0.5rem;
       justify-content: space-between;
       margin-top:2rem;
-      &--custom {
-        align-items: end;
-      }
       .main-text{
         font-size: 2.3rem;
         line-height: 1.1;

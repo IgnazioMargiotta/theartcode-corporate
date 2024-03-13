@@ -1,6 +1,6 @@
 .last-articles-box {
   overflow: hidden;
-  border-radius: 2rem;
+  border-radius: 1rem;
   transition-duration: 0.3s;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,26 @@
   box-shadow: var(--shadow-base);
   background-color: var(--color-white);
   width:100%;
+  position: relative;
+  &__read-time{
+    svg{
+      width: 15px;
+      fill: var(--forced-theme-color-white);
+    }
+    position: absolute;
+    z-index: 999;
+    top:1rem;
+    right:1rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    line-height: 0.6rem;
+    color: var(--forced-theme-color-white);
+    background-color: var(--color-black-opacity);
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    border-radius: 0.8rem;
+  }
   &__image {
     display: block;
     overflow: hidden;

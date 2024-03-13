@@ -3,7 +3,7 @@ export const contactSection = {
   subtitle:
     "Il tuo progetto, la nostra passione. Raccontaci cosa hai in mente!",
   form: {
-    title: "Dai, manca poco... che aspetti?",
+    title: "Siamo ad una sola email di distanza...",
     name: "Nome",
     surname: "Cognome",
     company: "Azienda",

@@ -33,7 +33,7 @@ export const PackagePriceSection = ({ lang }: any) => {
   };
 
   return (
-    <section className={`${styles["package-price"]} py-[4rem] mt-[4rem]`}>
+    <section className={`${styles["package-price"]} pt-[4rem] mt-[4rem]`}>
       <div className="container mx-auto">
         <div className="pb-12">
           <FadeInAnimation>
@@ -132,12 +132,8 @@ export const PackagePriceSection = ({ lang }: any) => {
                     <span>Strapi</span> CMS<br/>
                     <span>Next.js</span> Frontend<br/>
                     <span>{init.speakWithUs}</span><br/>
-                    <div className={`${styles["package-price-card__list"]}`}>
-                      <span>
-                        <span className={`${styles["package-price-card__list-single"]}`}>
-                          {sectionOne.cards[2].points[0]}
-                        </span>
-                      </span>
+                    <div className={`${styles["package-price-card__box"]}`}>
+                      {sectionOne.cards[2].points[0]}
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
@@ -165,12 +161,8 @@ export const PackagePriceSection = ({ lang }: any) => {
                     <span>Strapi</span> CMS<br/>
                     <span>Next.js</span> Frontend<br/>
                     <span>{init.speakWithUs}</span><br/>
-                    <div className={`${styles["package-price-card__list"]}`}>
-                      <span>
-                        <span className={`${styles["package-price-card__list-single"]}`}>
-                          {sectionOne.cards[3].points[0]}
-                        </span>
-                      </span>
+                    <div className={`${styles["package-price-card__box"]}`}>
+                      {sectionOne.cards[2].points[0]}
                     </div>
                   </div>
                   <div className={`${styles["package-price-card__price"]}`}>
@@ -187,40 +179,19 @@ export const PackagePriceSection = ({ lang }: any) => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className={styles["package-price-slide"]}>
-              <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary2"]}`}>
-                <div className={`${styles["package-price-card__title"]}`}>
-                  <span>{sectionOne.cards[4].label}</span>
-                  <h3>{sectionOne.cards[4].name}</h3>
-                </div>
-                <div className={`${styles["package-price-card__content"]}`}>
-                  <div>
-                    <span>{init.speakWithUs}</span><br/>
-                    <div className={`${styles["package-price-card__list"]}`}>
-                      <span>{sectionOne.cards[4].points[0]}</span>
-                      <span>{sectionOne.cards[4].points[1]}</span>
-                      <span>{sectionOne.cards[4].points[2]}</span>
-                    </div>
-                  </div>
-                  <div className={`${styles["package-price-card__price"]} ${styles["package-price-card__price--custom"]}`}>
-                    <div>
-                      {init.delivery}<br />
-                      <span className={`${styles["main-text"]}`}>X</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
-                    </div>
-                    <div className="text-right">
-                      <Button
-                        link="#contacts"
-                        text={init.discoverMore}
-                        style="fill"
-                        color="main2"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
           </Swiper>
         </FadeInAnimation>
+      </div>
+      <div className={`${styles["package-price-custom"]}`}>
+        <div className="container mx-auto mt-16 py-8 flex flex-col lg:flex-row items-center lg:justify-between gap-4">
+          <div className="lg:w-2/3 text-center lg:text-left">
+            <h3 className="pb-1">{lang.sectionCustom.title}</h3>
+            <p>{lang.sectionCustom.subTitle}</p>
+          </div>
+          <div className="flex justify-center lg:justify-end lg:w-1/3">
+            <Button link="/#contacts" text={lang.sectionCustom.button} color="main2" />
+          </div>
+        </div>
       </div>
     </section>
   );

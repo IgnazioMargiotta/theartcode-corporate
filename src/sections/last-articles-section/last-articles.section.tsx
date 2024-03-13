@@ -35,6 +35,7 @@ export const LastArticlesSection = ({ articles, lang }: any) => {
                     id={articles.id}
                     title={Title}
                     slug={Slug}
+                    readTime={ReadTime}
                     image={`${Seo.SharedImage.data.attributes.url}`}
                     category={categories.data[0]?.attributes?.Title}
                     description={Seo.MetaDescription}

@@ -1,7 +1,7 @@
 export const servicesSection = {
   title: "I nostri servizi",
   subtitle:
-    "Nel cuore dei nostri servizi, troviamo un impegno incrollabile verso l'innovazione e la qualità. Attraverso un approccio personalizzato e all'avanguardia, miriamo a trasformare le sfide digitali dei nostri clienti in opportunità straordinarie, portando valore e crescita sostenibile. Dallo sviluppo di soluzioni software su misura alla creazione di esperienze digitali coinvolgenti, ogni progetto è guidato dalla passione per l'eccellenza e dalla dedizione alla soddisfazione del cliente.",
+    "Nel cuore dei nostri servizi, troviamo un impegno incrollabile verso l'**innovazione** e la **qualità**. Attraverso un approccio personalizzato e all'avanguardia, miriamo a trasformare le sfide digitali dei nostri clienti in opportunità straordinarie, portando valore e crescita sostenibile.\n\nDallo sviluppo di soluzioni software su misura alla creazione di esperienze digitali coinvolgenti, ogni progetto è guidato dalla **passione per l'eccellenza** e dalla dedizione alla soddisfazione del cliente.",
   cards: {
     itStrategic: {
       title: "Consulenza strategica IT",

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const PresentationSection = ({ lang }: any) => {
 
-  const descriptionFirst = marked.parse(lang.descriptionFirst);
+  const description = marked.parse(lang.description);
 
   return (
     <section
@@ -40,11 +40,7 @@ export const PresentationSection = ({ lang }: any) => {
               Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;
               <span className="text-color-main2">code</span>
             </h1>
-            <div>
-              <div dangerouslySetInnerHTML={{ __html: descriptionFirst }} />
-              <p>{lang.descriptionSecond}</p>
-              <p>{lang.descriptionThird}</p>
-            </div>
+            <div dangerouslySetInnerHTML={{ __html: description }} />
           <div className={`${styles["buttons"]}`}>
             <Button
               link="#services"
