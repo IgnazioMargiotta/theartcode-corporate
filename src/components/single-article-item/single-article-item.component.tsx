@@ -5,6 +5,7 @@ interface SingleArticleItemProps {
   id: number;
   title: string;
   slug: string;
+  readTime: string;
   image: string;
   category: string;
   description: string;
@@ -13,6 +14,14 @@ interface SingleArticleItemProps {
 export const SingleArticleItem = (props: SingleArticleItemProps) => {
   return (
     <div className={`${styles["last-articles-box"]}`}>
+      {props.readTime && (
+        <span className={`${styles["last-articles-box__read-time"]}`}>
+          <svg viewBox="0 0 20 23">
+            <use href="#timer"></use>
+          </svg>
+          <span>{props.readTime}</span>
+        </span>
+      )}
       <Link
         className={`${styles["last-articles-box__image"]}`}
         href={`#${props.slug}`}

@@ -1,7 +1,7 @@
 export const servicesSection = {
   title: "Our services",
   subtitle:
-    "At the heart of our services lies an unwavering commitment to innovation and quality. Through a personalized and cutting-edge approach, we aim to transform our clients' digital challenges into extraordinary opportunities, delivering value and sustainable growth. From the development of bespoke software solutions to the creation of captivating digital experiences, each project is fueled by a passion for excellence and a commitment to customer satisfaction.",
+    "At the heart of our services lies an unwavering commitment to **innovation** and **quality**. Through a personalized and cutting-edge approach, we aim to transform our clients' digital challenges into extraordinary opportunities, delivering value and sustainable growth.\n\nFrom the development of bespoke software solutions to the creation of captivating digital experiences, each project is fueled by a **passion for excellence** and a commitment to customer satisfaction.",
   cards: {
     itStrategic: {
       title: "IT Strategic Consulting",

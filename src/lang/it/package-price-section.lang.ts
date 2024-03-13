@@ -1,10 +1,10 @@
 export const packagePriceSection = {
   init: {
     delivery: "CONSEGNA",
-    startTo: "a partire da",
+    startTo: "A PARTIRE DA",
     pageBuilder: "Page Builder",
-    pages: "pagine",
-    included: "inclusi",
+    pages: "Pagine",
+    included: "Inclusi",
     components: "Componenti",
     speakWithUs: "Parlane con noi",
     discoverMore: "Parla con noi"
@@ -57,20 +57,13 @@ export const packagePriceSection = {
           "Vuoi realizzare una piattaforma di vendita online scalabile? Che possa integrarsi con diverse soluzioni di mercato?",
         ]
       },
-      {
-        label: "Da zero",
-        name: "CUSTOM",
-        cms: "WordPress",
-        builder: "Elementor/WPbakery",
-        endTo: "Fino a X",
-        points: [
-          "Immaginiamo insieme",
-          "Costruiamo idee vincenti",
-          "Sogniamo una struttura performante"
-        ]
-      },
     ]
   },
+  sectionCustom:{
+    title: "Preferiresti una soluzione personalizzata?",
+    subTitle: "Collaboriamo per individuare soluzioni efficaci che soddisfino le tue esigenze.",
+    button: "Parliamone"
+  }
 }
 
 export default packagePriceSection;

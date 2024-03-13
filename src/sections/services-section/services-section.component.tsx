@@ -1,12 +1,13 @@
+import * as marked from 'marked'
 import styles from "./services-section.module.scss";
 import {
   DecorativeBubbles,
   FadeInAnimation,
   ServicesBox,
 } from "@theartcode/components";
-import Image from "next/image";
 
 export const ServicesSection = ({ lang }: any) => {
+  const subtitle = marked.parse(lang.subtitle);
   const { cards } = lang;
   return (
     <section
@@ -49,7 +50,7 @@ export const ServicesSection = ({ lang }: any) => {
             />
             <div>
               <h2>{lang.title}</h2>
-              <p>{lang.subtitle}</p>
+              <div dangerouslySetInnerHTML={{ __html: subtitle }} />
             </div>
             <DecorativeBubbles
               direction="right"

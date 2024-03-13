@@ -1,9 +1,9 @@
 export const packagePriceSection = {
   init: {
     delivery: "DELIVERY",
-    startTo: "starting from",
+    startTo: "STARTING FROM",
     pageBuilder: "Page Builder",
-    pages: "pages",
+    pages: "Pages",
     included: "Included",
     components: "Components",
     speakWithUs: "Speak with Us",
@@ -57,20 +57,13 @@ export const packagePriceSection = {
           "Do you want to create a scalable online sales platform? One that can integrate with various market solutions?",
         ]
       },
-      {
-        label: "From Scratch",
-        name: "CUSTOM",
-        cms: "WordPress",
-        builder: "Elementor/WPbakery",
-        endTo: "Up to X",
-        points: [
-          "Imagine Together",
-          "Let's Build Ideas Instead",
-          "Dream Up the Right Architecture"
-        ]
-      },
     ]
   },
+  sectionCustom:{
+    title: "Would you prefer a customized solution?",
+    subTitle: "Let's collaborate to identify effective solutions that meet your needs.",
+    button: "Let's talk"
+  }
 }
 
 export default packagePriceSection;
