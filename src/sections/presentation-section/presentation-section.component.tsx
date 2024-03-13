@@ -1,9 +1,14 @@
+import * as marked from 'marked'
+
 import { Button } from "@theartcode/components";
 import styles from "./presentation-section.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
 export const PresentationSection = ({ lang }: any) => {
+
+  const descriptionFirst = marked.parse(lang.descriptionFirst);
+
   return (
     <section
       className={`${styles["presentation"]} py-[15rem] mb-[4rem]`}
@@ -35,8 +40,8 @@ export const PresentationSection = ({ lang }: any) => {
               Where&nbsp;<span className="text-color-main1">art</span> meets&nbsp;
               <span className="text-color-main2">code</span>
             </h1>
-            <div className={`${styles["presentation-container__descriptions"]}`}>
-              <p>{lang.descriptionFirst}</p>
+            <div>
+              <div dangerouslySetInnerHTML={{ __html: descriptionFirst }} />
               <p>{lang.descriptionSecond}</p>
               <p>{lang.descriptionThird}</p>
             </div>
