@@ -37,7 +37,7 @@ export const IubendaScript = () => {
       />
       <Script
         id="iubenda-stub"
-        src="https://cdn.iubenda.com/cs/stub.js"
+        src="https://cdn.iubenda.com/cs/gpp/stub.js"
         strategy="lazyOnload"
       />
       <Script
