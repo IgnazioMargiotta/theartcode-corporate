@@ -24,13 +24,14 @@ export const SingleArticleItem = (props: SingleArticleItemProps) => {
       )}
       <Link
         className={`${styles["last-articles-box__image"]}`}
-        href={`#${props.slug}`}
+        href={`https://theartcode.dev/blog/${props.slug}`}
+        target="_BLANK"
         title={props.title}
       >
         <Image src={props.image} width={410} height={230} alt={props.title} />
       </Link>
       <div>
-        <Link href={`#${props.slug}`} title={props.title}>
+        <Link href={`https://theartcode.dev/blog/${props.slug}`} target="_BLANK" title={props.title}>
           <h4>{props.title}</h4>
         </Link>
         {props.description && (
@@ -46,7 +47,8 @@ export const SingleArticleItem = (props: SingleArticleItemProps) => {
           )}
           <Link
             className={`${styles["last-articles-box__button"]}`}
-            href={`localhost:3000/post/${props.slug}`}
+            href={`https://theartcode.dev/blog/${props.slug}`}
+            target="_BLANK"
             title={props.title}
           >
             <svg viewBox="0 0 20 20">

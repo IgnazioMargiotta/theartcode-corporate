@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Styles
 import styles from "./skills-section.module.scss";
+import Link from "next/link";
 
 export const SkillsSection = () => {
   return (
@@ -97,13 +98,15 @@ export const SkillsSection = () => {
             position="top-left"
             animation="true"
           />
-          <Image
-            src={`assets/images/logo_artcode_gradient.svg`}
-            className={`${styles["skills__logo"]}`}
-            width={300}
-            height={78}
-            alt="artCode"
-          />
+          <Link href={`https://theartcode.dev/`} target="_BLANK" title={`The artCode`}>
+            <Image
+              src={`assets/images/logo_artcode_gradient.svg`}
+              className={`${styles["skills__logo"]}`}
+              width={300}
+              height={78}
+              alt="artCode"
+            />
+          </Link>
           <Image
             src={`assets/images/line_variant1.svg`}
             className={`${styles["skills__line-decoration"]} ${styles["skills__line-decoration--variant1"]}`}
