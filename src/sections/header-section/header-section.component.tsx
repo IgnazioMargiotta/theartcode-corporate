@@ -12,6 +12,11 @@ export const HeaderSection = ({ lang }: any) => {
 
   const navigation = [
     {
+      name: lang.navigation.itemZero,
+      href: `${defaultLang}/#solutions`,
+      current: false,
+    },
+    {
       name: lang.navigation.itemOne,
       href: `${defaultLang}/#technology`,
       current: false,

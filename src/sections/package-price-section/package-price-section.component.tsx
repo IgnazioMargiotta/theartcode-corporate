@@ -32,8 +32,10 @@ export const PackagePriceSection = ({ lang }: any) => {
     },
   };
 
+  const defaultLang = lang.defaultLang === "it" ? "it" : "";
+
   return (
-    <section className={`${styles["package-price"]} pt-[4rem] mt-[4rem]`}>
+    <section className={`${styles["package-price"]} pt-[4rem] mt-[4rem]`} id="solutions">
       <div className="container mx-auto">
         <div className="pb-12">
           <FadeInAnimation>
@@ -189,8 +191,8 @@ export const PackagePriceSection = ({ lang }: any) => {
             <p>{lang.sectionCustom.subTitle}</p>
           </div>
           <div className="flex justify-center lg:justify-end lg:w-1/3">
-            <Button link="/#contacts" text={lang.sectionCustom.button} color="main2" />
-          </div>
+            <Button link={`${defaultLang}/#contacts`} text={lang.sectionCustom.button} color="main2" />
+          </div> 
         </div>
       </div>
     </section>

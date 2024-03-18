@@ -61,7 +61,7 @@ const Home = ({
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
-        <PackagePriceSection lang={packagePriceSection} />
+        <PackagePriceSection lang={{ ...packagePriceSection, defaultLang }} />
         <SkillsSection />
         <ServicesSection lang={servicesSection} />
         <LastArticlesSection articles={articles} lang={lastArticlesSection} />

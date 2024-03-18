@@ -1,5 +1,6 @@
 export const headerSection = {
   navigation: {
+    itemZero: "Soluzioni",
     itemOne: "Tecnologie",
     itemTwo: "Servizi",
     itemThree: "Blog",
