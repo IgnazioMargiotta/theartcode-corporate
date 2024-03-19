@@ -158,11 +158,6 @@ body:has(.header__menu--open){
       margin-left: -15px;
       margin-top: -12px;
     }
-    li.header__items:has(a[href*="blog"]):before,
-    li.header__items:has(a[href*="articoli"]):before,
-    li.header__items:has(a[href*="articles"]):before {
-      background-color: var(--color-primary3-opacity);
-    }
     li.header__social {
       display: none;
       align-items: center;

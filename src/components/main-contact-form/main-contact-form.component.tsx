@@ -143,24 +143,26 @@ export const MainContactForm = ({ lang }: any) => {
         </div>
       </div>
       <div>
-        <select name="you_find_us" id="you_find_us" aria-label={lang.howFindUs.default}>
-          <option value="">{lang.howFindUs.default}</option>
-          <option value={lang.howFindUs.valueOne}>
-            {lang.howFindUs.valueOne}
-          </option>
-          <option value={lang.howFindUs.valueTwo}>
-            {lang.howFindUs.valueTwo}
-          </option>
-          <option value={lang.howFindUs.valueThree}>
-            {lang.howFindUs.valueThree}
-          </option>
-          <option value={lang.howFindUs.valueFour}>
-            {lang.howFindUs.valueFour}
-          </option>
-          <option value={lang.howFindUs.valueFive}>
-            {lang.howFindUs.valueFive}
-          </option>
-        </select>
+        <div className={`${styles["custom-select"]}`}>
+          <select name="you_find_us" id="you_find_us" aria-label={lang.howFindUs.default}>
+            <option value="">{lang.howFindUs.default}</option>
+            <option value={lang.howFindUs.valueOne}>
+              {lang.howFindUs.valueOne}
+            </option>
+            <option value={lang.howFindUs.valueTwo}>
+              {lang.howFindUs.valueTwo}
+            </option>
+            <option value={lang.howFindUs.valueThree}>
+              {lang.howFindUs.valueThree}
+            </option>
+            <option value={lang.howFindUs.valueFour}>
+              {lang.howFindUs.valueFour}
+            </option>
+            <option value={lang.howFindUs.valueFive}>
+              {lang.howFindUs.valueFive}
+            </option>
+          </select>
+        </div>
       </div>
       <div>
         <textarea
