@@ -41,7 +41,7 @@ svg {
   max-width: 100%;
 }
 main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -61,6 +61,7 @@ textarea {
 }
 input[type="text"],
 input[type="password"],
+select,
 textarea {
   appearance: none;
 }
@@ -140,12 +141,12 @@ h6 {
   font-weight: 700;
 }
 h1 {
-  font-size: 3.2rem;
-  line-height: 1.2;
+  font-size: clamp(2.7rem, 6vw, 3.2rem);
+  line-height: 1.1;
 }
 h2 {
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  line-height: 1.1;
   .decoration-title {
     display: inline-block;
     position: relative;
@@ -162,9 +163,6 @@ h2 {
       z-index: -1;
       background-color: var(--color-primary2-opacity);
     }
-  }
-  .decoration-title--primary3:before {
-    background-color: var(--color-primary3-opacity);
   }
 }
 h3 {
