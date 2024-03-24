@@ -11,7 +11,7 @@ export const packagePriceSection = {
   },
   sectionOne: {
     title: "Soluzioni Monolitiche & Headless",
-    subtitle: "Sito web, E-commerce & soluzioni Software",
+    subtitle: "SOLO SVILUPPO | Sito web, E-commerce & soluzioni Software",
     cards: [
       {
         label: "Sito web",

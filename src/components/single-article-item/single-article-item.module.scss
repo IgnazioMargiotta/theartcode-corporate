@@ -100,7 +100,7 @@
 }
 .last-articles-box[data-size="visual"]{
   aspect-ratio: 1/1;
-  background: var(--forced-theme-color-black) top center / cover no-repeat;
+  background: var(--forced-theme-color-black) top center / 150% no-repeat;
   color:var(--forced-theme-color-white);
   & > div {
     justify-content: flex-end;

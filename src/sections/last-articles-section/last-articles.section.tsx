@@ -40,7 +40,7 @@ export const LastArticlesSection = ({ articles, lang }: any) => {
                     slug={Slug}
                     readTime={ReadTime}
                     image={`${Seo.SharedImage.data.attributes.url}`}
-                    category={categories.data[0]?.attributes?.Title}
+                    categories={categories.data}
                     description={Seo.MetaDescription}
                   />
                 );
