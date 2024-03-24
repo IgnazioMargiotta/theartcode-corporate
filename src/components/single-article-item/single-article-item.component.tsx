@@ -2,6 +2,9 @@ import styles from "./single-article-item.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
+//@theArtCode
+import { getDaysDate } from "@theartcode/utils";
+
 interface SingleArticleItemProps {
   sizeStyle: 'S' | 'M' | 'L' | 'visual';
   id: number;
@@ -10,17 +13,12 @@ interface SingleArticleItemProps {
   date: string;
   readTime: string;
   image: string;
-  category: string;
+  categories: [unknown];
   description: string;
 }
 
 export const SingleArticleItem = (props: SingleArticleItemProps) => {
-  const articleDate = new Date(props.date);
-  const formattedDate = articleDate.toLocaleDateString('it-IT', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric'
-  });
+  const formattedDate = getDaysDate(props.date)
 
   return (
     <>
@@ -47,7 +45,9 @@ export const SingleArticleItem = (props: SingleArticleItemProps) => {
           <div>
             {props.sizeStyle === 'L' && (
               <span className={`${styles["last-articles-box__tags"]}`}>
-                <span>NODE</span> <span>NODE</span>
+                {props.categories.length > 0 && props.categories.map((category: any,index: number) => {
+                  return (<span key={index}>{category.attributes.Title}</span>)
+                })}
               </span>
             )}
             <Link
