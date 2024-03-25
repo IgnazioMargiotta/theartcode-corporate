@@ -59,7 +59,7 @@ const Home = ({
             {
               'alt': `Vibra Studio`,
               'type': `image/jpeg`,
-              'url': `/public/assets/images/og_vibra.jpg`,
+              'url': `https://vibra.studio/assets/images/og_vibra.jpg`,
               'width': `1800`,
               'height': `945`
             }

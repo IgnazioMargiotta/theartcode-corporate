@@ -55,11 +55,12 @@ const Home = ({
           type="website"
           description="Vibra blends art and code to create innovative software solutions that elevate your digital experience. Discover how we turn ideas into reality."
           site_name="Vibra Studio"
+          locale="en_US"
           image={
             {
               'alt': `Vibra Studio`,
               'type': `image/jpeg`,
-              'url': `/public/assets/images/og_vibra.jpg`,
+              'url': `https://vibra.studio/assets/images/og_vibra.jpg`,
               'width': `1800`,
               'height': `945`
             }
