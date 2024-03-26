@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vibra.studio/sitemap.xml
