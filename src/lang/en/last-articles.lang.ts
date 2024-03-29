@@ -1,6 +1,6 @@
 export const lastArticlesSection = {
   title: "Last articles",
-  subtitle: "Come discover the latest articles on theArtCode!",
+  subtitle: "Come discover the latest articles on artCode!",
   button: "Browse the blog",
 };
 

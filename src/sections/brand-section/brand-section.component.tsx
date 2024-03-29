@@ -12,7 +12,7 @@ export const BrandSection = ({ lang }: any) => {
       <div className="container mx-auto">
         <FadeInAnimation>
           <div className="grid grid-cols-6 items-center gap-8">
-            <div className="text-center lg:text-left col-span-6 lg:col-span-2">
+            <div className="text-center lg:order-last lg:text-left col-span-6 lg:col-span-2">
               <h2 className="pb-4">{lang.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: subtitle }} />
             </div>

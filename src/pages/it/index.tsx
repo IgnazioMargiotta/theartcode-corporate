@@ -13,6 +13,7 @@ import {
   FooterSection,
   BrandSection,
   LastArticlesSection,
+  TeamSection
 } from "@theartcode/sections";
 
 // Components
@@ -31,6 +32,7 @@ import {
   lastArticlesSection,
   contactSection,
   headerSection,
+  teamSection,
   brandSection,
   packagePriceSection,
 } from "@theartcode/lang/it";
@@ -68,13 +70,14 @@ const Home = ({
       </Head>
       <HeaderSection lang={{ ...headerSection, defaultLang }} />
       <main>
-        <PresentationSection lang={presentationSection} />
+      <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
-        <PackagePriceSection lang={{ ...packagePriceSection, defaultLang }} />
+        <PackagePriceSection lang={packagePriceSection} />
         <SkillsSection />
         <ServicesSection lang={servicesSection} />
-        <LastArticlesSection articles={articles} lang={lastArticlesSection} />
+        <TeamSection lang={teamSection} />
         <BrandSection lang={brandSection} />
+        <LastArticlesSection articles={articles} lang={lastArticlesSection} />
         <ContactsSection lang={contactSection} />
       </main>
       <FooterSection />
