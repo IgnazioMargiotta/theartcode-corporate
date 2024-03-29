@@ -1,6 +1,12 @@
 .package-price{
+  h2{
+    text-wrap: balance;
+  }
   background-color:var(--color-gray1);
   &-custom{
+    h3{
+      text-wrap: balance;
+    }
     background-color: var(--color-primary2-opacity);
     color:var(--forced-theme-color-black);
   }
