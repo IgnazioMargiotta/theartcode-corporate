@@ -103,7 +103,7 @@ export const TeamSection = ({ lang }: any) => {
                   src={`/assets/images/profile-team/profile5.svg`}
                   width={250}
                   height={250}
-                  alt="Danilo Scopede"
+                  alt="Danilo Scopece"
                 />
               </div>
               <div className={`${styles["single-user__content"]}`}>
@@ -112,7 +112,7 @@ export const TeamSection = ({ lang }: any) => {
                     <use href="#finger-print"></use>
                   </svg>
                 </div>
-                <h4 className={`${styles["single-user__name"]}`}>Danilo Scopede</h4>
+                <h4 className={`${styles["single-user__name"]}`}>Danilo Scopece</h4>
                 Visual Designer
               </div>
             </div>
