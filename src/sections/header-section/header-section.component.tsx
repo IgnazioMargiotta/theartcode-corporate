@@ -75,7 +75,7 @@ export const HeaderSection = ({ lang }: any) => {
       <div className={`container mx-auto ${styles["header-container"]}`}>
         <Link href={`/${defaultLang}`} title="Vibra Studio">
           <Image
-            src={`assets/images/logo_vibra_gradient.svg`}
+            src={`/assets/images/logo_vibra_gradient.svg`}
             className={`${styles["header__logo"]}`}
             width={200}
             height={75}
