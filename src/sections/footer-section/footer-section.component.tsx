@@ -28,7 +28,7 @@ export const FooterSection = () => {
       <div className="container mx-auto flex flex-col md:flex-row gap-4 py-8">
         <div className="md:w-1/6 flex items-center justify-center md:justify-start">
           <Image
-            src={`assets/images/logo_vibra_black.svg`}
+            src={`/assets/images/logo_vibra_black.svg`}
             className={`${styles["footer__logo"]}`}
             width={200}
             height={36}
