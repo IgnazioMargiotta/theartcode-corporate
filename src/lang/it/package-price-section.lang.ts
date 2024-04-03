@@ -14,8 +14,8 @@ export const packagePriceSection = {
     subtitle: "SOLO SVILUPPO | Sito web, E-commerce & soluzioni Software",
     cards: [
       {
-        label: "Sito web",
-        name: "BASIC",
+        label: "MONOLITHIC SOLUTION",
+        name: "Sito Web",
         cms: "WordPress",
         builder: "Elementor/WPbakery",
         endTo: "Fino a 4",
@@ -28,8 +28,8 @@ export const packagePriceSection = {
         ]
       },
       {
-        label: "E-commerce",
-        name: "PRO",
+        label: "SOLUZIONI MONOLITICHE",
+        name: "E-commerce",
         cms: "WordPress",
         builder: "Elementor/WPbakery",
         endTo: "Fino a 6",
@@ -43,16 +43,16 @@ export const packagePriceSection = {
         ]
       },
       {
-        label: "Website Plan",
-        name: "BASIC headless",
+        label: "HEADLESS SOLUTION",
+        name: "Sito Web",
         endTo: "Up to 4",
         points: [
           "Hai bisogno di realizzare un nuovo sito web moderno? Le sfide ci piacciono e amerai le nostre soluzioni Headless!",
         ]
       },
       {
-        label: "E-commerce Plan",
-        name: "PRO headless",
+        label: "HEADLESS SOLUTION",
+        name: "E-commerce",
         points: [
           "Vuoi realizzare una piattaforma di vendita online scalabile? Che possa integrarsi con diverse soluzioni di mercato?",
         ]

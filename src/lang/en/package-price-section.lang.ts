@@ -14,8 +14,8 @@ export const packagePriceSection = {
     subtitle: "ONLY DEV | Website, E-commerce & Software solutions",
     cards: [
       {
-        label: "Website Plan",
-        name: "BASIC",
+        label: "MONOLITHIC SOLUTION",
+        name: "Website Plan",
         cms: "WordPress",
         builder: "Elementor/WPbakery",
         endTo: "Up to 4",
@@ -28,8 +28,8 @@ export const packagePriceSection = {
         ]
       },
       {
-        label: "E-commerce Plan",
-        name: "BASIC",
+        label: "MONOLITHIC SOLUTION",
+        name: "E-commerce Plan",
         cms: "WordPress",
         builder: "Elementor/WPbakery",
         endTo: "Up to 4",
@@ -43,16 +43,16 @@ export const packagePriceSection = {
         ]
       },
       {
-        label: "Website Plan",
-        name: "BASIC headless",
+        label: "HEADLESS SOLUTION",
+        name: "Website Plan",
         endTo: "Up to 4",
         points: [
           "Do you need to create a new, modern website? We love challenges, and you'll love our Headless solutions!",
         ]
       },
       {
-        label: "E-commerce Plan",
-        name: "PRO headless",
+        label: "HEADLESS SOLUTION",
+        name: "E-commerce Plan",
         points: [
           "Do you want to create a scalable online sales platform? One that can integrate with various market solutions?",
         ]
