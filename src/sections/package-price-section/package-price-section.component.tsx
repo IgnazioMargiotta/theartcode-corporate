@@ -77,7 +77,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
                       {init.delivery}<br />
-                      <span className={`${styles["main-text"]}`}>1</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
                       {init.startTo}<br />
@@ -112,7 +112,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                   <div className={`${styles["package-price-card__price"]}`}>
                     <div>
                       {init.delivery}<br />
-                      <span className={`${styles["main-text"]}`}>1</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                      <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
                     <div className="text-right">
                       {init.startTo}<br />
@@ -131,7 +131,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                 </div>
                 <div className={`${styles["package-price-card__content"]}`}>
                   <div>
-                    <span>Strapi</span> CMS<br/>
+                    <span>Wordpress</span> CMS<br/>
                     <span>Next.js</span> Frontend<br/>
                     <span>{init.speakWithUs}</span><br/>
                     <div className={`${styles["package-price-card__box"]}`}>
@@ -145,7 +145,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                     </div>
                     <div className="text-right">
                      {init.startTo}<br />
-                      <span className={`${styles["main-text"]}`}>12.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      <span className={`${styles["main-text"]}`}>6K</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
@@ -154,6 +154,35 @@ export const PackagePriceSection = ({ lang }: any) => {
             </SwiperSlide>
             <SwiperSlide className={styles["package-price-slide"]}>
               <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary3"]}`}>
+                <div className={`${styles["package-price-card__title"]}`}>
+                  <span>{sectionOne.cards[2].label}</span>
+                  <h3>{sectionOne.cards[2].name}</h3>
+                </div>
+                <div className={`${styles["package-price-card__content"]}`}>
+                  <div>
+                    <span>Strapi</span> CMS<br/>
+                    <span>Next.js</span> Frontend<br/>
+                    <span>{init.speakWithUs}</span><br/>
+                    <div className={`${styles["package-price-card__box"]}`}>
+                      {sectionOne.cards[2].points[0]}
+                    </div>
+                  </div>
+                  <div className={`${styles["package-price-card__price"]}`}>
+                    <div>
+                      {init.delivery}<br />
+                      <span className={`${styles["main-text"]}`}>8</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
+                    </div>
+                    <div className="text-right">
+                     {init.startTo}<br />
+                      <span className={`${styles["main-text"]}`}>8K</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      + IVA
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles["package-price-slide"]}>
+              <div className={`${styles["package-price-card"]} ${styles["package-price-card--color-primary1"]}`}>
                 <div className={`${styles["package-price-card__title"]}`}>
                   <span>{sectionOne.cards[3].label}</span>
                   <h3>{sectionOne.cards[3].name}</h3>
@@ -174,7 +203,7 @@ export const PackagePriceSection = ({ lang }: any) => {
                     </div>
                     <div className="text-right">
                       {init.startTo}<br />
-                      <span className={`${styles["main-text"]}`}>22.000</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
+                      <span className={`${styles["main-text"]}`}>14K</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
                     </div>
                   </div>
