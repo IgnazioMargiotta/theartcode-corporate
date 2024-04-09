@@ -41,7 +41,7 @@ export const BrandSection = ({ lang }: any) => {
                   alt="iungo"
                 />
               </div>
-              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
+              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size33"]}`}>
                 <Image
                   src={`/assets/images/brands-logo/brands_np_digital.webp`}
                   width={146}
@@ -49,7 +49,7 @@ export const BrandSection = ({ lang }: any) => {
                   alt="NP digital"
                 />
               </div>
-              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
+              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size33"]}`}>
                 <Image
                   src={`/assets/images/brands-logo/brands_matehub.webp`}
                   width={146}
@@ -57,15 +57,7 @@ export const BrandSection = ({ lang }: any) => {
                   alt="MateHub"
                 />
               </div>
-              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
-                <Image
-                  src={`/assets/images/brands-logo/brands_iride.webp`}
-                  width={146}
-                  height={30}
-                  alt="IRIDE"
-                />
-              </div>
-              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size25"]}`}>
+              <div className={`${styles["brand__single-box"]} ${styles["brand__single-box--size33"]}`}>
                 <Image
                   src={`/assets/images/brands-logo/brands_frg.webp`}
                   width={146}
