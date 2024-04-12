@@ -121,6 +121,16 @@ option[value=""] {
 a.iubenda-tp-btn.iubenda-cs-preferences-link {
   display: none !important;
 }
+.iubenda-tp-btn-container {
+  display: none !important;
+}
+.iubenda-tp-btn {
+  display: none !important;
+}
+button.iubenda-tp-btn.iubenda-cs-preferences-link {
+  display: none !important;
+  opacity: 0;
+}
 /* Style global */
 body {
   font-family: var(--font-base);
