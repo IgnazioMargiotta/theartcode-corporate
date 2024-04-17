@@ -79,11 +79,11 @@ export const PackagePriceSection = ({ lang }: any) => {
                       {init.delivery}<br />
                       <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
-                    <div className="text-right">
+                    {/* <div className="text-right">
                       {init.startTo}<br />
                       <span className={`${styles["main-text"]}`}>1.200</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -114,11 +114,11 @@ export const PackagePriceSection = ({ lang }: any) => {
                       {init.delivery}<br />
                       <span className={`${styles["main-text"]}`}>2</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
-                    <div className="text-right">
+                    {/* <div className="text-right">
                       {init.startTo}<br />
                       <span className={`${styles["main-text"]}`}>1.600</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -143,11 +143,11 @@ export const PackagePriceSection = ({ lang }: any) => {
                       {init.delivery}<br />
                       <span className={`${styles["main-text"]}`}>6</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
-                    <div className="text-right">
+                    {/* <div className="text-right">
                      {init.startTo}<br />
                       <span className={`${styles["main-text"]}`}>6K</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -172,11 +172,11 @@ export const PackagePriceSection = ({ lang }: any) => {
                       {init.delivery}<br />
                       <span className={`${styles["main-text"]}`}>8</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
-                    <div className="text-right">
+                    {/* <div className="text-right">
                      {init.startTo}<br />
                       <span className={`${styles["main-text"]}`}>8K</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -201,11 +201,11 @@ export const PackagePriceSection = ({ lang }: any) => {
                       {init.delivery}<br />
                       <span className={`${styles["main-text"]}`}>12</span>&nbsp;<span className={`${styles["small-text"]}`}>WEEK</span>
                     </div>
-                    <div className="text-right">
+                    {/* <div className="text-right">
                       {init.startTo}<br />
                       <span className={`${styles["main-text"]}`}>14K</span>&nbsp;<span className={`${styles["small-text"]}`}>€</span><br/>
                       + IVA
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
