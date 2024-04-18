@@ -24,7 +24,7 @@ export const TeamSection = ({ lang }: any) => {
             <div className={`${styles["single-user__container"]}`}>
               <div className={`${styles["single-user__image"]}`}>
                 <Image
-                  src={`/assets/images/profile-team/profile3.svg`}
+                  src={`/assets/images/profile-team/ignazio_margiotta.webp`}
                   width={250}
                   height={250}
                   alt="Ignazio Margiotta"
@@ -43,7 +43,7 @@ export const TeamSection = ({ lang }: any) => {
             <div className={`${styles["single-user__container"]}`}>
               <div className={`${styles["single-user__image"]}`}>
                 <Image
-                  src={`/assets/images/profile-team/profile2.svg`}
+                  src={`/assets/images/profile-team/samuele_neri.webp`}
                   width={250}
                   height={250}
                   alt="Samuele Neri"
@@ -62,7 +62,7 @@ export const TeamSection = ({ lang }: any) => {
             <div className={`${styles["single-user__container"]}`}>
               <div className={`${styles["single-user__image"]}`}>
                 <Image
-                  src={`/assets/images/profile-team/profile1.svg`}
+                  src={`/assets/images/profile-team/daniel_diletto.webp`}
                   width={250}
                   height={250}
                   alt="Daniel Diletto"
@@ -81,7 +81,7 @@ export const TeamSection = ({ lang }: any) => {
             <div className={`${styles["single-user__container"]}`}>
               <div className={`${styles["single-user__image"]}`}>
                 <Image
-                  src={`/assets/images/profile-team/profile4.svg`}
+                  src={`/assets/images/profile-team/simone_schiaffonati.webp`}
                   width={250}
                   height={250}
                   alt="Simone Schiaffonati"
@@ -100,7 +100,7 @@ export const TeamSection = ({ lang }: any) => {
             <div className={`${styles["single-user__container"]}`}>
               <div className={`${styles["single-user__image"]}`}>
                 <Image
-                  src={`/assets/images/profile-team/profile5.svg`}
+                  src={`/assets/images/profile-team/danilo_scopece.webp`}
                   width={250}
                   height={250}
                   alt="Danilo Scopece"
