@@ -98,7 +98,7 @@ export const SkillsSection = () => {
             position="top-left"
             animation="true"
           />
-          <Link href={`https://theartcode.dev/`} target="_BLANK" title={`The artCode`}>
+          <Link href={`https://theartcode.dev/`} target="_blank" title={`artCode`}>
             <Image
               src={`assets/images/logo_artcode_gradient.svg`}
               className={`${styles["skills__logo"]}`}
