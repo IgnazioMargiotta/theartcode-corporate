@@ -73,10 +73,10 @@ const Home = ({
       <main>
         <PresentationSection lang={presentationSection} />
         <CustomersSection lang={customersSection} />
-        <PackagePriceSection lang={packagePriceSection} />
+        {/* <PackagePriceSection lang={packagePriceSection} /> */}
         <SkillsSection />
         <ServicesSection lang={servicesSection} />
-        <TeamSection lang={teamSection} />
+        {/* <TeamSection lang={teamSection} /> */}
         <BrandSection lang={brandSection} />
         <LastArticlesSection articles={articles} lang={lastArticlesSection} />
         <ContactsSection lang={contactSection} />
