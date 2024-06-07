@@ -55,14 +55,14 @@ export const FooterSection = () => {
             >
               info@vibra.studio
             </Link>{" "}
-            &nbsp;{" "}
+            {/* &nbsp;{" "}
             <Link
               href="tel:+393518015772"
               className="font-normal"
               title="+39 351 801 5772"
             >
               +39 351 801 5772
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="md:w-1/6 flex items-center justify-center md:justify-end">
